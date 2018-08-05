@@ -27,6 +27,11 @@
   padding-left: 50px;
 }
 
+@mixin vertical-spacer {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 @mixin reset-lists {
   margin: 0;
   padding: 0;
@@ -78,10 +83,7 @@
 
 
 
-@mixin vertical-spacer {
-  margin-top: 65px;
-  margin-bottom: 65px;
-}
+
 
 @mixin page-header-title {
   max-width: 725px;

@@ -26,7 +26,6 @@ textarea {
 input,
 select,
 textarea {
-  /* Older iOS puts a border radius on inputs by default. */
   border-radius: 0;
 }
 
@@ -63,22 +62,16 @@ body:not(.util-IsTabbing) textarea:focus {
 */
 html {
   box-sizing: border-box;
-  /* Sets a specific default `font-size` for user with `rem` type scales. */
   font-size: 16px;
-
   background-color: #fff;
-  /* Changes the default tap highlight to be completely transparent in iOS. */
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
   font-family: $font-body;
   text-rendering: optimizeLegibility;
-
-  /* By default, `<body>` has no `background-color` so we set one as a best practice. */
   background-color: $color-body-bg;
   color: $color-body-text;
-
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }

@@ -1,0 +1,23 @@
+.sec-ContentIntro_Inner {
+	@include grid-container-wide;
+}
+
+.sec-ContentIntro_Body {
+	margin-top: -80px;
+	padding: 100px 100px 60px;
+	border-bottom: 1px solid #eee;
+	background-color: #fff;
+}
+
+.sec-ContentIntro_Title {
+	color: $color-orange;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.sec-ContentIntro_Text {
+	font-family: $font-droid;
+	font-size: 26px;
+	line-height: 46px;
+	text-align: center;
+}
