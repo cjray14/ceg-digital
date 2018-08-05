@@ -2,7 +2,7 @@
 <html>
 <head>
   	<meta charset="utf-8" />
-	<title>CEG Digital | Homepage</title>
+	<title>CEG Digital | What we do</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="description" content="{{ page_description | escape }}" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -10,55 +10,109 @@
 	<link rel="canonical" href="{{ canonical_url }}" />
 	<link rel="shortcut icon" href="" type="image/png" />
   	<link rel="stylesheet" href="css/main.css" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  	<script src="js/main.js"></script>
 </head>
 <body>
+	<div id="content-loader"><div class="content-loader content-loader-dots"><div></div></div></div>
+
 	<header class="hd-Header">
 	  <div class="hd-Header_Inner">
 	    <div class="hd-Header_Body">
+	    	<div class="hd-Header_Logo">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122 67.4" class="ico-Logo">
+					<path d="M87.8 11.3c0 .2 0 .8 1 1 1.4.2 2-.5 2-1.3.7-.1 1.3-.3 1.4-.7.2-.6-.4-.9-.4-.9-.1.7-.4 1-1.5 1.3-1 .3-2.9.2-3.5-.1.1 0 .5.6 1 .7z" fill="currentColor"/>
+					<path d="M116.7 26.1c1.8-1.1 3.5-1.6 4.6-.9-.9-2-2.5-2.4-4-2.2h-.1-.1l-.3.1c-.7.2-1.4.5-2 .8l-5.3 2.2-.1-.1c.7-2.4 3.4-3.5 4.9-3.6-4-2.1-7.5 1.9-7.9 3.5-.1 1-.2 1.8-.1 2.3l-.2.7s-.8 1.2-3.2 2c-1.9.6-3.3-2.2-6.4-4.9L92 21.8l.6.3c.5.6 1.1 1.1 2.1 1.7 1.5.8 3.1 2.3 4.1 2.6.7-.3 2.1-2.5 1.1-3.8.2-.8.6-1.4.2-2.5-.5.5-1.1 1-1.4 1.6-1.7-.7-3-1.7-3.1-3.6 1.2-.2 4.3.3 6.2 2.4 1.5 1.8 3.6 1.7 4.8 1.3 1.3-.4 2.2-2.6 1.7-3.3-.4 1-1 1.5-1.6 2-1.5 1-3.7.1-4.9-1.2-1.2-1.2-3.2-3.2-6-2.7.3-1.1 1-1.7 2.4-2 2.2-.2 3.8.2 4.9 1.6-.1.8-.4 2-.4 2.9.5-.2 1.2-1.1 1.5-1.6.6.1 1.2 0 1.6-.3.3-.3 1.3-2.1 1.4-2.8-.2 0-.5-.2-.9-.4l.2-.5c.4.3.8.5 1.1.5 0 0 .6-.1 1.1-.7.5-.6.6-1.1.3-1.8s-2.9-1.4-2.9-1.4c-.7-.5-1.5-1-2.4-1.4-.4-.8-1.2-2.1-2.6-2.7-1.3-.6-2.4-1.2-3.1-1.6-.1-.6-1.9-3.3-4.4-3.6-1.3 0-1.2-.1-1.7 0 2.4 1.2 2.8 3 2.8 3.9-1-1.2-2.8-3.9-5.5-4.9-1.2 1.3-1.5 3.4-1.3 5.1.1 1.4 1.1 2.3 2.1 3-1.1-.4-2.3-.8-2.8-2.1-.4-1.1-.4-2.1 0-3.2-1.7.3-4.7-.1-5.6-2.1-.3.7-.1 2.5.5 3.5.2.3.4.6.7.8-1.8-.2-5.1-.6-6.9-.8.3 1.2 3.1 2.2 3.1 4.3-1.4-.2-2.6-.4-3.5-.7 7.2 3.9 12.1 11.6 12.1 20.4 0 8.3-4.4 15.6-11 19.7 1.3-.1 2.6-.3 3.2-1 0 0 4.5 3.2 5.9 3.8 1.4.6 1.1.8 1.8.4.7-.3.4-1.2 2-.4.4.4.9.9 1.5 1.4 1.5 1.3 3.5 2.6 5.4 3h.1c.1 0 .3-.1.3-.2l.3-.8v-.1l.1-.3s.1.1.3.2l.1.1c.6.3 1.8.8 3.3 1.1 2.2.5 4.6.8 7.2-.6h.1c.1-.1.2-.2.2-.3V53.7l-.3-.5-.3-.5v-.1l-.2-.3.4-.2.1-.1 1.3-.6 1-.5.1-.1c.1-.1.1-.2.1-.3 0-.1-.1-.2-.2-.3l-.3-.1-2.6-1.1c2.2-1 3.7-1.5 4.6-.3-.7-4.5-5.6-3.3-7.2-2.6-1 .5-1.6.9-2.1 1.3-.9.4-2.1.7-3.5.7-1.8 0-3.9-1.6-5.6-3.4-1.7-1.7-3-3.6-3.2-3.9l4.2.5 3 .4s2.1.6 3.3.3c1.1-.3-1.6-.7-.1-1.5.7-.4 2.5.1 3.1 0 .5-.1-.7-.7-.3-1.3.3-.6 2.7-.9 3.3-1.1.7-.2-1.6-1.2.4-2.8.4-.3 1-.6 1.7-.9 2.2-1 6.2-1.9 10.4-1.7.2 0 .3-.2.3-.4 0-.1 0-.2-.1-.3l-.9-.7L117 30c2.4-1.3 4.1-1.9 5.1-.5-.6-3.4-3.3-3.7-5.4-3.4zM101.3 9.4c1-.3 1.4-.6 1.5-1.3 0 0 .6.3.4.9-.1.4-.6.6-1.4.7 0 .7-.6 1.5-2 1.3-1.1-.2-1.1-.8-1-1-.5-.1-.9-.7-1-.8.5.4 2.4.5 3.5.2zM88.9 8.1s-.1 0 0 0z" fill="currentColor"/>
+					<circle cx="76" cy="15.4" r="4.8" fill="currentColor"/>
+					<circle cx="65.3" cy="15.4" r="4.3" fill="currentColor"/>
+					<circle cx="54.6" cy="15.4" r="3.8" fill="currentColor"/>
+					<circle cx="43.9" cy="15.4" r="3.3" fill="currentColor"/>
+					<circle cx="33.3" cy="15.4" r="2.8" fill="currentColor"/>
+					<circle cx="22.6" cy="15.4" r="2.3" fill="currentColor"/>
+					<circle cx="11.9" cy="15.4" r="1.8" fill="currentColor"/>
+					<circle cx="1.2" cy="15.4" r="1.2" fill="currentColor"/>
+					<circle cx="81.2" cy="27.8" r="4.8" fill="currentColor"/>
+					<circle cx="70.6" cy="27.8" r="4.2" class="§"/>
+					<circle cx="59.9" cy="27.8" r="3.6" fill="currentColor"/>
+					<circle cx="49.3" cy="27.8" r="3" fill="currentColor"/>
+					<circle cx="38.7" cy="27.8" r="2.4" fill="currentColor"/>
+					<circle cx="28" cy="27.8" r="1.8" fill="currentColor"/>
+					<circle cx="17.4" cy="27.8" r="1.2" fill="currentColor"/>
+					<g><circle cx="76.8" cy="40.2" r="4.8" fill="currentColor"/>
+						<circle cx="66" cy="40.2" r="4.1" fill="currentColor"/>
+						<circle cx="55.2" cy="40.2" r="3.4" fill="currentColor"/>
+						<ellipse cx="44.4" cy="40.2" fill="currentColor" rx="2.7" ry="2.7"/>
+						<circle cx="33.6" cy="40.2" r="2" fill="currentColor"/>
+						<circle cx="22.8" cy="40.2" r="1.2" fill="currentColor"/>
+					</g>
+					<path d="M30.5 51.2c-1.5-1.3-3.3-2-5.6-2h-4.1v14.2h4.8c1.9 0 3.6-.7 5-2.1 1.4-1.4 2.1-3.1 2.1-5 0-2.1-.7-3.8-2.2-5.1zm-.9 9c-1.1 1.2-2.5 1.8-4.1 1.8h-3.4V50.5h3c1.6 0 3.1.5 4.3 1.6 1.2 1.1 1.8 2.4 1.9 4 0 1.6-.5 3-1.7 4.1zM34.4 49.1h1.4v2.5h-1.4zM34.4 52.8h1.4v10.5h-1.4zM47 54.1c-1.1-1.1-2.4-1.6-3.9-1.6-1.5.1-2.7.6-3.7 1.7s-1.5 2.3-1.5 3.8.6 2.9 1.6 4c1.1 1.1 2.4 1.6 3.9 1.6 1.6-.1 2.8-.7 3.9-1.9v1c0 1-.4 1.8-1.1 2.5-.8.7-1.6 1.1-2.7 1.1-.9 0-1.7-.3-2.4-.8s-1.2-1.1-1.4-1.9h-1.4c.3 1.1.9 2 1.7 2.6.9.7 2 1.1 3.2 1.1 1.4.1 2.6-.4 3.7-1.2 1.1-.9 1.6-2 1.6-3.3V58c.2-1.5-.4-2.8-1.5-3.9zm-1 6.8c-.8.8-1.7 1.2-2.7 1.2-1.1 0-2-.4-2.8-1.2-.8-.8-1.2-1.7-1.2-2.9 0-1.1.4-2.1 1.1-2.9.8-.8 1.7-1.3 2.7-1.3 1.2-.1 2.1.4 3 1.2.8.9 1.2 1.9 1.2 3-.1 1.2-.5 2.2-1.3 2.9zM50.6 49.1H52v2.5h-1.4zM50.6 52.8H52v10.5h-1.4zM57.8 63.6c-2.6 0-3.8-1.1-3.8-3.3V49.1h1.4v3.7h2.4v1.3h-2.4V60c0 1.6.8 2.3 2.4 2.3v1.3zM70.3 63.3h-1.4v-1.6c-1.1 1.3-2.5 1.9-4.2 1.9-1.4-.1-2.7-.6-3.7-1.7s-1.5-2.3-1.5-3.8.6-2.9 1.6-3.9c1.1-1.1 2.4-1.6 3.9-1.6 1.5.1 2.7.6 3.8 1.7 1 1.1 1.5 2.3 1.5 3.8V63.3zM60.9 58c0 1.1.3 2.1 1.1 2.9.8.8 1.7 1.3 2.7 1.3 1.2.1 2.1-.3 3-1.2.8-.9 1.2-1.9 1.2-3s-.4-2-1.2-2.8c-.7-.9-1.7-1.3-2.7-1.3-1.1 0-2.1.4-2.9 1.2-.8.8-1.2 1.7-1.2 2.9zM73.6 63.3h-1.4V49.1h1.4v14.2z" class="hd-Header_Logo-text"/>
+				</svg>
+	    	</div>
+	    	<div class="hd-Header_Main">
+	    		<div class="hd-Header_Navigation">
+			      	<nav class="hd-Navigation" role="navigation">
+				        <ul class="hd-Navigation_Items">
+				            <li class="hd-Navigation_Item"><a href="#" class="hd-Navigation_Link">Who we are</a></li>
+				            <li class="hd-Navigation_Item"><a href="#" class="hd-Navigation_Link hd-Navigation_Link-active">What we do</a></li>
+				            <li class="hd-Navigation_Item"><a href="#" class="hd-Navigation_Link">Success stories</a></li>
+				            <li class="hd-Navigation_Item"><a href="#" class="hd-Navigation_Link">Contact</a></li>
+				        </ul>
+			      	</nav>
 
-	      <nav class="hd-Header_Navigation" role="navigation">
-	        <ul class="hd-Header_Items">
-	            <li class="hd-Header_Item"><a href="#" class="hd-Header_Link">Who we are</a></li>
-	            <li class="hd-Header_Item"><a href="#" class="hd-Header_Link">What we do</a></li>
-	            <li class="hd-Header_Item"><a href="#" class="hd-Header_Link">Success stories</a></li>
-	            <li class="hd-Header_Item"><a href="#" class="hd-Header_Link">Contact</a></li>
-	        </ul>
-	      </nav>
-
+			      	<div class="hd-CEG">
+			      		CEG
+			      	</div>
+			    </div>
+			    <div class="hd-Header_Breadcrumb">
+			    	<div class="hd-Breadcrumb">
+			      		<ul class="hd-Breadcrumb_Items">
+			      			<li class="hd-Breadcrumb_Item"><a href="/" class="hd-Breadcrumb_Link">Home</a> <span class="hd-Header_LinkDivide">></span></li>
+			      			<li class="hd-Breadcrumb_Item">What we do</li>
+			      		</ul>
+			      	</div>
+		      	</div>
+		    </div>
 	    </div>
 	  </div>
 	</header>
 
 	<main class="mn-Main">
-		<h1>Hello World!!</h1>
-		<h4>Heading 4</h4>
+		<h1>What we do</h1>
+
+		<section class="sec-BannerCallToAction">
+			<div class="sec-BannerCallToAction_Image"></div>
+			<div class="sec-BannerCallToAction_Content">
+				<h3 class="sec-BannerCallToAction_SubTitle">Get in touch</h3>
+				<h2 class="sec-BannerCallToAction_Title">Like what you see?</h2>
+				<p class="sec-BannerCallToAction_Text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+				<a href="#" class="sec-BannerCallToAction_Link">Contact us</a>
+			</div>
+		</section>
 	</main>
 
 	<footer class="ft-Footer">
 	  <div class="ft-Footer_Inner">
 	    <div class="ft-Footer_Body">
-
 	    	<div class="ft-Footer_Left">
-	        	<nav class="ft-Footer_Navigation">
-		          <ul class="ft-Footer_Items">
-		              <li class="ft-Footer_Item"><a href="#" class="ft-Footer_Link">Sitemap</a></li>
-		              <li class="ft-Footer_Item"><a href="#" class="ft-Footer_Link">Cookie policy</a></li>
-		              <li class="ft-Footer_Item"><a href="#" class="ft-Footer_Link">Terms of use</a></li>
-		              <li class="ft-Footer_Item"><a href="#" class="ft-Footer_Link">Privacy statement</a></li>
-		              <li class="ft-Footer_Item"><a href="#" class="ft-Footer_Link">Contact</a></li>
-		              <li class="ft-Footer_Item"><a href="#" class="ft-Footer_Link">Linkedin</a></li>
+	        	<nav class="ft-Navigation">
+		          <ul class="ft-Navigation_Items">
+		              <li class="ft-Navigation_Item"><a href="#" class="ft-Navigation_Link">Sitemap</a></li>
+		              <li class="ft-Navigation_Item"><a href="#" class="ft-Navigation_Link">Cookie policy</a></li>
+		              <li class="ft-Navigation_Item"><a href="#" class="ft-Navigation_Link">Terms of use</a></li>
+		              <li class="ft-Navigation_Item"><a href="#" class="ft-Navigation_Link">Privacy statement</a></li>
+		              <li class="ft-Navigation_Item"><a href="#" class="ft-Navigation_Link">Contact</a></li>
+		              <li class="ft-Navigation_Item"><a href="#" class="ft-Navigation_Link">Linkedin</a></li>
 		          </ul>
 		        </nav>
 
-	        	<p>&copy; Cambridge Education Group. All rights reserved.</p>
+	        	<p class="ft-Copyright">&copy; Cambridge Education Group. All rights reserved.</p>
 	        </div>
-
 	        <div class="ft-Footer_Right">
 		        <div class="ft-Logo">
 		        	SVG
 		        </div>
 		    </div>
-
 	    </div>
 	  </div>
 	</footer>

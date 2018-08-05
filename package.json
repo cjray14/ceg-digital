@@ -7,13 +7,6 @@
     "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "postcss": {
-    "parser": "sugarss",
-    "map": false,
-    "plugins": {
-      "postcss-plugin": {}
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cjray14/ceg-digital.git"
@@ -27,7 +20,7 @@
   "devDependencies": {
     "node-sass": "^4.9.2",
     "nodemon": "^1.18.3",
-    "postcss-loader": "^2.1.6",
     "reload": "^2.3.0"
-  }
+  },
+  "dependencies": {}
 }

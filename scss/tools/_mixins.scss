@@ -1,6 +1,7 @@
-@mixin grid-max-container {
-  position: relative;
+// Globals
 
+@mixin grid-container-wide {
+  position: relative;
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
@@ -8,19 +9,74 @@
   padding-left: 50px;
 }
 
-@mixin grid-full-container {
+@mixin grid-container-medium {
   position: relative;
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+}
 
-  padding-right: 30px;
-  padding-left: 30px;
+@mixin grid-container-small {
+  position: relative;
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 @mixin reset-lists {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
+
+@mixin button-orange {
+  padding: 20px 40px;
+  font-size: 16px;
+  background-color: $color-orange;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+// Settings
+
+@mixin dimensions($w, $h){
+  width: $w;
+  height: $h;
+}
+
+@mixin position($x, $y){
+  top: $y;
+  left: $x;
+}
+
+@mixin border-radius($value){
+    -webkit-border-radius: $value;
+    border-radius: $value;
+    background-clip: padding-box;
+}
+
+@mixin box-shadow($value){
+    -webkit-box-shadow: $value;
+    box-shadow: $value;
+}
+
+@mixin animation($value){
+    -webkit-animation: $value;
+    -moz-animation: $value;
+    -ms-animation: $value;
+    -o-animation: $value;
+    animation: $value;
+}
+
+
+
+
 
 @mixin vertical-spacer {
   margin-top: 65px;
@@ -28,44 +84,14 @@
 }
 
 @mixin page-header-title {
-
   max-width: 725px;
   margin-right: auto;
   margin-left: auto;
-
   font-size: 60px;
   font-weight: $font-weight-semibold;
   letter-spacing: -0.75px;
   line-height: 60px;
-
   color: $color-orange;
-}
-
-@mixin page-header-text {
-  margin-top: 30px;
-
-  font-size: 12px;
-  font-weight: $font-weight-semibold;
-  letter-spacing: 3.6px;
-  line-height: 16px;
-  text-transform: uppercase;
-
-  color: $color-dark-grey;
-}
-
-@mixin button-orange {
-  padding: 20px 30px 17px;
-
-  font-size: 12px;
-  font-weight: $font-weight-semibold;
-  letter-spacing: 3.6px;
-  text-transform: uppercase;
-
-  background-color: $color-orange;
-  border: 0;
-  color: #fff;
-
-  cursor: pointer;
 }
 
 @mixin visually-hidden() {
@@ -95,8 +121,6 @@
 
   overflow: auto;
 }
-
-
 
 /**
  * Sets a media query for the specified breakpoint

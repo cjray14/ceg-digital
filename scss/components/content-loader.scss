@@ -1,0 +1,52 @@
+#content-loader {
+	width: 100%;
+	margin: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	position: absolute;
+}
+
+.content-loader {
+    // Generic properties used for any CSS animation
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+
+    div {
+        position: absolute;
+        &:before, &:after {
+            content: "";
+            position: absolute;
+        }
+    }
+
+    // Properties for this particular animation
+    &.content-loader-dots {
+        @include dimensions(48px, 16px);
+
+        div {
+            &:before {
+                @include position(-15px, 0);
+                @include dimensions(6px, 6px);
+                background-color: $color-orange;
+                @include border-radius(5px);
+                @include animation(#{"growDot 1s linear 0s infinite"});
+            }
+            
+            @include position(21px, 5px);
+            @include dimensions(6px, 6px);
+            background-color:$color-orange;
+            @include border-radius(5px);
+            @include animation(#{"growDot 1s linear .15s infinite"});
+
+            &:after {
+                @include position(15px, 0);
+                @include dimensions(6px, 6px);
+                background-color: $color-orange;
+                @include border-radius(5px);
+                @include animation(#{"growDot 1s linear .3s infinite"});
+            }
+        }
+    }
+}

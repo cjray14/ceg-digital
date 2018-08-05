@@ -5,7 +5,7 @@
 }
 
 .ft-Footer_Inner {
-  @include grid-max-container;
+  @include grid-container-wide;
 }
 
 .ft-Footer_Body {
@@ -18,11 +18,11 @@
   flex: 1;
 }
 
-.ft-Footer_Items {
+.ft-Navigation_Items {
   display: flex;
 }
 
-.ft-Footer_Item {
+.ft-Navigation_Item {
   margin-right: 50px;
 
   &:last-child {
@@ -30,7 +30,7 @@
   }
 }
 
-.ft-Footer_Link {
+.ft-Navigation_Link {
   color: $color-dark-grey;
 
   &:hover {
