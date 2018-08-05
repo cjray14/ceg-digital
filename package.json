@@ -1,0 +1,25 @@
+{
+  "name": "ceg-digital",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjray14/ceg-digital.git"
+  },
+  "author": "Chris Ray",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjray14/ceg-digital/issues"
+  },
+  "homepage": "https://github.com/cjray14/ceg-digital#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.2",
+    "nodemon": "^1.18.3",
+    "reload": "^2.3.0"
+  }
+}
