@@ -1,0 +1,71 @@
+.ft-Footer {
+  padding-top: 90px;
+  padding-bottom: 40px;
+
+  background-color: #fff;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.ft-Footer_Inner {
+  @include grid-max-container;
+}
+
+.ft-Footer_Body {
+  position: relative;
+
+  display: flex;
+}
+
+.ft-Footer_Left {
+  flex: 1;
+}
+
+.ft-Footer_Items {
+  display: flex;
+}
+
+.ft-Footer_Item {
+  margin-right: 50px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.ft-Footer_Link {
+  color: $color-light;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.ft-Social_Items {
+  display: flex;
+}
+
+.ft-Social_Item {
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.ft-Social_Link {
+  color: $color-primary;
+}
+
+.ft-Footer_Logo {
+  position: absolute;
+  top: -140px;
+  left: 0;
+
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+
+  box-shadow: 0 0 10px #ccc;
+}

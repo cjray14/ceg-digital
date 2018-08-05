@@ -1,0 +1,228 @@
+/*
+|--------------------------------------------------------------------------
+| Redefine
+|--------------------------------------------------------------------------
+| Global resets to make life easier
+|
+*/
+a,
+area,
+button,
+[role='button'],
+input:not([type='range']),
+label,
+select,
+summary,
+textarea {
+  /* Enable panning and pinch zoom gestures, but disable additional
+  non-standard gestures such as double-tap to zoom. Disabling double-tap to
+  zoom removes the need for browsers to delay the generation of click events
+  when the user taps the screen. This is an alias for "pan-x pan-y pinch-zoom"
+  (which, for compatibility, is itself still valid). */
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+input,
+select,
+textarea {
+  /* Older iOS puts a border radius on inputs by default. */
+  border-radius: 0;
+}
+
+body:not(.util-IsTabbing) button:focus,
+body:not(.util-IsTabbing) input:focus,
+body:not(.util-IsTabbing) select:focus,
+body:not(.util-IsTabbing) textarea:focus {
+  outline: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Viewports
+|--------------------------------------------------------------------------
+|
+*/
+@at-root {
+  @viewport {
+    width: device-width;
+  }
+}
+
+/*
+|--------------------------------------------------------------------------
+| HTML / Body resets
+|--------------------------------------------------------------------------
+|
+*/
+html {
+
+  box-sizing: border-box;
+  /* Sets a specific default `font-size` for user with `rem` type scales. */
+  font-size: 16px;
+
+  background-color: #fff;
+  /* Changes the default tap highlight to be completely transparent in iOS. */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+
+  padding-top: 70px;
+
+  font-family: $font-body;
+  text-rendering: optimizeLegibility;
+
+  /* By default, `<body>` has no `background-color` so we set one as a best practice. */
+  background-color: $color-body-bg;
+  color: $color-body-text;
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer;
+}
+
+body,
+input,
+textarea,
+button,
+select {
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: 100%;
+}
+
+option {
+  background-color: #fff;
+  color: $color-body-text;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Typography - Headings
+|--------------------------------------------------------------------------
+|
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Typography - Keyline
+|--------------------------------------------------------------------------
+|
+*/
+hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  border: 0;
+  border-top: 1px solid rgba(155, 155, 155, 0.3);
+}
+
+/*
+|--------------------------------------------------------------------------
+| Typography - Lists
+|--------------------------------------------------------------------------
+|
+*/
+ul {
+  @include reset-lists;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Typography - Paragraph
+|--------------------------------------------------------------------------
+|
+*/
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  line-height: 24px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Typography - Anchors
+|--------------------------------------------------------------------------
+| It is more comment that we *don't* want any kind of default styling on
+| <a> elements. We'll unset any browser styling on <a>, then give some
+| defaults for unclassed <a> elements.
+|
+*/
+:root {
+  cursor: auto;
+}
+
+a {
+  font-weight: inherit;
+  text-decoration: none;
+
+  color: currentColor;
+}
+
+a:not([class]) {
+  font-weight: 500;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Form
+|--------------------------------------------------------------------------
+|
+*/
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Images
+|--------------------------------------------------------------------------
+|
+*/
+figure {
+  margin: 0;
+}
+
+img,
+picture {
+  max-width: 100%;
+  margin: 0;
+}
+
+svg {
+  display: block;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Tables
+|--------------------------------------------------------------------------
+|
+*/
+table {
+  width: 100%;
+
+  table-layout: fixed;
+}
