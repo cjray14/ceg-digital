@@ -1,10 +1,7 @@
 .ft-Footer {
-  padding-top: 90px;
+  padding-top: 50px;
   padding-bottom: 40px;
-
-  background-color: #fff;
-
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid $color-medium-grey;
 }
 
 .ft-Footer_Inner {
@@ -34,38 +31,9 @@
 }
 
 .ft-Footer_Link {
-  color: $color-light;
+  color: $color-dark-grey;
 
   &:hover {
     text-decoration: underline;
   }
-}
-
-.ft-Social_Items {
-  display: flex;
-}
-
-.ft-Social_Item {
-  margin-right: 15px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
-.ft-Social_Link {
-  color: $color-primary;
-}
-
-.ft-Footer_Logo {
-  position: absolute;
-  top: -140px;
-  left: 0;
-
-  width: 100px;
-  height: 100px;
-
-  border-radius: 50%;
-
-  box-shadow: 0 0 10px #ccc;
 }

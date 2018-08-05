@@ -497,6 +497,13 @@ textarea,
  *   @include clearfix;
  * }
  */
+@font-face {
+  font-family: 'droid_serifitalic';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/DroidSerif-Italic-webfont.eot");
+  src: url("../fonts/DroidSerif-Italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/DroidSerif-Italic-webfont.woff2") format("woff2"), url("../fonts/DroidSerif-Italic-webfont.woff") format("woff"), url("../fonts/DroidSerif-Italic-webfont.ttf") format("truetype"), url("../fonts/DroidSerif-Italic-webfont.svg#droid_serifitalic") format("svg"); }
+
 /*
 |--------------------------------------------------------------------------
 | Redefine
@@ -562,12 +569,11 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 body {
-  padding-top: 70px;
-  font-family: Volte, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font-family: Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   text-rendering: optimizeLegibility;
   /* By default, `<body>` has no `background-color` so we set one as a best practice. */
-  background-color: #fff0e9;
-  color: #878787;
+  background-color: #fff;
+  color: #373737;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
 
@@ -584,7 +590,7 @@ select {
 
 option {
   background-color: #fff;
-  color: #878787; }
+  color: #373737; }
 
 /*
 |--------------------------------------------------------------------------
@@ -600,6 +606,25 @@ h5,
 h6 {
   margin-top: 0;
   margin-bottom: 0; }
+
+h1 {
+  font-size: 54px; }
+
+h2 {
+  font-size: 30px; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 16px;
+  color: #8a959e; }
+
+h5 {
+  font-size: 16px; }
+
+h6 {
+  font-size: 16px; }
 
 /*
 |--------------------------------------------------------------------------
@@ -695,14 +720,12 @@ table {
   table-layout: fixed; }
 
 .hd-Header {
-  position: fixed;
   top: 0;
   z-index: 9;
   width: 100%;
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: #fff;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.05); }
+  border-bottom: 1px solid rgba(51, 51, 51, 0.5); }
 
 .hd-Header_Inner {
   position: relative;
@@ -739,15 +762,15 @@ table {
 .hd-Header_Link {
   display: flex;
   font-weight: 600;
-  color: #f96; }
+  color: #373737; }
 
 .hd-Header_Link-green {
-  color: #6fd8d5; }
+  color: #ee7700; }
 
 .hd-Header_Icon-basket {
   margin-right: 10px;
   margin-left: 10px;
-  color: #f96; }
+  color: #373737; }
 
 .hd-Header_Count {
   align-items: center;
@@ -756,15 +779,14 @@ table {
   width: 16px;
   height: 16px;
   font-size: 11px;
-  background-color: #f96;
+  background-color: #373737;
   border-radius: 50%;
   color: #fff; }
 
 .ft-Footer {
-  padding-top: 90px;
+  padding-top: 50px;
   padding-bottom: 40px;
-  background-color: #fff;
-  border-top: 1px solid rgba(0, 0, 0, 0.05); }
+  border-top: 1px solid #8a959e; }
 
 .ft-Footer_Inner {
   position: relative;
@@ -790,26 +812,6 @@ table {
     margin-right: 0; }
 
 .ft-Footer_Link {
-  color: #939393; }
+  color: #373737; }
   .ft-Footer_Link:hover {
     text-decoration: underline; }
-
-.ft-Social_Items {
-  display: flex; }
-
-.ft-Social_Item {
-  margin-right: 15px; }
-  .ft-Social_Item:last-child {
-    margin-right: 0; }
-
-.ft-Social_Link {
-  color: #6fd8d5; }
-
-.ft-Footer_Logo {
-  position: absolute;
-  top: -140px;
-  left: 0;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  box-shadow: 0 0 10px #ccc; }

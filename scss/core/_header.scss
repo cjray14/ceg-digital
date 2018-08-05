@@ -1,6 +1,6 @@
 .hd-Header {
 
-  position: fixed;
+  //position: fixed;
   top: 0;
 
   z-index: 9;
@@ -9,9 +9,7 @@
   padding-top: 25px;
   padding-bottom: 25px;
 
-  background-color: #fff;
-
-  border-bottom: 1px solid rgba(51, 51, 51, 0.05);
+  border-bottom: 1px solid rgba(51, 51, 51, 0.5); 
 }
 
 .hd-Header_Inner {
@@ -61,18 +59,18 @@
 
   font-weight: $font-weight-semibold;
 
-  color: $color-secondary;
+  color: $color-dark-grey;
 }
 
 .hd-Header_Link-green {
-  color: $color-primary;
+  color: $color-orange;
 }
 
 .hd-Header_Icon-basket {
   margin-right: 10px;
   margin-left: 10px;
 
-  color: $color-secondary;
+  color: $color-dark-grey;
 }
 
 .hd-Header_Count {
@@ -87,7 +85,7 @@
 
   font-size: 11px;
 
-  background-color: $color-secondary;
+  background-color: $color-dark-grey;
   border-radius: 50%;
   color: #fff;
 }

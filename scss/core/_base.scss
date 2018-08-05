@@ -62,7 +62,6 @@ body:not(.util-IsTabbing) textarea:focus {
 |
 */
 html {
-
   box-sizing: border-box;
   /* Sets a specific default `font-size` for user with `rem` type scales. */
   font-size: 16px;
@@ -73,9 +72,6 @@ html {
 }
 
 body {
-
-  padding-top: 70px;
-
   font-family: $font-body;
   text-rendering: optimizeLegibility;
 
@@ -121,6 +117,31 @@ h6 {
   margin-bottom: 0;
 }
 
+h1 {
+  font-size: 54px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 16px;
+  color: $color-medium-grey;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
 /*
 |--------------------------------------------------------------------------
 | Typography - Keyline
@@ -130,7 +151,6 @@ h6 {
 hr {
   margin-top: 40px;
   margin-bottom: 40px;
-
   border: 0;
   border-top: 1px solid rgba(155, 155, 155, 0.3);
 }
@@ -154,7 +174,6 @@ ul {
 p {
   margin-top: 0;
   margin-bottom: 0;
-
   line-height: 24px;
 }
 
@@ -174,7 +193,6 @@ p {
 a {
   font-weight: inherit;
   text-decoration: none;
-
   color: currentColor;
 }
 
@@ -223,6 +241,5 @@ svg {
 */
 table {
   width: 100%;
-
   table-layout: fixed;
 }

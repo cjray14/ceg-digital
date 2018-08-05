@@ -38,7 +38,7 @@
   letter-spacing: -0.75px;
   line-height: 60px;
 
-  color: $color-primary;
+  color: $color-orange;
 }
 
 @mixin page-header-text {
@@ -50,10 +50,10 @@
   line-height: 16px;
   text-transform: uppercase;
 
-  color: $color-secondary;
+  color: $color-dark-grey;
 }
 
-@mixin button-primary {
+@mixin button-orange {
   padding: 20px 30px 17px;
 
   font-size: 12px;
@@ -61,7 +61,7 @@
   letter-spacing: 3.6px;
   text-transform: uppercase;
 
-  background-color: $color-primary;
+  background-color: $color-orange;
   border: 0;
   color: #fff;
 
