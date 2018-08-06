@@ -39,6 +39,8 @@
 }
 
 .hd-CEG {
+  margin-top: 20px;
+  margin-right: 25px;
   margin-left: auto;
 }
 
@@ -51,6 +53,14 @@
   font-weight: $font-weight-semibold;
   color: $color-dark-grey;
   padding: 40px 30px;
+
+  &:hover {
+    background-color: #eee;
+  }
+}
+
+.hd-Navigation_Link-active {
+  background-color: #eee;
 }
 
 .hd-Breadcrumb_Items {
@@ -73,10 +83,6 @@
   padding-right: 15px;
 }
 
-.hd-Header_LinkDivide {
+.hd-Breadcrumb_Divide {
   color: $color-medium-grey;
-}
-
-.hd-Navigation_Link-active {
-  background-color: #eee;
 }

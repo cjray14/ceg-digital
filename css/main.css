@@ -752,8 +752,12 @@ table {
   table-layout: fixed; }
 
 .ico-Logo {
-  width: 150px;
-  height: 83px; }
+  width: 122px;
+  height: 68px; }
+
+.ico-CEG {
+  width: 57px;
+  height: 48px; }
 
 .hd-Header {
   width: 100%;
@@ -788,6 +792,8 @@ table {
   padding-bottom: 20px; }
 
 .hd-CEG {
+  margin-top: 20px;
+  margin-right: 25px;
   margin-left: auto; }
 
 .hd-Navigation_Items {
@@ -798,6 +804,11 @@ table {
   font-weight: 600;
   color: #373737;
   padding: 40px 30px; }
+  .hd-Navigation_Link:hover {
+    background-color: #eee; }
+
+.hd-Navigation_Link-active {
+  background-color: #eee; }
 
 .hd-Breadcrumb_Items {
   display: flex; }
@@ -814,16 +825,13 @@ table {
   color: #ee7700;
   padding-right: 15px; }
 
-.hd-Header_LinkDivide {
+.hd-Breadcrumb_Divide {
   color: #8a959e; }
-
-.hd-Navigation_Link-active {
-  background-color: #eee; }
 
 .ft-Footer {
   padding-top: 50px;
   padding-bottom: 40px;
-  border-top: 1px solid #8a959e; }
+  border-top: 1px solid #ddd; }
 
 .ft-Footer_Inner {
   position: relative;
@@ -839,6 +847,9 @@ table {
 
 .ft-Footer_Left {
   flex: 1; }
+
+.ft-Navigation {
+  margin-bottom: 20px; }
 
 .ft-Navigation_Items {
   display: flex; }
