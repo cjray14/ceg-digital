@@ -1,0 +1,30 @@
+.sec-OtherSuccessStories {
+	@include vertical-spacer;
+}
+
+.sec-OtherSuccessStories_Inner {
+	@include grid-container-wide;
+}
+
+.sec-OtherSuccessStories_Header {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.sec-OtherSuccessStories_Items {
+	display: grid;
+	grid-gap: 50px;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.sec-OtherSuccessStory_Image {
+	margin-bottom: 20px;
+}
+
+.sec-OtherSuccessStory_Title {
+	margin-bottom: 20px;
+}
+
+.sec-OtherSuccessStory_Text {
+	margin-bottom: 20px;
+}
