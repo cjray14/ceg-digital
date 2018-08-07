@@ -1,6 +1,10 @@
 .sec-BannerTitle {
 	position: relative;
 	overflow: hidden;
+  
+	.template-homepage & {
+	    margin-top: -56px;
+	}
 
 	&::after {
 		content: '';
@@ -30,6 +34,10 @@
 
 .sec-BannerTitle_Image-what {
 	background-image: url(../img/temp-what1.jpg);
+}
+
+.sec-BannerTitle_Image-who {
+	background-image: url(../img/temp-who1.jpg);
 }
 
 .sec-BannerTitle_Image-falmouth {

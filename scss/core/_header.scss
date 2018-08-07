@@ -1,7 +1,5 @@
 .hd-Header {
   width: 100%;
-  position: relative;
-  z-index: 1;
   background-color: #fff;
 }
 
@@ -11,10 +9,14 @@
 
 .hd-Header_Logo {
   width: 200px;
+  height: 164px;
   color: $color-orange;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
 
   .hd-Header_Logo-text {
     fill: $color-dark-grey;
@@ -22,9 +24,7 @@
 }
 
 .hd-Header_Main {
-  display: flex;
   flex: 1;
-  flex-direction: column;
 }
 
 .hd-Header_Navigation {
@@ -36,6 +36,10 @@
 .hd-Header_Breadcrumb {
   padding-top: 20px;
   padding-bottom: 20px;
+
+  .template-homepage & {
+    display: none;
+  }
 }
 
 .hd-CEG {

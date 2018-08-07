@@ -1,0 +1,32 @@
+.sec-MeetOurPeople {
+	@include vertical-spacer;
+}
+
+.sec-MeetOurPeople_Inner {
+	@include grid-container-wide;
+}
+
+.sec-MeetOurPeople_Header {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.sec-MeetOurPeople_Items {
+	display: grid;
+	grid-column-gap: 50px;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.sec-Person_Content {
+	background-color: #fff;
+	margin-right: 40px;
+	padding: 40px 20px;
+	z-index: 1;
+	position: relative;
+	top: -40px;
+}
+
+.sec-Person_Title {
+	margin-bottom: 15px;
+	color: $color-orange;
+}

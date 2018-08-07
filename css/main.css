@@ -761,8 +761,6 @@ table {
 
 .hd-Header {
   width: 100%;
-  position: relative;
-  z-index: 1;
   background-color: #fff; }
 
 .hd-Header_Body {
@@ -770,17 +768,19 @@ table {
 
 .hd-Header_Logo {
   width: 200px;
+  height: 164px;
   color: #ee7700;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  background-color: #fff; }
   .hd-Header_Logo .hd-Header_Logo-text {
     fill: #373737; }
 
 .hd-Header_Main {
-  display: flex;
-  flex: 1;
-  flex-direction: column; }
+  flex: 1; }
 
 .hd-Header_Navigation {
   display: flex;
@@ -790,6 +790,8 @@ table {
 .hd-Header_Breadcrumb {
   padding-top: 20px;
   padding-bottom: 20px; }
+  .template-homepage .hd-Header_Breadcrumb {
+    display: none; }
 
 .hd-CEG {
   margin-top: 20px;
@@ -870,7 +872,8 @@ table {
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
-  position: absolute; }
+  position: absolute;
+  z-index: -1; }
 
 .content-loader {
   display: inline-block;
@@ -980,6 +983,8 @@ table {
 .sec-BannerTitle {
   position: relative;
   overflow: hidden; }
+  .template-homepage .sec-BannerTitle {
+    margin-top: -56px; }
   .sec-BannerTitle::after {
     content: '';
     width: 100%;
@@ -1005,6 +1010,9 @@ table {
 
 .sec-BannerTitle_Image-what {
   background-image: url(../img/temp-what1.jpg); }
+
+.sec-BannerTitle_Image-who {
+  background-image: url(../img/temp-who1.jpg); }
 
 .sec-BannerTitle_Image-falmouth {
   background-image: url(../img/temp-case1.jpg); }
@@ -1088,6 +1096,39 @@ table {
   line-height: 46px;
   text-align: center; }
 
+.sec-MeetOurPeople {
+  margin-top: 60px;
+  margin-bottom: 60px; }
+
+.sec-MeetOurPeople_Inner {
+  position: relative;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px; }
+
+.sec-MeetOurPeople_Header {
+  margin-bottom: 50px;
+  text-align: center; }
+
+.sec-MeetOurPeople_Items {
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: repeat(3, 1fr); }
+
+.sec-Person_Content {
+  background-color: #fff;
+  margin-right: 40px;
+  padding: 40px 20px;
+  z-index: 1;
+  position: relative;
+  top: -40px; }
+
+.sec-Person_Title {
+  margin-bottom: 15px;
+  color: #ee7700; }
+
 .sec-OtherSuccessStories {
   margin-top: 60px;
   margin-bottom: 60px; }
@@ -1117,3 +1158,66 @@ table {
 
 .sec-OtherSuccessStory_Text {
   margin-bottom: 20px; }
+
+.sec-WePartnerWith {
+  margin-top: 60px;
+  margin-bottom: 60px; }
+
+.sec-WePartnerWith_Inner {
+  position: relative;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px; }
+
+.sec-WePartnerWith_Header {
+  text-align: center;
+  margin-bottom: 50px; }
+
+.sec-WePartnerWith_Body {
+  padding-right: 50px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+  border-bottom: 1px solid #eee; }
+
+.sec-WePartnerWith_Title {
+  margin-bottom: 10px; }
+
+.sec-WePartnerWith_Items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+
+.sec-WeProvide {
+  margin-top: 60px;
+  margin-bottom: 60px; }
+
+.sec-WeProvide_Inner {
+  position: relative;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px; }
+
+.sec-WeProvide_Header {
+  text-align: center;
+  margin-bottom: 50px; }
+
+.sec-WeProvide_Body {
+  padding-bottom: 100px;
+  border-bottom: 1px solid #eee; }
+
+.sec-WeProvide_Title {
+  margin-bottom: 10px; }
+
+.sec-WeProvide_Items {
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(3, 1fr); }
+
+.sec-WeProvide_Item {
+  margin-top: 60px;
+  padding-top: 30px;
+  padding-left: 30px;
+  border-top: 2px solid #ee7700; }
