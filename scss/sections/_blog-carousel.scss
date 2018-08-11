@@ -1,0 +1,17 @@
+.sec-BlogCarousel {
+	@include vertical-spacer;
+}
+
+.sec-BlogCarousel_Inner {
+	@include grid-container-wide;
+}
+
+.sec-BlogCarousel_Footer {
+	margin-top: 40px;
+	text-align: right;
+}
+
+.sec-BlogCarousel_Link {
+	color: $color-orange;
+	font-weight: bold;
+}

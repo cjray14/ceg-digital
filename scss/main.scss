@@ -1,18 +1,46 @@
-@import 'vendor/sanitize.scss';
-@import 'tools/variables.scss';
-@import 'tools/mixins.scss';
-@import 'tools/animations.scss';
-@import 'fonts/droid-serif.scss';
-@import 'core/base.scss';
-@import 'core/icons.scss';
-@import 'core/header.scss';
-@import 'core/footer.scss';
-@import 'components/content-loader.scss';
-@import 'sections/banner-call-to-action.scss';
-@import 'sections/banner-title.scss';
-@import 'sections/content-area.scss';
-@import 'sections/content-intro.scss';
-@import 'sections/meet-our-people.scss';
-@import 'sections/other-success-stories.scss';
-@import 'sections/we-partner-with.scss';
-@import 'sections/we-provide.scss';
+// Vendor (external resource)
+@import 'vendor/sanitize';
+
+// Settings
+@import 'variables';
+
+// Tools
+@import 'tools/mixins';
+@import 'tools/animations';
+
+// Fonts
+@import 'fonts/droid-serif';
+
+// Core
+@import 'core/base';
+@import 'core/content-loader';
+@import 'core/footer';
+@import 'core/header';
+@import 'core/icons';
+
+// Components
+@import 'components/blg-card';
+@import 'components/blg-list';
+@import 'components/cas-card';
+@import 'components/mop-card';
+@import 'components/mop-list';
+@import 'components/oss-card';
+@import 'components/oss-list';
+@import 'components/pge-card';
+@import 'components/pge-list';
+@import 'components/wep-card';
+@import 'components/wep-list';
+@import 'components/wpw-list';
+
+// Sections
+@import 'sections/banner-call-to-action';
+@import 'sections/banner-title';
+@import 'sections/blog-carousel';
+@import 'sections/case-study';
+@import 'sections/content-area';
+@import 'sections/content-intro';
+@import 'sections/meet-our-people';
+@import 'sections/other-success-stories';
+@import 'sections/page-call-to-action';
+@import 'sections/we-partner-with';
+@import 'sections/we-provide';

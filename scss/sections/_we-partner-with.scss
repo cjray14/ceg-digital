@@ -9,23 +9,11 @@
 .sec-WePartnerWith_Header {
 	text-align: center;
 	margin-bottom: 50px;
+	@include grid-container-medium;
 }
 
 .sec-WePartnerWith_Body {
-	padding-right: 50px;
 	padding-bottom: 100px;
-	padding-left: 50px;
 	border-bottom: 1px solid #eee;
-}
-
-.sec-WePartnerWith_Title {
-	margin-bottom: 10px;
-}
-
-.sec-WePartnerWith_Items {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-}
-
-.sec-WePartnerWith_Item {
+	@include grid-container-medium;
 }

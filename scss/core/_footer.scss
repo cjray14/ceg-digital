@@ -1,43 +1,43 @@
 .ft-Footer {
-  padding-top: 50px;
-  padding-bottom: 40px;
-  border-top: 1px solid #ddd;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    border-top: 1px solid #ddd;
 }
 
 .ft-Footer_Inner {
-  @include grid-container-wide;
+    @include grid-container-wide;
 }
 
 .ft-Footer_Body {
-  position: relative;
+    position: relative;
 
-  display: flex;
+    display: flex;
 }
 
 .ft-Footer_Left {
-  flex: 1;
+    flex: 1;
 }
 
 .ft-Navigation {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .ft-Navigation_Items {
-  display: flex;
+    display: flex;
 }
 
 .ft-Navigation_Item {
-  margin-right: 50px;
+    margin-right: 50px;
 
-  &:last-child {
-    margin-right: 0;
-  }
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
 .ft-Navigation_Link {
-  color: $color-dark-grey;
+    color: $color-dark-grey;
 
-  &:hover {
-    text-decoration: underline;
-  }
+    &:hover {
+      text-decoration: underline;
+    }
 }

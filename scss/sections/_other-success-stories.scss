@@ -1,0 +1,12 @@
+.sec-OtherSuccessStories {
+	@include vertical-spacer;
+}
+
+.sec-OtherSuccessStories_Inner {
+	@include grid-container-wide;
+}
+
+.sec-OtherSuccessStories_Header {
+	margin-bottom: 50px;
+	text-align: center;
+}

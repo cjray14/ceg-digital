@@ -1,6 +1,8 @@
 .sec-BannerTitle {
 	position: relative;
 	overflow: hidden;
+	padding-top: 200px;
+	padding-bottom: 260px;
   
 	.template-homepage & {
 	    margin-top: -56px;
@@ -30,33 +32,43 @@
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
+
+	.sec-BannerTitle-home & {
+		background-image: url(../img/temp-home1.jpg);
+	}
+
+	.sec-BannerTitle-who & {
+		background-image: url(../img/temp-who1.jpg);
+	}
+
+	.sec-BannerTitle-what & {
+		background-image: url(../img/temp-what1.jpg);
+	}
+
+	.sec-BannerTitle-falmouth & {
+		background-image: url(../img/temp-case1.jpg);
+	}
 }
 
-.sec-BannerTitle_Image-what {
-	background-image: url(../img/temp-what1.jpg);
-}
-
-.sec-BannerTitle_Image-who {
-	background-image: url(../img/temp-who1.jpg);
-}
-
-.sec-BannerTitle_Image-falmouth {
-	background-image: url(../img/temp-case1.jpg);
-}
-
-.sec-BannerTitle_Content {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	z-index: 1;
-	position: relative;
-	text-align: center;
+.sec-BannerTitle_Wrap {
 	max-width: 1200px;
 	margin-right: auto;
 	margin-left: auto;
-	padding-top: 200px;
-	padding-bottom: 260px;
+
+	.sec-BannerTitle-home & {
+		max-width: 950px;
+	}
+}
+
+.sec-BannerTitle_Content {
+	text-align: center;
+	position: relative;
+	z-index: 1;
+
+	.sec-BannerTitle-home & {
+		max-width: 600px;
+		text-align: left;
+	}
 }
 
 .sec-BannerTitle_SubTitle {

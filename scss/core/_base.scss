@@ -1,10 +1,5 @@
-/*
-|--------------------------------------------------------------------------
-| Redefine
-|--------------------------------------------------------------------------
-| Global resets to make life easier
-|
-*/
+// Global resets
+
 a,
 area,
 button,
@@ -14,70 +9,53 @@ label,
 select,
 summary,
 textarea {
-  /* Enable panning and pinch zoom gestures, but disable additional
-  non-standard gestures such as double-tap to zoom. Disabling double-tap to
-  zoom removes the need for browsers to delay the generation of click events
-  when the user taps the screen. This is an alias for "pan-x pan-y pinch-zoom"
-  (which, for compatibility, is itself still valid). */
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
 }
 
 input,
 select,
 textarea {
-  border-radius: 0;
+    border-radius: 0;
 }
 
 body:not(.util-IsTabbing) button:focus,
 body:not(.util-IsTabbing) input:focus,
 body:not(.util-IsTabbing) select:focus,
 body:not(.util-IsTabbing) textarea:focus {
-  outline: none;
+    outline: none;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-/*
-|--------------------------------------------------------------------------
-| Viewports
-|--------------------------------------------------------------------------
-|
-*/
 @at-root {
-  @viewport {
-    width: device-width;
-  }
+    @viewport {
+        width: device-width;
+    }
 }
 
-/*
-|--------------------------------------------------------------------------
-| HTML / Body resets
-|--------------------------------------------------------------------------
-|
-*/
 html {
-  box-sizing: border-box;
-  font-size: 16px;
-  background-color: #fff;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #fff;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 body {
-  font-family: $font-body;
-  text-rendering: optimizeLegibility;
-  background-color: $color-body-bg;
-  color: $color-body-text;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+    font-family: $font-body;
+    text-rendering: optimizeLegibility;
+    background-color: $color-body-bg;
+    color: $color-body-text;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 button {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 body,
@@ -85,29 +63,23 @@ input,
 textarea,
 button,
 select {
-  -webkit-font-smoothing: antialiased;
-  text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    text-size-adjust: 100%;
 }
 
 option {
-  background-color: #fff;
-  color: $color-body-text;
+    background-color: #fff;
+    color: $color-body-text;
 }
 
-/*
-|--------------------------------------------------------------------------
-| Typography - Headings
-|--------------------------------------------------------------------------
-|
-*/
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
-  margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 h1 {
@@ -135,104 +107,59 @@ h6 {
   font-size: 16px;
 }
 
-/*
-|--------------------------------------------------------------------------
-| Typography - Keyline
-|--------------------------------------------------------------------------
-|
-*/
 hr {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  border: 0;
-  border-top: 1px solid rgba(155, 155, 155, 0.3);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 0;
+    border-top: 1px solid rgba(155, 155, 155, 0.3);
 }
 
-/*
-|--------------------------------------------------------------------------
-| Typography - Lists
-|--------------------------------------------------------------------------
-|
-*/
 ul {
-  @include reset-lists;
+    @include reset-lists;
 }
 
-/*
-|--------------------------------------------------------------------------
-| Typography - Paragraph
-|--------------------------------------------------------------------------
-|
-*/
 p {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 24px;
 }
 
-/*
-|--------------------------------------------------------------------------
-| Typography - Anchors
-|--------------------------------------------------------------------------
-| It is more comment that we *don't* want any kind of default styling on
-| <a> elements. We'll unset any browser styling on <a>, then give some
-| defaults for unclassed <a> elements.
-|
-*/
 :root {
   cursor: auto;
 }
 
 a {
-  font-weight: inherit;
-  text-decoration: none;
-  color: currentColor;
+    font-weight: inherit;
+    text-decoration: none;
+    color: currentColor;
 }
 
 a:not([class]) {
-  font-weight: 500;
+    font-weight: 500;
 }
 
-/*
-|--------------------------------------------------------------------------
-| Form
-|--------------------------------------------------------------------------
-|
-*/
 button,
 input,
 select,
 textarea {
-  font-family: inherit;
+    font-family: inherit;
 }
 
-/*
-|--------------------------------------------------------------------------
-| Images
-|--------------------------------------------------------------------------
-|
-*/
 figure {
-  margin: 0;
+    margin: 0;
 }
 
 img,
 picture {
-  max-width: 100%;
-  margin: 0;
+    max-width: 100%;
+    margin: 0;
 }
 
 svg {
-  display: block;
+    display: block;
 }
 
-/*
-|--------------------------------------------------------------------------
-| Tables
-|--------------------------------------------------------------------------
-|
-*/
 table {
-  width: 100%;
-  table-layout: fixed;
+    width: 100%;
+    table-layout: fixed;
 }

@@ -6,6 +6,10 @@
 	@include grid-container-medium;
 }
 
+.sec-ContentArea_Body {
+	@include grid-container-small;
+}
+
 .sec-ContentArea_Title {
 	margin-bottom: 30px;
 }
@@ -30,4 +34,13 @@
 		margin-bottom: 10px;
 		line-height: 24px;
 	}
+}
+
+.sec-ContentArea_ImageWrap {
+	width: calc(100% + 200px);
+	margin-bottom: 50px;
+	margin-left: -100px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #eee;
 }

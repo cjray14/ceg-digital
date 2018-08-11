@@ -1,92 +1,92 @@
 .hd-Header {
-  width: 100%;
-  background-color: #fff;
+    width: 100%;
+    background-color: #fff;
 }
 
 .hd-Header_Body {
-  display: flex;
+    display: flex;
 }
 
 .hd-Header_Logo {
-  width: 200px;
-  height: 164px;
-  color: $color-orange;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 1;
-  background-color: #fff;
+    width: 200px;
+    height: 144px;
+    color: $color-orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
 
-  .hd-Header_Logo-text {
-    fill: $color-dark-grey;
-  }
+    .hd-Header_Logo-text {
+      fill: $color-dark-grey;
+    }
 }
 
 .hd-Header_Main {
-  flex: 1;
+    flex: 1;
 }
 
 .hd-Header_Navigation {
-  display: flex;
-  flex: 1;
-  border-bottom: 10px solid $color-orange;
+    display: flex;
+    flex: 1;
+    border-bottom: 10px solid $color-orange;
 }
 
 .hd-Header_Breadcrumb {
-  padding-top: 20px;
-  padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
-  .template-homepage & {
-    display: none;
-  }
+    .template-homepage & {
+      display: none;
+    }
 }
 
 .hd-CEG {
-  margin-top: 20px;
-  margin-right: 25px;
-  margin-left: auto;
+    margin-top: 20px;
+    margin-right: 25px;
+    margin-left: auto;
 }
 
 .hd-Navigation_Items {
-  display: flex;
+    display: flex;
 }
 
 .hd-Navigation_Link {
-  display: flex;
-  font-weight: $font-weight-semibold;
-  color: $color-dark-grey;
-  padding: 40px 30px;
+    display: flex;
+    font-weight: $font-weight-semibold;
+    color: $color-dark-grey;
+    padding: 30px;
 
-  &:hover {
-    background-color: #eee;
-  }
+    &:hover {
+      background-color: #eee;
+    }
 }
 
 .hd-Navigation_Link-active {
-  background-color: #eee;
+    background-color: #eee;
 }
 
 .hd-Breadcrumb_Items {
-  display: flex;
+    display: flex;
 }
 
 .hd-Breadcrumb_Item {
-  margin-right: 15px;
-  font-size: 14px;
-  display: flex;
+    margin-right: 15px;
+    font-size: 14px;
+    display: flex;
 
-  &:last-child {
-    margin-right: 0;
-  }
+    &:last-child {
+      margin-right: 0;
+    }
 }
 
 .hd-Breadcrumb_Link {
-  font-weight: bold;
-  color: $color-orange;
-  padding-right: 15px;
+    font-weight: bold;
+    color: $color-orange;
+    padding-right: 15px;
 }
 
 .hd-Breadcrumb_Divide {
-  color: $color-medium-grey;
+    color: $color-medium-grey;
 }

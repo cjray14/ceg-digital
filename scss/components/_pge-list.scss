@@ -1,0 +1,9 @@
+.pge-List_Items {
+	display: grid;
+	grid-column-gap: 50px;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+// .pge-List_Item-offset {
+// 	margin-top: 60px;
+// }

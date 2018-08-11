@@ -1,0 +1,33 @@
+.blg-Card {
+	display: flex;
+}
+
+.blg-Card_Image {
+	width: 50%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.blg-Card_Content {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	justify-content: center;
+	background-color: $color-orange;
+	padding-right: 75px;
+	padding-left: 75px;
+}
+
+.blg-Card_SubTitle {
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.blg-Card_Title {
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.blg-Card_Text {
+	color: #fff;
+}

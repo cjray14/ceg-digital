@@ -1,0 +1,13 @@
+.sec-CaseStudy {
+	@include vertical-spacer;
+}
+
+.sec-CaseStudy_Inner {
+	@include grid-container-medium;
+}
+
+.sec-CaseStudy_Header {
+	text-align: center;
+	margin-bottom: 50px;
+	@include grid-container-medium;
+}
