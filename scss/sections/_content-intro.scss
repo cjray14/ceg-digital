@@ -1,6 +1,6 @@
 .sec-ContentIntro_Inner {
 	background-color: #fff;
-	@include grid-container-wide;
+	@include container-wide;
 }
 
 .sec-ContentIntro_Body {
@@ -8,7 +8,7 @@
 	padding-top: 80px;
 	padding-bottom: 60px;
   border-bottom: 1px solid #d3d3d3;
-	@include grid-container-medium;
+	@include container-medium;
 }
 
 .sec-ContentIntro_Title {

@@ -12,9 +12,9 @@
 }
 
 .flw-Card_TitleLink {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexbox;
+  @include justify-content(center);
+  @include align-items(center);
 }
 
 .flw-Card_Icon {

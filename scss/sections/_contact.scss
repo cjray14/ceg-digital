@@ -1,13 +1,13 @@
 .sec-Contact_Inner {
   background-color: #fff;
-  @include grid-container-wide;
+  @include container-wide;
 }
 
 .sec-Contact_Body {
   margin-top: -80px;
   padding-top: 80px;
   padding-bottom: 80px;
-  @include grid-container-medium;
+  @include container-medium;
 }
 
 .sec-Contact_SubTitle {
@@ -43,15 +43,15 @@
 }
 
 .sec-Contact_Items {
-  display: flex;
+  @include flexbox;
 }
 
 .sec-Contact_Item {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
+  @include flexbox;
+  @include flex-direction(column);
+  @include flex(1);
 }
 
 .sec-Contact_Item-card {
-  flex: 0 0 65%;
+  @include flex(0 0 65%);
 }

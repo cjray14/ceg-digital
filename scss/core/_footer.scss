@@ -6,17 +6,16 @@
 }
 
 .ft-Footer_Inner {
-  @include grid-container-wide;
+  @include container-wide;
 }
 
 .ft-Footer_Body {
   position: relative;
-
-  display: flex;
+  @include flexbox;
 }
 
 .ft-Footer_Left {
-  flex: 1;
+  @include flex(1);
 }
 
 .ft-Navigation {
@@ -24,7 +23,7 @@
 }
 
 .ft-Navigation_Items {
-  display: flex;
+  @include flexbox;
 }
 
 .ft-Navigation_Item {
@@ -43,10 +42,10 @@
 .ft-Navigation_Link-linkedin {
   padding-bottom: 0;
   font-size: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: color 0.3s;
+  @include flexbox;
+  @include justify-content(center);
+  @include align-items(center);
+  @include transition(color 0.3s);
 
   &:hover {
     background-size: 0 0;

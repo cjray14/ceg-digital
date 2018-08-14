@@ -1,59 +1,59 @@
 #content-loader {
-	width: 100%;
-	margin: auto;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	text-align: center;
-	position: absolute;
-    z-index: -1;
+  width: 100%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  position: absolute;
+  z-index: -1;
 }
 
 .content-loader {
-    width: 48px;
-    height: 16px;
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
+  width: 48px;
+  height: 16px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
 }
 
 .content-loader-dots {
+  position: absolute;
+
+  &:before, &:after {
+    content: '';
     position: absolute;
+  }
 
-    &:before, &:after {
-        content: '';
-        position: absolute;
+  .content-loader & {
+    width: 6px;
+    height: 6px;
+    top: 5px;
+    left: 21px;
+    background-color: $color-orange;
+    background-clip: padding-box;
+    @include border-radius(5px);
+    @include animation(#{"growDot 1s linear .15s infinite"});
+
+    &:before {
+      width: 6px;
+      height: 6px;
+      top: 0;
+      left: -15px;
+      background-color: $color-orange;
+      background-clip: padding-box;
+      @include border-radius(5px);
+      @include animation(#{"growDot 1s linear 0s infinite"});
     }
 
-    .content-loader & {
-        width: 6px;
-        height: 6px;
-        top: 5px;
-        left: 21px;
-        background-color: $color-orange;
-        background-clip: padding-box;
-        @include border-radius(5px);
-        @include animation(#{"growDot 1s linear .15s infinite"});
-
-        &:before {
-            width: 6px;
-            height: 6px;
-            top: 0;
-            left: -15px;
-            background-color: $color-orange;
-            background-clip: padding-box;
-            @include border-radius(5px);
-            @include animation(#{"growDot 1s linear 0s infinite"});
-        }
-
-        &:after {
-            width: 6px;
-            height: 6px;
-            top: 0;
-            left: 15px;
-            background-color: $color-orange;
-            background-clip: padding-box;
-            @include border-radius(5px);
-            @include animation(#{"growDot 1s linear .3s infinite"});
-        }
+    &:after {
+      width: 6px;
+      height: 6px;
+      top: 0;
+      left: 15px;
+      background-color: $color-orange;
+      background-clip: padding-box;
+      @include border-radius(5px);
+      @include animation(#{"growDot 1s linear .3s infinite"});
     }
+  }
 }

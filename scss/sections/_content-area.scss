@@ -3,11 +3,11 @@
 }
 
 .sec-ContentArea_Inner {
-	@include grid-container-medium;
+	@include container-medium;
 }
 
 .sec-ContentArea_Body {
-	@include grid-container-small;
+	@include container-small;
 }
 
 .sec-ContentArea_Title {

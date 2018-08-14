@@ -1,6 +1,6 @@
 .wep-List_Items {
-	display: grid;
-	grid-column-gap: 20px;
-	grid-row-gap: 30px;
-	grid-template-columns: repeat(3, 1fr);
+  @include grid;
+  @include grid-template-columns(repeat(3, 1fr));
+  @include grid-gap-column-row(20px, 30px);
+  @include grid-gap(30px);
 }

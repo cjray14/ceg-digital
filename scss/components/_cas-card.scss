@@ -17,10 +17,10 @@
 }
 
 .cas-Card_Image {
-  transition: transform 0.5s;
+  @include transition(transform 0.5s);
 
   .cas-Card:hover & {
-    transform: scale(1.04);
+    @include transform(scale(1.04));
   }
 }
 
@@ -35,7 +35,7 @@
   margin-bottom: 15px;
   font-size: 24px;
   line-height: 30px;
-  transition: color 0.3s;
+  @include transition(color 0.3s);
 
   .cas-Card:hover & {
     color: $color-orange;

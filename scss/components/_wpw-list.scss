@@ -1,13 +1,13 @@
 .wpw-List_Items {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+  @include grid;
+  @include grid-template-columns(repeat(4, 1fr));
 }
 
 .wpw-List_Item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 65px 40px;
+  @include flexbox;
+  @include justify-content(center);
+  @include align-items(center);
 }
 
 .wpw-List_Item-falmouth {

@@ -17,6 +17,11 @@ function pageLoader(){
   bar.animate(1.0);
 }
 
+function loadDelays() {
+  $('.js-LoadDelay').addClass('js-LoadDelay-loaded');
+  $('.js-LoadDelayAfter').addClass('js-LoadDelay-loaded');
+}
+
 function blogCarousel(){
   if ($('.blg-List_Items .blg-List_Item').length > 1) {
     $('.blg-List_Items').flickity({
@@ -36,12 +41,10 @@ function blogCarousel(){
 
 function globals(){
   pageLoader()
+  loadDelays()
   blogCarousel()
 }
 
 $(document).ready(function(){
-  $('.js-LoadDelay').addClass('js-LoadDelay-loaded');
-  $('.js-LoadDelayAfter').addClass('js-LoadDelay-loaded');
-
   globals()
 });

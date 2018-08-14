@@ -1,156 +1,156 @@
 .hd-Header {
-    width: 100%;
-    position: relative;
-    z-index: 5;
+  width: 100%;
+  position: relative;
+  z-index: 5;
 }
 
 .hd-Header_Body {
-    display: flex;
+  @include flexbox;
 }
 
 .hd-Header_Logo {
-    width: 175px;
-    height: 145px;
-    color: $color-orange;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-    background-color: #fff;
+  width: 175px;
+  height: 145px;
+  color: $color-orange;
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  @include flexbox;
+  @include justify-content(center);
+  @include align-items(center);
 
-    .hd-Header_Logo-text {
-      fill: $color-dark-grey;
-    }
+  .hd-Header_Logo-text {
+    fill: $color-dark-grey;
+  }
 }
 
 .hd-Header_Main {
-    flex: 1;
+  @include flex(1);
 }
 
 .hd-Header_Navigation {
-    display: flex;
-    flex: 1;
-    border-bottom: 10px solid $color-orange;
-    background-color: #fff;
+  border-bottom: 10px solid $color-orange;
+  background-color: #fff;
+  @include flexbox;
+  @include flex(1);
 }
 
 .hd-Header_Breadcrumb {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
-    .template-homepage & {
-      display: none;
-    }
+  .template-homepage & {
+    display: none;
+  }
 }
 
 .hd-CEG {
-    margin-top: 20px;
-    margin-right: 25px;
-    margin-left: auto;
+  margin-top: 20px;
+  margin-right: 25px;
+  margin-left: auto;
 }
 
 .hd-Navigation_Items {
-    display: flex;
+  @include flexbox;
 }
 
 .hd-Navigation_Item {
-    position: relative;
+  position: relative;
 }
 
 .hd-Navigation_Link {
-    display: flex;
-    font-weight: bold;
-    color: $color-dark-grey;
-    padding: 35px 30px;
-    transition: color 0.3s;
+  font-weight: bold;
+  color: $color-dark-grey;
+  padding: 35px 30px;
+  @include flexbox;
+  @include transition(color 0.3s);
 
-    &:hover {
-        color: $color-orange;
-    }
+  &:hover {
+    color: $color-orange;
+  }
 
-    .hd-Navigation_Item-sub:hover & {
-        color: $color-orange;
-    }
+  .hd-Navigation_Item-sub:hover & {
+    color: $color-orange;
+  }
 }
 
 .hd-Navigation_Link-active {
-    background-color: #ededed;
+  background-color: #ededed;
 }
 
 .hd-SubNavigation_Items {
-    min-width: 250px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  min-width: 250px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: absolute;
+  top: 100%;
+  left: -35px;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9999;
+  box-shadow: 3px 0 9px rgba(0, 0, 0, 0.22);
+  @include transition(opacity 0.3s, visibility 0.3s, transform 0.3s);
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 13px;
     position: absolute;
-    top: 100%;
-    left: -35px;
-    background-color: #fff;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 9999;
-    box-shadow: 3px 0 9px rgba(0, 0, 0, 0.22);
-    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+    top: -13px;
+    left: 0;
+    background-image: url(../img/tip.png);
+    background-position: top center;
+  }
 
-    &::before {
-        content: '';
-        width: 100%;
-        height: 13px;
-        position: absolute;
-        top: -13px;
-        left: 0;
-        background-image: url(../img/tip.png);
-        background-position: top center;
-    }
-
-    .hd-Navigation_Item-sub:hover & {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(-10px);
-    }
+  .hd-Navigation_Item-sub:hover & {
+    opacity: 1;
+    visibility: visible;
+    @include transform(translateY(-10px));
+  }
 }
 
 .hd-SubNavigation_Link {
-    display: block;
-    font-weight: bold;
-    color: $color-dark-grey;
-    padding: 10px 30px;
+  display: block;
+  font-weight: bold;
+  color: $color-dark-grey;
+  padding: 10px 30px;
 
-    &:hover {
-        background-color: #ededed;
-    }
+  &:hover {
+    background-color: #ededed;
+  }
 }
 
 .hd-SubNavigation_Link-active {
-    background-color: #ededed;
+  background-color: #ededed;
 }
 
 .hd-Breadcrumb_Items {
-    display: flex;
+  @include flexbox;
 }
 
 .hd-Breadcrumb_Item {
-    margin-right: 15px;
-    font-size: 14px;
-    display: flex;
+  margin-right: 15px;
+  font-size: 14px;
+  @include flexbox;
 
-    &:last-child {
-      margin-right: 0;
-    }
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .hd-Breadcrumb_Link {
-    font-weight: bold;
-    color: $color-orange;
-    padding-right: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-weight: bold;
+  color: $color-orange;
+  padding-right: 15px;
+  @include flexbox;
+  @include justify-content(center);
+  @include align-items(center);
 }
 
 .hd-Breadcrumb_Divide {
-    color: $color-medium-grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  color: $color-medium-grey;
+  @include flexbox;
+  @include justify-content(center);
+  @include align-items(center);
 }

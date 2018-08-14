@@ -3,15 +3,15 @@
 }
 
 .sec-MeetOurPeople_Inner {
-	@include grid-container-wide;
+	@include container-wide;
 }
 
 .sec-MeetOurPeople_Header {
 	margin-bottom: 50px;
 	text-align: center;
-	@include grid-container-medium;
+	@include container-medium;
 }
 
 .sec-MeetOurPeople_Body {
-	@include grid-container-medium;
+	@include container-medium;
 }

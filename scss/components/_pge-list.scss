@@ -1,7 +1,7 @@
 .pge-List_Items {
-	display: grid;
-	grid-column-gap: 50px;
-	grid-template-columns: repeat(2, 1fr);
+  @include grid;
+  @include grid-template-columns(repeat(2, 1fr));
+  @include grid-gap(50px);
 }
 
 // .pge-List_Item-offset {

@@ -3,19 +3,19 @@
 }
 
 .sec-BlogCarousel_Inner {
-	@include grid-container-wide;
+	@include container-wide;
 }
 
 .sec-BlogCarousel_Footer {
 	margin-top: 40px;
-  display: flex;
+  @include flexbox;
 }
 
 .sec-BlogCarousel_Link {
 	color: $color-orange;
 	font-weight: bold;
-  display: flex;
   margin-left: auto;
+  @include flexbox;
 }
 
 .sec-BlogCarousel_Icon {

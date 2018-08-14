@@ -9,53 +9,53 @@ label,
 select,
 summary,
 textarea {
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
 }
 
 input,
 select,
 textarea {
-    border-radius: 0;
+  @include border-radius(0);
 }
 
 body:not(.util-IsTabbing) button:focus,
 body:not(.util-IsTabbing) input:focus,
 body:not(.util-IsTabbing) select:focus,
 body:not(.util-IsTabbing) textarea:focus {
-    outline: none;
+  outline: none;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  @include box-sizing;
 }
 
 @at-root {
-    @viewport {
-        width: device-width;
-    }
+  @viewport {
+    width: device-width;
+  }
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 16px;
-    background-color: #fff;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-size: 16px;
+  background-color: #fff;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  @include box-sizing;
 }
 
 body {
-    font-family: $font-body;
-    text-rendering: optimizeLegibility;
-    background-color: $color-body-bg;
-    color: $color-body-text;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+  font-family: $font-body;
+  text-rendering: optimizeLegibility;
+  background-color: $color-body-bg;
+  color: $color-body-text;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 body,
@@ -63,13 +63,13 @@ input,
 textarea,
 button,
 select {
-    -webkit-font-smoothing: antialiased;
-    text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: 100%;
 }
 
 option {
-    background-color: #fff;
-    color: $color-body-text;
+  background-color: #fff;
+  color: $color-body-text;
 }
 
 h1,
@@ -78,8 +78,8 @@ h3,
 h4,
 h5,
 h6 {
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h1 {
@@ -108,20 +108,20 @@ h6 {
 }
 
 hr {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    border: 0;
-    border-top: 1px solid rgba(155, 155, 155, 0.3);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: 0;
+  border-top: 1px solid rgba(155, 155, 155, 0.3);
 }
 
 ul {
-    @include reset-lists;
+  @include reset-lists;
 }
 
 p {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 26px;
 }
 
 :root {
@@ -129,37 +129,37 @@ p {
 }
 
 a {
-    font-weight: inherit;
-    text-decoration: none;
-    color: currentColor;
+  font-weight: inherit;
+  text-decoration: none;
+  color: currentColor;
 }
 
 a:not([class]) {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 button,
 input,
 select,
 textarea {
-    font-family: inherit;
+  font-family: inherit;
 }
 
 figure {
-    margin: 0;
+  margin: 0;
 }
 
 img,
 picture {
-    max-width: 100%;
-    margin: 0;
+  max-width: 100%;
+  margin: 0;
 }
 
 svg {
-    display: block;
+  display: block;
 }
 
 table {
-    width: 100%;
-    table-layout: fixed;
+  width: 100%;
+  table-layout: fixed;
 }

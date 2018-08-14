@@ -9,16 +9,16 @@
 }
 
 .oss-Card_Image {
-  transition: transform 0.5s;
+  @include transition(transform 0.5s);
 
   .oss-Card:hover & {
-    transform: scale(1.04);
+    @include transform(scale(1.04));
   }
 }
 
 .oss-Card_Title {
 	margin-bottom: 20px;
-  transition: color 0.3s;
+  @include transition(color 0.3s);
 
   .oss-Card:hover & {
     color: $color-orange;

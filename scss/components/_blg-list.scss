@@ -1,8 +1,8 @@
 .blg-List_Items {
   .flickity-prev-next-button {
-    border-radius: 0;
     background: $color-medium-grey;
-    box-shadow: 3px 0 9px rgba(0, 0, 0, 0.16);
+    @include border-radius(0);
+    @include box-shadow(3px 0 9px rgba(0, 0, 0, 0.16));
 
     &:active {
       opacity: 1;
@@ -15,7 +15,7 @@
 
       &:hover {
         svg {
-          transform: translateX(-3px);
+          @include transform(translateX(-3px));
         }
       }
     }
@@ -27,13 +27,13 @@
 
       &:hover {
         svg {
-          transform: translateX(3px);
+          @include transform(translateX(3px));
         }
       }
     }
 
     svg {
-      transition: transform 0.3s;
+       @include transition(transform 0.3s);
     }
 
     .arrow {

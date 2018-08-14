@@ -3,11 +3,11 @@
 }
 
 .sec-CaseStudy_Inner {
-	@include grid-container-medium;
+	@include container-medium;
 }
 
 .sec-CaseStudy_Header {
 	text-align: center;
 	margin-bottom: 50px;
-	@include grid-container-medium;
+	@include container-medium;
 }
