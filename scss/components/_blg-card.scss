@@ -1,31 +1,51 @@
 .blg-Card {
 	display: flex;
+  overflow: hidden;
+}
+
+.blg-Card_Header {
+  width: 50%;
+  display: block;
+  overflow: hidden;
+}
+
+.blg-Card_Body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  background-color: $color-orange;
+  padding-right: 75px;
+  padding-left: 75px;
 }
 
 .blg-Card_Image {
-	width: 50%;
+	width: 100%;
 	height: 100%;
 	object-fit: cover;
-}
+  transition: transform 0.5s;
 
-.blg-Card_Content {
-	display: flex;
-	flex-direction: column;
-	flex: 1;
-	justify-content: center;
-	background-color: $color-orange;
-	padding-right: 75px;
-	padding-left: 75px;
+  .blg-Card:hover & {
+      transform: scale(1.04);
+  }
 }
 
 .blg-Card_SubTitle {
 	color: #fff;
 	margin-bottom: 30px;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 .blg-Card_Title {
 	color: #fff;
 	margin-bottom: 30px;
+	font-size: 24px;
+  line-height: 30px;
+}
+
+.blg-Card_TitleLink {
+	font-weight: bold;
 }
 
 .blg-Card_Text {

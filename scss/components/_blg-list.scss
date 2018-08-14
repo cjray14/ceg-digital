@@ -1,0 +1,47 @@
+.blg-List_Items {
+  .flickity-prev-next-button {
+    border-radius: 0;
+    background: $color-medium-grey;
+    box-shadow: 3px 0 9px rgba(0, 0, 0, 0.16);
+
+    &:active {
+      opacity: 1;
+    }
+
+    &.previous {
+      top: 50px;
+      right: -22px;
+      left: auto;
+
+      &:hover {
+        svg {
+          transform: translateX(-3px);
+        }
+      }
+    }
+
+    &.next {
+      top: 105px;
+      right: -22px;
+      left: auto;
+
+      &:hover {
+        svg {
+          transform: translateX(3px);
+        }
+      }
+    }
+
+    svg {
+      transition: transform 0.3s;
+    }
+
+    .arrow {
+      fill: #fff;
+    }
+  }
+}
+
+.blg-List_Item {
+  width: 100%;
+}

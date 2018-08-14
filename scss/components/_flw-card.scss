@@ -1,0 +1,29 @@
+.flw-Card {
+	padding: 50px 80px;
+	background-color: #f1f0ef;
+}
+
+.flw-Card_Title {
+	color: $color-orange;
+	margin-bottom: 20px;
+	font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.flw-Card_TitleLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flw-Card_Icon {
+  margin-left: 15px;
+}
+
+.flw-Card_Text {
+  text-align: center;
+	font-size: 21px;
+  line-height: 34px;
+	font-family: $font-droid;
+}

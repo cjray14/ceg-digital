@@ -1,11 +1,36 @@
+.oss-Card {
+  display: block;
+  overflow: hidden;
+}
+
+.oss-Card_Header {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
 .oss-Card_Image {
-	margin-bottom: 20px;
+  transition: transform 0.5s;
+
+  .oss-Card:hover & {
+    transform: scale(1.04);
+  }
 }
 
 .oss-Card_Title {
 	margin-bottom: 20px;
+  transition: color 0.3s;
+
+  .oss-Card:hover & {
+    color: $color-orange;
+  }
 }
 
 .oss-Card_Text {
 	margin-bottom: 20px;
+}
+
+.oss-Card_Icon {
+  display: block;
+  margin-top: 40px;
+  color: $color-orange;
 }

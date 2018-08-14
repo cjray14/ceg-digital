@@ -11,7 +11,8 @@
 }
 
 .sec-ContentArea_Title {
-	margin-bottom: 30px;
+	margin-bottom: 25px;
+	font-size: 30px;
 }
 
 .sec-ContentArea_Text {
@@ -21,8 +22,12 @@
 .sec-ContentArea_Text-diff {
 	color: $color-orange;
 	font-weight: bold;
-	font-size: 22px;
-	line-height: 28px;
+	font-size: 18px;
+}
+
+.sec-ContentArea_Link {
+  display: inline-block;
+	@include button-orange;
 }
 
 .sec-ContentArea_List {
@@ -36,11 +41,26 @@
 	}
 }
 
-.sec-ContentArea_ImageWrap {
+.sec-ContentArea_VideoWrap {
 	width: calc(100% + 200px);
 	margin-bottom: 50px;
 	margin-left: -100px;
 	padding-top: 20px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #eee;
+}
+
+.sec-ContentArea_ImageWrap {
+	margin-bottom: 50px;
+	padding-top: 20px;
+}
+
+.sec-ContentArea_ImageWrap-pushout {
+	width: calc(100% + 200px);
+	margin-left: -100px;
+}
+
+.sec-ContentArea_ImageWrap-border {
 	padding-bottom: 50px;
 	border-bottom: 1px solid #eee;
 }

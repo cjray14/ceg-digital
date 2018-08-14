@@ -6,6 +6,20 @@
     animation: $value;
 }
 
+@mixin animated-underline {
+  padding-bottom: 5px;
+
+  background-image: linear-gradient(transparent calc(100% - 1px), $color-medium-grey 1px);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+
+  transition: background-size 0.2s;
+
+  &:hover {
+    background-size: 100% 100%;
+  }
+}
+
 @mixin appearance {
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -30,14 +44,88 @@
     box-shadow: $value;
 }
 
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint == 'xs' {
+    @media only screen and (min-width: 451px) {
+      @content;
+    }
+  } @else if $breakpoint == 'custom-600' {
+    @media only screen and (min-width: 600px) {
+      @content;
+    }
+  } @else if $breakpoint == 'sm' {
+    @media only screen and (min-width: 768px) {
+      @content;
+    }
+  } @else if $breakpoint == 'md' {
+    @media only screen and (min-width: 900px) {
+      @content;
+    }
+  } @else if $breakpoint == 'lg' {
+    @media only screen and (min-width: 1200px) {
+      @content;
+    }
+  } @else if $breakpoint == 'xlg' {
+    @media only screen and (min-width: 1440px) {
+      @content;
+    }
+  } @else if $breakpoint == 'xxlg' {
+    @media only screen and (min-width: 1600px) {
+      @content;
+    }
+  } @else if $breakpoint == 'xxs-viewport' {
+    @media only screen and (max-width: 450px) {
+      @content;
+    }
+  } @else if $breakpoint == 'xs-viewport' {
+    @media only screen and (max-width: 767px) {
+      @content;
+    }
+  } @else if $breakpoint == 'sm-viewport' {
+    @media only screen and (min-width: 768px) and (max-width: 899px) {
+      @content;
+    }
+  } @else if $breakpoint == 'md-viewport' {
+    @media only screen and (min-width: 900px) and (max-width: 1199px) {
+      @content;
+    }
+  } @else if $breakpoint == 'lg-viewport' {
+    @media only screen and (min-width: 1200px) and (max-width: 1439px) {
+      @content;
+    }
+  }
+}
+
 @mixin button-orange {
-    padding: 20px 40px;
+    padding: 15px 30px;
     font-size: 16px;
     background-color: $color-orange;
     border: 0;
     color: #fff;
     cursor: pointer;
     font-weight: bold;
+    transform: perspective(1px) translateZ(0);
+
+    &:hover {
+        &::before {
+            transform: scaleX(1);
+            transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+        }
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background-color: $color-dark-grey;
+        transform: scaleX(0);
+        transform-origin: 0 50%;
+        transition: transform 0.5s ease-out;
+    }
 }
 
 @mixin grid-container-medium {
@@ -94,8 +182,8 @@
 }
 
 @mixin vertical-spacer {
-    margin-top: 75px;
-    margin-bottom: 75px;
+    margin-top: 65px;
+    margin-bottom: 65px;
 }
 
 // Flex

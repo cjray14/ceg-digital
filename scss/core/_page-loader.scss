@@ -1,0 +1,15 @@
+#container {
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  top: 0;
+}
+
+.js-LoadDelay {
+  opacity: 0;
+  transition: opacity 1s 1.1s;
+
+  &.js-LoadDelay-loaded {
+    opacity: 1;
+  }
+}

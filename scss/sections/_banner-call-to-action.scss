@@ -11,7 +11,7 @@
 	bottom: 0;
 	left: 0;
 	background-attachment: fixed;
-	background-image: url(../img/contact-cta.jpg);
+	background-image: url(../img/hero-contact.jpg);
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
@@ -25,24 +25,28 @@
 	z-index: 1;
 	position: relative;
 	text-align: center;
-	max-width: 600px;
+	max-width: 500px;
 	margin-right: auto;
 	margin-left: auto;
-	padding-top: 200px;
-	padding-bottom: 200px;
+	padding-top: 150px;
+	padding-bottom: 150px;
 }
 
 .sec-BannerCallToAction_SubTitle {
-	margin-bottom: 20px;
+	margin-bottom: 15px;
+	color: #8a959e;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 .sec-BannerCallToAction_Title {
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 	color: $color-orange;
+	font-size: 30px;
 }
 
 .sec-BannerCallToAction_Text {
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 
 .sec-BannerCallToAction_Link {

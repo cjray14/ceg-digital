@@ -1,43 +1,64 @@
 .ft-Footer {
-    padding-top: 50px;
-    padding-bottom: 40px;
-    border-top: 1px solid #ddd;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  border-top: 1px solid #d3d3d3;
+  background-color: #f5f5f5;
 }
 
 .ft-Footer_Inner {
-    @include grid-container-wide;
+  @include grid-container-wide;
 }
 
 .ft-Footer_Body {
-    position: relative;
+  position: relative;
 
-    display: flex;
+  display: flex;
 }
 
 .ft-Footer_Left {
-    flex: 1;
+  flex: 1;
 }
 
 .ft-Navigation {
-    margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .ft-Navigation_Items {
-    display: flex;
+  display: flex;
 }
 
 .ft-Navigation_Item {
-    margin-right: 50px;
+  margin-right: 30px;
 
-    &:last-child {
-        margin-right: 0;
-    }
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .ft-Navigation_Link {
-    color: $color-dark-grey;
+  color: $color-dark-grey;
+  @include animated-underline;
+}
 
-    &:hover {
-      text-decoration: underline;
-    }
+.ft-Navigation_Link-linkedin {
+  padding-bottom: 0;
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.3s;
+
+  &:hover {
+    background-size: 0 0;
+    color: $color-orange;
+  }
+}
+
+.ft-Copyright {
+  color: #7f7f7f;
+  font-size: 14px;
+}
+
+.ft-Logo {
+  margin-top: -10px;
 }

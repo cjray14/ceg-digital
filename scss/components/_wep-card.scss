@@ -1,5 +1,11 @@
 .wep-Card {
-	padding-top: 30px;
-	padding-left: 30px;
-	border-top: 2px solid $color-orange;
+	padding: 30px 25px 30px 40px;
+  position: relative;
+	border-top: 1px solid $color-orange;
+}
+
+.wep-Card_Icon {
+  color: $color-orange;
+  position: absolute;
+  left: 0;
 }

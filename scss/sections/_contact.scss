@@ -1,0 +1,57 @@
+.sec-Contact_Inner {
+  background-color: #fff;
+  @include grid-container-wide;
+}
+
+.sec-Contact_Body {
+  margin-top: -80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @include grid-container-medium;
+}
+
+.sec-Contact_SubTitle {
+  margin-bottom: 10px;
+  font-family: $font-droid;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: normal;
+}
+
+.sec-Contact_Title {
+  margin-bottom: 20px;
+  font-size: 54px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.sec-Contact_SubText {
+  margin-bottom: 30px;
+  font-family: $font-droid;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: normal;
+}
+
+.sec-Contact_Text {
+  margin-bottom: 20px;
+}
+
+.sec-Contact_Link {
+  color: $color-orange;
+  font-weight: bold;
+}
+
+.sec-Contact_Items {
+  display: flex;
+}
+
+.sec-Contact_Item {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.sec-Contact_Item-card {
+  flex: 0 0 65%;
+}

@@ -8,10 +8,16 @@
 
 .sec-BlogCarousel_Footer {
 	margin-top: 40px;
-	text-align: right;
+  display: flex;
 }
 
 .sec-BlogCarousel_Link {
 	color: $color-orange;
 	font-weight: bold;
+  display: flex;
+  margin-left: auto;
+}
+
+.sec-BlogCarousel_Icon {
+  margin-left: 20px;
 }

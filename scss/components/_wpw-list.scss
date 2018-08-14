@@ -2,3 +2,30 @@
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 }
+
+.wpw-List_Item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 65px 40px;
+}
+
+.wpw-List_Item-falmouth {
+  color: #fff;
+  background-color: #000;
+}
+
+.wpw-List_Item-queenmary {
+  color: #fff;
+  background-color: #6f809f;
+}
+
+.wpw-List_Item-southampton {
+  color: #fff;
+  background-color: #002e3b;
+}
+
+.wpw-List_Item-cass {
+  color: #1d1d1b;
+  background-color: #f4f4f4;
+}

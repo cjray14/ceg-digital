@@ -1,16 +1,49 @@
-.cas-Card_Content {
-	margin-top: -100px;
-	margin-right: 150px;
-	padding: 50px 150px 50px 100px;
-	position: relative;
-	background-color: #fff;
-	z-index: 1;
+.cas-Card {
+  display: block;
+  overflow: hidden;
+}
+
+.cas-Card_Header {
+  overflow: hidden;
+}
+
+.cas-Card_Body {
+  margin-top: -100px;
+  margin-right: 150px;
+  padding: 50px 200px 50px 100px;
+  position: relative;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.cas-Card_Image {
+  transition: transform 0.5s;
+
+  .cas-Card:hover & {
+    transform: scale(1.04);
+  }
 }
 
 .cas-Card_SubTitle {
-	margin-bottom: 20px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #8a959e;
 }
 
 .cas-Card_Title {
-	margin-bottom: 20px;
+  margin-bottom: 15px;
+  font-size: 24px;
+  line-height: 30px;
+  transition: color 0.3s;
+
+  .cas-Card:hover & {
+    color: $color-orange;
+  }
+}
+
+.cas-Card_Icon {
+  display: block;
+  margin-top: 40px;
+  color: $color-orange;
 }

@@ -1,4 +1,5 @@
 // Vendor (external resource)
+@import 'vendor/flickity';
 @import 'vendor/sanitize';
 
 // Settings
@@ -17,11 +18,13 @@
 @import 'core/footer';
 @import 'core/header';
 @import 'core/icons';
+@import 'core/page-loader';
 
 // Components
 @import 'components/blg-card';
 @import 'components/blg-list';
 @import 'components/cas-card';
+@import 'components/flw-card';
 @import 'components/mop-card';
 @import 'components/mop-list';
 @import 'components/oss-card';
@@ -37,8 +40,10 @@
 @import 'sections/banner-title';
 @import 'sections/blog-carousel';
 @import 'sections/case-study';
+@import 'sections/contact';
 @import 'sections/content-area';
 @import 'sections/content-intro';
+@import 'sections/map';
 @import 'sections/meet-our-people';
 @import 'sections/other-success-stories';
 @import 'sections/page-call-to-action';

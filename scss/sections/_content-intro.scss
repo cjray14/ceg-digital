@@ -7,7 +7,7 @@
 	margin-top: -80px;
 	padding-top: 80px;
 	padding-bottom: 60px;
-	border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #d3d3d3;
 	@include grid-container-medium;
 }
 
@@ -15,11 +15,13 @@
 	color: $color-orange;
 	margin-bottom: 30px;
 	text-align: center;
+	font-size: 30px;
+	letter-spacing: -1px;
 }
 
 .sec-ContentIntro_Text {
 	font-family: $font-droid;
-	font-size: 24px;
-	line-height: 38px;
+	font-size: 21px;
+	line-height: 36px;
 	text-align: center;
 }

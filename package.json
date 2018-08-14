@@ -4,10 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
-    "start": "node js/main.js",
-    "build-sass": "stylus -w style.styl -o style.css"
+    "build-css": "node-sass scss/main.scss css/main.css -w",
+    "server": "live-server"
   },
   "repository": {
     "type": "git",
@@ -20,12 +18,7 @@
   },
   "homepage": "https://github.com/cjray14/ceg-digital#readme",
   "devDependencies": {
-    "node-sass": "^4.9.2",
-    "nodemon": "^1.18.3",
-    "reload": "^2.3.0"
-  },
-  "dependencies": {
-    "express": "^4.16.3",
-    "stylus": "^0.54.5"
+    "live-server": "^1.2.0",
+    "node-sass": "^4.9.3"
   }
 }
