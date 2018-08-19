@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="utf-8" />
-	<title>CEG Digital | What we do</title>
+  <meta charset="utf-8" />
+	<title>CEG Digital | News</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="description" content="{{ page_description | escape }}" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -13,9 +13,10 @@
 
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<script src="js/progressbar.js"></script>
+	<script src="js/flickity.js"></script>
 	<script src="js/main.js"></script>
 </head>
-<body>
+<body class="template-article">
 	<div id="container"></div>
 	<div id="content-loader"><div class="content-loader"><span class="content-loader-dots"></span></div></div>
 
@@ -57,7 +58,7 @@
 			      	<nav class="hd-Navigation" role="navigation">
 				        <ul class="hd-Navigation_Items">
 			            <li class="hd-Navigation_Item"><a href="who-we-are.html" class="hd-Navigation_Link">Who we are</a></li>
-			            <li class="hd-Navigation_Item"><a href="what-we-do.html" class="hd-Navigation_Link hd-SubNavigation_Link-active">What we do</a></li>
+			            <li class="hd-Navigation_Item"><a href="what-we-do.html" class="hd-Navigation_Link">What we do</a></li>
 			            <li class="hd-Navigation_Item hd-Navigation_Item-sub">
 			            	<a href="#" class="hd-Navigation_Link">Success stories</a>
 			            	<ul class="hd-SubNavigation_Items">
@@ -67,7 +68,7 @@
 			            		<li class="hd-SubNavigation_Item"><a href="falmouth.html" class="hd-SubNavigation_Link">CASS</a></li>
 			            	</ul>
 			            </li>
-			            <li class="hd-Navigation_Item"><a href="news.html" class="hd-Navigation_Link">News</a></li>
+			            <li class="hd-Navigation_Item"><a href="news.html" class="hd-Navigation_Link hd-Navigation_Link-active">News</a></li>
 			            <li class="hd-Navigation_Item"><a href="contact.html" class="hd-Navigation_Link">Contact</a></li>
 				        </ul>
 			      	</nav>
@@ -95,31 +96,27 @@
 			      				</a>
 			      				<span class="hd-Breadcrumb_Divide">></span>
 			      			</li>
-			      			<li class="hd-Breadcrumb_Item">What we do</li>
+			      			<li class="hd-Breadcrumb_Item"><a href="news.html" class="hd-Breadcrumb_Link">News</a> <span class="hd-Breadcrumb_Divide">></span></li>
+			      			<li class="hd-Breadcrumb_Item">CATS Academy Student Wins National Congressional Art Competition</li>
 			      		</ul>
-			      	</div>
-		      	</div>
+				     	</div>
+			     	</div>
 			    </div>
 		    </div>
 		  </div>
 		</header>
 
 		<main class="mn-Main">
-			<section class="sec-BannerTitle sec-BannerTitle-what">
+			<section class="sec-BannerTitle sec-BannerTitle-article">
 				<div class="sec-BannerTitle_Image"></div>
-				<div class="sec-BannerTitle_Wrap">
-					<div class="sec-BannerTitle_Content">
-						<h2 class="sec-BannerTitle_SubTitle">Our vision</h2>
-						<h1 class="sec-BannerTitle_Title">What we do</h1>
-					</div>
-				</div>
 			</section>
 
 			<section class="sec-ContentIntro">
 				<div class="sec-ContentIntro_Inner">
 					<div class="sec-ContentIntro_Body">
-						<h2 class="sec-ContentIntro_Title">SEO-friendly h2 page heading</h2>
-						<p class="sec-ContentIntro_Text">CEG Digital is proud to offer a suite of services to enable universities to expand global access to higher education programmes. Our vision is to become, in partnership with a select portfolio of high ranking universities, the leading global provider of online and blended higher education over the next five years.</p>
+						<h1 class="sec-ContentIntro_Heading">CATS Academy Student Wins National Congressional Art Competition</h1>
+						<p class="sec-ContentIntro_Date">Tue, 23 May '17 | Category</p>
+						<p class="sec-ContentIntro_Text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, quam voluptas earum, nemo molestiae amet explicabo dicta, esse ipsum voluptates recusandae quos.</p>
 					</div>
 				</div>
 			</section>
@@ -127,57 +124,67 @@
 			<section class="sec-ContentArea">
 				<div class="sec-ContentArea_Inner">
 					<div class="sec-ContentArea_Body">
-						<h3 class="sec-ContentArea_Title">How it works</h3>
-						<p class="sec-ContentArea_Text">Leveraging decades of global higher-education experience, CEG Digital provides a unique combination of financial resources, teaching expertise and global market knowledge to unlock the online learning market for both students and universities.</p>
-
-						<h3 class="sec-ContentArea_Title">We can provide</h3>
-						<ul class="sec-ContentArea_List">
-							<li>Development of new and/or conversion of existing courses, in close collaboration with university academics</li>
-							<li>E-learning tutor recruitment, management and training</li>
-							<li>Locations for face-to-face workshops, as required</li>
-							<li>A learning management system</li>
-							<li>Dedicated pastoral and administrative support teams</li>
-							<li>Global sales team engaging with international agents, corporate and government channels</li>
-							<li>Direct sales conversion team, admissions support and enrolment services</li>
-						</ul>
-
-						<p class="sec-ContentArea_Text sec-ContentArea_Text-diff">As an example of our pedagogical expertise, watch this video to find out how students learn with Falmouth Flexible.</p>
-
-						<div class="sec-ContentArea_VideoWrap">
-							<img src="img/woman.jpg" alt="Image" class="sec-ContentArea_Video" />
+						<div class="sec-ContentArea_ImageWrap sec-ContentArea_ImageWrap-pushout sec-ContentArea_ImageWrap-border">
+							<img src="img/painting.jpg" alt="Image" class="sec-ContentArea_Image" />
 						</div>
 
-						<h3 class="sec-ContentArea_Title">Why choose us</h3>
-						<p class="sec-ContentArea_Text">CEG Digital market university courses worldwide and, significantly, we provide all the up-front capital. Students are taught by online tutors who report to university faculty. The university retains full control and all IP of the academic material, and overall control of quality assurance.</p>
-
-						<p class="sec-ContentArea_Text">Student support is key to the CEG Digital model - we know that online students need more support not less. Our course advisors provide a friendly ear for routine advice about work-life balance, how to be an effective online learner and the student’s progression through the programme.</p>
-
-						<p class="sec-ContentArea_Text">We can also provide optional Face-to-Face Events for partner universities, designed to offer experiential learning by bringing students together with their peers and academic staff. Events are devised to allow exploration of topics related to students’ course content and offer a wider industry context for their learning.  </p>
-
-						<div class="sec-ContentArea_ImageWrap">
-							<img src="img/team.jpg" alt="Image" class="sec-ContentArea_Image" />
-						</div>
-
-						<h3 class="sec-ContentArea_Title">Other benefits to universities include</h3>
-						<ul class="sec-ContentArea_List">
-							<li>Introduction of programmes to new, currently untapped audiences</li>
-							<li>Increased student volumes without stress on physical infrastructure: ability to scale rapidly</li>
-							<li>Foundation for a robust digital learning strategy</li>
-							<li>Development of newly structured programmes in areas of expertise</li>
-							<li>Access to a global marketing and sales network for online, blended and on-campus programmes</li>
-							<li>Opportunity to monetise historical and ongoing investments in open educational resources</li>
-						</ul>
+						<p class="sec-ContentArea_Text">Under this partnership CEG Digital and Falmouth agreed to launch an initial suite of 5 online MAs to a global audience.CEG Digital is a full service collaborative partner – providing academic content creation services, administration and management of a virtual learning environment, recruitment, training and monitoring of tutors to deliver the content, pastoral care advisers for all non-academic student support, admissions services and marketing and recruitment activities.</p>
+						<p class="sec-ContentArea_Text">We currently have 6 live programmes (MAs in Photography, Advertising, Event Management, Writing for Script and Screen and App Development and a PGCHE). We will be launching a further 2 MAs in September 2018 (Illustration and Graphic Design) and a Top Up in Photography. Thus our portfolio of launched programmes will have grown to 9 HE programmes over 2 years. CEG Digital programmes now represent 59% of all Falmouth PG applications and 60% of all enrolled PG students. Further, we have secured students from 42 different countries to date, providing outstanding diversity by nationality on the programmes.</p>
+						<p class="sec-ContentArea_Text">
+							<a href="#" target="_blank" class="sec-ContentArea_Link">
+								<span class="sec-ContentArea_Icon">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="ico-ExternalLink"><path fill="currentColor" d="M576 24v127.984c0 21.461-25.96 31.98-40.971 16.971l-35.707-35.709-243.523 243.523c-9.373 9.373-24.568 9.373-33.941 0l-22.627-22.627c-9.373-9.373-9.373-24.569 0-33.941L442.756 76.676l-35.703-35.705C391.982 25.9 402.656 0 424.024 0H552c13.255 0 24 10.745 24 24zM407.029 270.794l-16 16A23.999 23.999 0 0 0 384 303.765V448H64V128h264a24.003 24.003 0 0 0 16.97-7.029l16-16C376.089 89.851 365.381 64 344 64H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V287.764c0-21.382-25.852-32.09-40.971-16.97z"></path></svg>
+								</span>
+								Visit site
+							</a>
+						</p>
 					</div>
 				</div>
 			</section>
 
-			<section class="sec-BannerCallToAction">
-				<div class="sec-BannerCallToAction_Image"></div>
-				<div class="sec-BannerCallToAction_Content">
-					<h3 class="sec-BannerCallToAction_SubTitle">Get in touch</h3>
-					<h2 class="sec-BannerCallToAction_Title"><a href="contact.html" class="sec-BannerCallToAction_TitleLink">Like what you see?</a></h2>
-					<p class="sec-BannerCallToAction_Text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-					<a href="contact.html" class="sec-BannerCallToAction_Link">Contact us</a>
+			<section class="sec-BlogCarousel">
+				<div class="sec-BlogCarousel_Inner">
+					<div class="sec-BlogCarousel_Header">
+						<h2 class="sec-BlogCarousel_Heading">Related</h2>
+					</div>
+					<div class="sec-BlogCarousel_Body">
+						<div class="blg-List">
+							<ul class="blg-List_Items">
+								<li class="blg-List_Item">
+									<div class="blg-Card">
+										<a href="#" class="blg-Card_Header">
+											<img src="img/blog-1.jpg" alt="Image" class="blg-Card_Image" />
+										</a>
+										<div class="blg-Card_Body">
+											<h4 class="blg-Card_SubTitle">Blog Category</h4>
+											<h3 class="blg-Card_Title"><a href="#" class="blg-Card_TitleLink">Article heading about digital and online courses or offerings</a></h3>
+											<p class="blg-Card_Text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution</p>
+										</div>
+									</div>
+								</li>
+								<li class="blg-List_Item">
+									<div class="blg-Card">
+										<a href="#" class="blg-Card_Header">
+											<img src="img/blog-1.jpg" alt="Image" class="blg-Card_Image" />
+										</a>
+										<div class="blg-Card_Body">
+											<h4 class="blg-Card_SubTitle">Blog Category</h4>
+											<h3 class="blg-Card_Title"><a href="#" class="blg-Card_TitleLink">Article heading about digital and online courses or offerings</a></h3>
+											<p class="blg-Card_Text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="sec-BlogCarousel_Footer">
+						<a href="#" class="sec-BlogCarousel_Link">
+							All articles
+							<span class="sec-BlogCarousel_Icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="ico-ArrowLong"><path fill="currentColor" d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"></path></svg>
+							</span>
+						</a>
+					</div>
 				</div>
 			</section>
 		</main>

@@ -9,6 +9,19 @@
 	padding-bottom: 60px;
   border-bottom: 1px solid #d3d3d3;
 	@include container-medium;
+
+	.template-article & {
+		padding-bottom: 0;
+		border-bottom: 0;
+	}
+}
+
+.sec-ContentIntro_Heading {
+	color: $color-orange;
+	color: $color-orange;
+	margin-bottom: 30px;
+	text-align: center;
+	letter-spacing: -1px;
 }
 
 .sec-ContentIntro_Title {
@@ -17,6 +30,13 @@
 	text-align: center;
 	font-size: 30px;
 	letter-spacing: -1px;
+}
+
+.sec-ContentIntro_Date {
+	color: $color-medium-grey;
+	margin-bottom: 40px;
+	font-weight: bold;
+	text-align: center;
 }
 
 .sec-ContentIntro_Text {

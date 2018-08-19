@@ -780,13 +780,26 @@ table {
   table-layout: fixed; }
 
 #content-loader {
-  width: 100%;
-  margin: auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
   text-align: center;
   position: absolute;
-  z-index: -1; }
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center; }
 
 .content-loader {
   width: 48px;
@@ -1138,6 +1151,10 @@ table {
   width: 116px;
   height: 29px; }
 
+.ico-LogoFalmouthLarge {
+  width: 270px;
+  height: 36px; }
+
 .ico-LogoQueenmary {
   width: 143px;
   height: 38px; }
@@ -1177,6 +1194,10 @@ table {
 .ico-LinkedinFill {
   width: 27px;
   height: 27px; }
+
+.ico-ExternalLink {
+  width: 17px;
+  height: 14px; }
 
 #container {
   width: 100%;
@@ -1687,6 +1708,8 @@ table {
   .template-homepage .sec-BannerTitle {
     margin-top: -47px;
     padding-bottom: 200px; }
+  .template-article .sec-BannerTitle {
+    padding-top: 250px; }
   .sec-BannerTitle::after {
     content: '';
     width: 100%;
@@ -1717,6 +1740,8 @@ table {
     background-image: url(../img/hero-what.jpg); }
   .sec-BannerTitle-falmouth .sec-BannerTitle_Image {
     background-image: url(../img/hero-falmouth.jpg); }
+  .sec-BannerTitle-article .sec-BannerTitle_Image {
+    background-image: url(../img/hero-article.jpg); }
 
 .sec-BannerTitle_Wrap {
   max-width: 1200px;
@@ -1748,12 +1773,35 @@ table {
   font-weight: bold;
   letter-spacing: -1px; }
 
+.sec-BannerTitle_Logo {
+  color: #fff;
+  margin-top: 40px;
+  margin-bottom: -40px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center; }
+
 .sec-BlogCarousel {
   margin-top: 65px;
   margin-bottom: 65px; }
 
 .sec-BlogCarousel_Inner {
   max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative; }
+
+.sec-BlogCarousel_Header {
+  text-align: center;
+  margin-bottom: 50px;
+  max-width: 900px;
   margin-right: auto;
   margin-left: auto;
   position: relative; }
@@ -1899,7 +1947,15 @@ table {
   font-size: 18px; }
 
 .sec-ContentArea_Link {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
   padding: 15px 30px;
   font-size: 16px;
   background-color: #ee7700;
@@ -1941,6 +1997,10 @@ table {
     -moz-transition: transform 0.5s ease-out;
     -o-transition: transform 0.5s ease-out;
     transition: transform 0.5s ease-out; }
+
+.sec-ContentArea_Icon {
+  margin-top: -4px;
+  margin-right: 10px; }
 
 .sec-ContentArea_List {
   list-style-type: disc;
@@ -1986,6 +2046,16 @@ table {
   margin-right: auto;
   margin-left: auto;
   position: relative; }
+  .template-article .sec-ContentIntro_Body {
+    padding-bottom: 0;
+    border-bottom: 0; }
+
+.sec-ContentIntro_Heading {
+  color: #ee7700;
+  color: #ee7700;
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: -1px; }
 
 .sec-ContentIntro_Title {
   color: #ee7700;
@@ -1993,6 +2063,12 @@ table {
   text-align: center;
   font-size: 30px;
   letter-spacing: -1px; }
+
+.sec-ContentIntro_Date {
+  color: #8a959e;
+  margin-bottom: 40px;
+  font-weight: bold;
+  text-align: center; }
 
 .sec-ContentIntro_Text {
   font-family: droid_serifitalic, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;

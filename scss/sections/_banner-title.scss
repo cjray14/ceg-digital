@@ -9,6 +9,10 @@
 		padding-bottom: 200px;
 	}
 
+	.template-article & {
+		padding-top: 250px;
+	}
+
 	&::after {
 		content: '';
 		width: 100%;
@@ -48,6 +52,10 @@
 
 	.sec-BannerTitle-falmouth & {
 		background-image: url(../img/hero-falmouth.jpg);
+	}
+
+	.sec-BannerTitle-article & {
+		background-image: url(../img/hero-article.jpg);
 	}
 }
 
@@ -89,4 +97,12 @@
 	font-size: 54px;
 	font-weight: bold;
 	letter-spacing: -1px;
+}
+
+.sec-BannerTitle_Logo {
+	color: #fff;
+	margin-top: 40px;
+  margin-bottom: -40px;
+	@include flexbox;
+	@include justify-content(center);
 }

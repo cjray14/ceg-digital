@@ -26,8 +26,14 @@
 }
 
 .sec-ContentArea_Link {
-  display: inline-block;
+	@include flexbox-inline;
+	@include align-items(center);
 	@include button-orange;
+}
+
+.sec-ContentArea_Icon {
+  margin-top: -4px;
+	margin-right: 10px;
 }
 
 .sec-ContentArea_List {
