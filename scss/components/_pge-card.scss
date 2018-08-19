@@ -8,16 +8,18 @@
 }
 
 .pge-Card_Body {
-  margin-top: -100px;
-  margin-right: 150px;
-  padding: 30px 50px 30px 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   position: relative;
   background-color: #fff;
   z-index: 1;
 
-  // .pge-Card-alt & {
-  //  margin-right: 100px;
-  // }
+  @include breakpoint('lg') {
+    margin-top: -100px;
+    margin-right: 150px;
+    padding-right: 50px;
+    padding-left: 30px;
+  }
 }
 
 .pge-Card_Image {

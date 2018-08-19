@@ -1,7 +1,12 @@
 .hd-Header {
   width: 100%;
   position: relative;
+  background-color: #fff;
   z-index: 5;
+  
+  @include breakpoint('lg') {
+    background-color: transparent;
+  }
 }
 
 .hd-Header_Body {
@@ -10,7 +15,7 @@
 
 .hd-Header_Logo {
   width: 175px;
-  height: 145px;
+  height: 100px;
   color: $color-orange;
   position: relative;
   z-index: 1;
@@ -18,6 +23,10 @@
   @include flexbox;
   @include justify-content(center);
   @include align-items(center);
+  
+  @include breakpoint('lg') {
+    height: 145px;
+  }
 
   .hd-Header_Logo-text {
     fill: $color-dark-grey;
@@ -29,10 +38,14 @@
 }
 
 .hd-Header_Navigation {
-  border-bottom: 10px solid $color-orange;
-  background-color: #fff;
-  @include flexbox;
-  @include flex(1);
+  display: none;
+
+  @include breakpoint('lg') {
+    border-bottom: 10px solid $color-orange;
+    background-color: #fff;
+    @include flexbox;
+    @include flex(1);
+  }
 }
 
 .hd-Header_Breadcrumb {

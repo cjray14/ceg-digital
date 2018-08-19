@@ -7,6 +7,5 @@
 }
 
 .sec-OtherSuccessStories_Header {
-	margin-bottom: 50px;
-	text-align: center;
+  @include section-header;
 }

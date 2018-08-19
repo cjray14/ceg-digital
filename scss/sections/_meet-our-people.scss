@@ -7,9 +7,7 @@
 }
 
 .sec-MeetOurPeople_Header {
-	margin-bottom: 50px;
-	text-align: center;
-	@include container-medium;
+  @include section-header;
 }
 
 .sec-MeetOurPeople_Body {

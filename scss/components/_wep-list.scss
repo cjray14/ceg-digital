@@ -1,6 +1,17 @@
 .wep-List_Items {
   @include grid;
-  @include grid-template-columns(repeat(3, 1fr));
-  @include grid-gap-column-row(20px, 30px);
-  @include grid-gap(30px);
+  @include grid-gap(10px);
+
+  @include breakpoint('lg') {
+    @include grid-template-columns(repeat(3, 1fr));
+    @include grid-gap-column-row(20px, 30px);
+  }
+}
+
+.wep-List_Item {
+  text-align: center;
+
+  @include breakpoint('lg') {
+    text-align: left;
+  }
 }

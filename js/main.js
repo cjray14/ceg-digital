@@ -22,6 +22,31 @@ function loadDelays() {
   $('.js-LoadDelayAfter').addClass('js-LoadDelay-loaded');
 }
 
+function contentFadein() {
+  setTimeout(function(){
+    setInterval(function() {
+      $($('.js-Fadein:in-viewport').not('.js-Fadedin')[0]).addClass('js-Fadedin');
+    }, 100);
+  }, 1000);
+}
+
+function blogCarousel(){
+  if ($('.blg-List_Items .blg-List_Item').length > 1) {
+    $('.blg-List_Items').flickity({
+      cellAlign: 'left',
+      wrapAround: true,
+      imagesLoaded: true,
+      pageDots: false,
+      arrowShape: {
+        x0: 30,
+        x1: 60, y1: 20,
+        x2: 60, y2: 10,
+        x3: 60
+      }
+    });
+  };
+}
+
 function imageParallax() {
   // https://codepen.io/hendrysadrak/pen/ctgaz
 
@@ -68,36 +93,17 @@ function imageParallax() {
   $fwindow.trigger('scroll');
 }
 
-function blogCarousel(){
-  if ($('.blg-List_Items .blg-List_Item').length > 1) {
-    $('.blg-List_Items').flickity({
-      cellAlign: 'left',
-      wrapAround: true,
-      imagesLoaded: true,
-      pageDots: false,
-      arrowShape: {
-        x0: 30,
-        x1: 60, y1: 20,
-        x2: 60, y2: 10,
-        x3: 60
-      }
-    });
-  };
-}
-
 function globals(){
   pageLoader()
   loadDelays()
-  imageParallax()
+  contentFadein()
   blogCarousel()
+  
+  if ($(window).width() >= 1200) {
+    imageParallax()
+  }
 }
 
 $(document).ready(function(){
   globals()
-
-  setTimeout(function(){
-    setInterval(function() {
-      $($('.js-Fadein:in-viewport').not('.js-Fadedin')[0]).addClass('js-Fadedin');
-    }, 100);
-  }, 1000);
 });

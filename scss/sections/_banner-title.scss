@@ -1,8 +1,12 @@
 .sec-BannerTitle {
 	position: relative;
 	overflow: hidden;
-	padding-top: 150px;
-	padding-bottom: 250px;
+  padding: 60px 20px;
+  
+  @include breakpoint('lg') {
+    padding-top: 150px;
+    padding-bottom: 250px;
+  }
 
 	&::after {
 		content: '';
@@ -18,8 +22,10 @@
 }
 
 .sec-BannerTitle-home {
-	margin-top: -47px;
-	padding-bottom: 200px;
+  @include breakpoint('lg') {
+    margin-top: -47px;
+    padding-bottom: 200px;
+  }
 }
 
 .sec-BannerTitle-news {
@@ -32,16 +38,7 @@
 }
 
 .sec-BannerTitle_Image {
-	width: 100%;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: top center;
-	background-size: cover;
+	@include banner-image;
 
 	.sec-BannerTitle-home & {
 		background-image: url(../img/hero-home.jpg);
@@ -68,7 +65,7 @@
 	}
 }
 
-.sec-BannerTitle_Wrap {
+.sec-BannerTitle_Body {
 	max-width: 1200px;
 	margin-right: auto;
 	margin-left: auto;

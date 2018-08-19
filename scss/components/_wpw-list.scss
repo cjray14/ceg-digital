@@ -1,6 +1,10 @@
 .wpw-List_Items {
   @include grid;
-  @include grid-template-columns(repeat(4, 1fr));
+  @include grid-template-columns(repeat(2, 1fr));
+
+  @include breakpoint('lg') {
+    @include grid-template-columns(repeat(4, 1fr));
+  }
 }
 
 .wpw-List_Item {

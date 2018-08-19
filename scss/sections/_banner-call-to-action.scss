@@ -1,20 +1,17 @@
 .sec-BannerCallToAction {
 	position: relative;
 	overflow: hidden;
+  padding: 60px 20px;
+  
+  @include breakpoint('lg') {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
 }
 
 .sec-BannerCallToAction_Image {
-	width: 100%;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-attachment: fixed;
-	background-image: url(../img/hero-contact.jpg);
-	background-repeat: no-repeat;
-	background-position: top center;
-	background-size: cover;
+  background-image: url(../img/hero-contact.jpg);
+  @include banner-image;
 }
 
 .sec-BannerCallToAction_Content {
@@ -23,13 +20,14 @@
 	max-width: 500px;
 	margin-right: auto;
 	margin-left: auto;
-	padding-top: 150px;
-	padding-bottom: 150px;
   z-index: 1;
-  @include flexbox;
-  @include flex-direction(column);
-  @include justify-content(center);
-  @include align-items(center);
+  
+  @include breakpoint('lg') {
+    @include flexbox;
+    @include flex-direction(column);
+    @include justify-content(center);
+    @include align-items(center);
+  }
 }
 
 .sec-BannerCallToAction_SubTitle {
@@ -50,5 +48,6 @@
 }
 
 .sec-BannerCallToAction_Link {
+  display: inline-block;
 	@include button-orange;
 }

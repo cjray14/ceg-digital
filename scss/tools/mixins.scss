@@ -26,6 +26,22 @@
   appearance: none;
 }
 
+@mixin banner-image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  @include breakpoint('lg') {
+    background-attachment: fixed;
+  }
+}
+
 @mixin border-radius($value...) {
   -webkit-border-radius: $value;
   -moz-border-radius: $value;
@@ -129,10 +145,15 @@
 }
 
 @mixin container-medium {
-  max-width: 900px;
-  margin-right: auto;
-  margin-left: auto;
   position: relative;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  @include breakpoint('md') {
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 @mixin container-small {
@@ -143,16 +164,31 @@
 }
 
 @mixin container-wide {
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
   position: relative;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  @include breakpoint('lg') {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 @mixin reset-lists {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@mixin section-header {
+  text-align: center;
+  margin-bottom: 30px;
+  @include container-medium;
+
+  @include breakpoint('lg') {
+    margin-bottom: 50px;
+  }
 }
 
 @mixin transform($value...) {
@@ -191,8 +227,13 @@
 }
 
 @mixin vertical-spacer {
-  margin-top: 65px;
-  margin-bottom: 65px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  @include breakpoint('lg') {
+    margin-top: 65px;
+    margin-bottom: 65px;
+  }
 }
 
 // Grid

@@ -49,8 +49,13 @@
 }
 
 .ico-Check {
-  width: 21px;
-  height: 21px;
+  width: 16px;
+  height: 16px;
+
+  @include breakpoint('lg') {
+    width: 21px;
+    height: 21px;
+  }
 }
 
 .ico-Linkedin {

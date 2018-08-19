@@ -4,11 +4,16 @@
 }
 
 .sec-ContentIntro_Body {
-	margin-top: -80px;
-	padding-top: 80px;
-	padding-bottom: 60px;
+	padding-top: 30px;
+	padding-bottom: 30px;
   border-bottom: 1px solid #d3d3d3;
 	@include container-medium;
+
+  @include breakpoint('lg') {
+    margin-top: -80px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
 
 	.template-article & {
 		padding-bottom: 0;
@@ -17,7 +22,6 @@
 }
 
 .sec-ContentIntro_Heading {
-	color: $color-orange;
 	color: $color-orange;
 	margin-bottom: 30px;
 	text-align: center;

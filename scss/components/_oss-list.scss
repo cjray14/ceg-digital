@@ -1,5 +1,8 @@
 .oss-List_Items {
   @include grid;
-  @include grid-template-columns(repeat(3, 1fr));
   @include grid-gap(30px);
+
+  @include breakpoint('lg') {
+    @include grid-template-columns(repeat(3, 1fr));
+  }
 }

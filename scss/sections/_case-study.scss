@@ -7,7 +7,5 @@
 }
 
 .sec-CaseStudy_Header {
-	text-align: center;
-	margin-bottom: 50px;
-	@include container-medium;
+  @include section-header;
 }

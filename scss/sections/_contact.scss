@@ -43,7 +43,9 @@
 }
 
 .sec-Contact_Items {
-  @include flexbox;
+  @include breakpoint('lg') {
+    @include flexbox;
+  }
 }
 
 .sec-Contact_Item {

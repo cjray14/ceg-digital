@@ -8,12 +8,17 @@
 }
 
 .cas-Card_Body {
-  margin-top: -100px;
-  margin-right: 150px;
-  padding: 50px 200px 50px 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   position: relative;
   background-color: #fff;
   z-index: 1;
+
+  @include breakpoint('lg') {
+    margin-top: -100px;
+    margin-right: 150px;
+    padding: 50px 200px 50px 100px;
+  }
 }
 
 .cas-Card_Image {
