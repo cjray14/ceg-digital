@@ -1705,11 +1705,6 @@ table {
   overflow: hidden;
   padding-top: 150px;
   padding-bottom: 250px; }
-  .template-homepage .sec-BannerTitle {
-    margin-top: -47px;
-    padding-bottom: 200px; }
-  .template-article .sec-BannerTitle {
-    padding-top: 250px; }
   .sec-BannerTitle::after {
     content: '';
     width: 100%;
@@ -1720,6 +1715,17 @@ table {
     bottom: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.25); }
+
+.sec-BannerTitle-home {
+  margin-top: -47px;
+  padding-bottom: 200px; }
+
+.sec-BannerTitle-news {
+  padding-top: 75px;
+  padding-bottom: 75px; }
+
+.sec-BannerTitle-article {
+  padding-top: 250px; }
 
 .sec-BannerTitle_Image {
   width: 100%;
@@ -1740,6 +1746,8 @@ table {
     background-image: url(../img/hero-what.jpg); }
   .sec-BannerTitle-falmouth .sec-BannerTitle_Image {
     background-image: url(../img/hero-falmouth.jpg); }
+  .sec-BannerTitle-news .sec-BannerTitle_Image {
+    background-image: url(../img/hero-who.jpg); }
   .sec-BannerTitle-article .sec-BannerTitle_Image {
     background-image: url(../img/hero-article.jpg); }
 
@@ -1754,7 +1762,8 @@ table {
   text-align: center;
   position: relative;
   z-index: 1; }
-  .sec-BannerTitle-home .sec-BannerTitle_Content {
+  .sec-BannerTitle-home .sec-BannerTitle_Content,
+  .sec-BannerTitle-news .sec-BannerTitle_Content {
     max-width: 550px;
     text-align: left; }
 
@@ -1766,12 +1775,28 @@ table {
   font-weight: normal; }
   .template-homepage .sec-BannerTitle_SubTitle {
     margin-bottom: 20px; }
+  .template-news .sec-BannerTitle_SubTitle {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-family: Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: bold; }
 
 .sec-BannerTitle_Title {
   color: #fff;
   font-size: 54px;
   font-weight: bold;
   letter-spacing: -1px; }
+
+.sec-BannerTitle_Text {
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-family: droid_serifitalic, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  line-height: 30px; }
+
+.sec-BannerTitle_Icon {
+  color: #fff; }
 
 .sec-BannerTitle_Logo {
   color: #fff;
@@ -2099,6 +2124,16 @@ table {
 
 .sec-MeetOurPeople_Body {
   max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative; }
+
+.sec-News {
+  margin-top: 65px;
+  margin-bottom: 65px; }
+
+.sec-News_Inner {
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
   position: relative; }

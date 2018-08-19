@@ -4,15 +4,6 @@
 	padding-top: 150px;
 	padding-bottom: 250px;
 
-	.template-homepage & {
-	  margin-top: -47px;
-		padding-bottom: 200px;
-	}
-
-	.template-article & {
-		padding-top: 250px;
-	}
-
 	&::after {
 		content: '';
 		width: 100%;
@@ -24,6 +15,20 @@
 		left: 0;
 		background: rgba(0,0,0,0.25);
 	}
+}
+
+.sec-BannerTitle-home {
+	margin-top: -47px;
+	padding-bottom: 200px;
+}
+
+.sec-BannerTitle-news {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.sec-BannerTitle-article {
+	padding-top: 250px;
 }
 
 .sec-BannerTitle_Image {
@@ -54,6 +59,10 @@
 		background-image: url(../img/hero-falmouth.jpg);
 	}
 
+	.sec-BannerTitle-news & {
+		background-image: url(../img/hero-who.jpg);
+	}
+
 	.sec-BannerTitle-article & {
 		background-image: url(../img/hero-article.jpg);
 	}
@@ -74,7 +83,8 @@
 	position: relative;
 	z-index: 1;
 
-	.sec-BannerTitle-home & {
+	.sec-BannerTitle-home &,
+	.sec-BannerTitle-news & {
 		max-width: 550px;
 		text-align: left;
 	}
@@ -90,6 +100,13 @@
 	.template-homepage & {
 		margin-bottom: 20px;
 	}
+
+	.template-news & {
+		margin-bottom: 20px;
+		font-size: 22px;
+		font-family: $font-body;
+		font-weight: bold;
+	}
 }
 
 .sec-BannerTitle_Title {
@@ -97,6 +114,19 @@
 	font-size: 54px;
 	font-weight: bold;
 	letter-spacing: -1px;
+}
+
+.sec-BannerTitle_Text {
+	color: #fff;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 21px;
+	font-family: $font-droid;
+	line-height: 30px;
+}
+
+.sec-BannerTitle_Icon {
+	color: #fff;
 }
 
 .sec-BannerTitle_Logo {
