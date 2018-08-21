@@ -9,7 +9,6 @@
 
 .cas-Card_Body {
   padding-top: 30px;
-  padding-bottom: 30px;
   position: relative;
   background-color: #fff;
   z-index: 1;
@@ -17,6 +16,7 @@
   @include breakpoint('lg') {
     margin-top: -100px;
     margin-right: 150px;
+    padding-bottom: 30px;
     padding: 50px 200px 50px 100px;
   }
 }
@@ -38,8 +38,6 @@
 
 .cas-Card_Title {
   margin-bottom: 15px;
-  font-size: 24px;
-  line-height: 30px;
   @include transition(color 0.3s);
 
   .cas-Card:hover & {
@@ -49,6 +47,10 @@
 
 .cas-Card_Icon {
   display: block;
-  margin-top: 40px;
+  margin-top: 20px;
   color: $color-orange;
+
+  @include breakpoint('lg') {
+    margin-top: 40px;
+  }
 }

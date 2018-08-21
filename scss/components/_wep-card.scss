@@ -4,11 +4,19 @@
   position: relative;
   background-color: $color-orange;
 
-  @include breakpoint('lg') {
+  @include breakpoint('custom-600') {
     display: block;
-    padding: 30px 25px 30px 40px;
+    padding: 20px 15px 0 35px;
     border-top: 1px solid $color-orange;
     background-color: transparent;
+  }
+
+  @include breakpoint('sm') {
+    padding: 30px 25px 0 40px;
+  }
+
+  @include breakpoint('md') {
+    padding: 30px 25px 30px 40px;
   }
 }
 
@@ -17,7 +25,7 @@
   font-size: 16px;
   line-height: 20px;
 
-  @include breakpoint('lg') {
+  @include breakpoint('custom-600') {
     color: $color-dark-grey;
     margin-bottom: 10px;
     font-size: 24px;
@@ -28,7 +36,7 @@
 .wep-Card_Text {
   display: none;
 
-  @include breakpoint('lg') {
+  @include breakpoint('custom-600') {
     display: block;
   }
 }
@@ -39,7 +47,7 @@
   top: 7px;
   left: 10px;
 
-  @include breakpoint('lg') {
+  @include breakpoint('custom-600') {
     color: $color-orange;
     top: auto;
     left: 0;

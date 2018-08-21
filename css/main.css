@@ -713,13 +713,20 @@ h6 {
   margin-bottom: 0; }
 
 h1 {
-  font-size: 54px; }
+  font-size: 36px; }
+  @media only screen and (min-width: 1200px) {
+    h1 {
+      font-size: 54px; } }
 
 h2 {
-  font-size: 30px; }
+  font-size: 24px; }
+  @media only screen and (min-width: 1200px) {
+    h2 {
+      font-size: 30px; } }
 
 h3 {
-  font-size: 24px; }
+  font-size: 24px;
+  line-height: 30px; }
 
 h4 {
   font-size: 16px;
@@ -1379,7 +1386,6 @@ table {
 
 .cas-Card_Body {
   padding-top: 30px;
-  padding-bottom: 30px;
   position: relative;
   background-color: #fff;
   z-index: 1; }
@@ -1387,6 +1393,7 @@ table {
     .cas-Card_Body {
       margin-top: -100px;
       margin-right: 150px;
+      padding-bottom: 30px;
       padding: 50px 200px 50px 100px; } }
 
 .cas-Card_Image {
@@ -1408,8 +1415,6 @@ table {
 
 .cas-Card_Title {
   margin-bottom: 15px;
-  font-size: 24px;
-  line-height: 30px;
   -webkit-transition: color 0.3s;
   -moz-transition: color 0.3s;
   -o-transition: color 0.3s;
@@ -1419,8 +1424,11 @@ table {
 
 .cas-Card_Icon {
   display: block;
-  margin-top: 40px;
+  margin-top: 20px;
   color: #ee7700; }
+  @media only screen and (min-width: 1200px) {
+    .cas-Card_Icon {
+      margin-top: 40px; } }
 
 .flw-Card {
   padding: 50px 80px;
@@ -1548,7 +1556,6 @@ table {
 
 .pge-Card_Body {
   padding-top: 30px;
-  padding-bottom: 30px;
   position: relative;
   background-color: #fff;
   z-index: 1; }
@@ -1557,6 +1564,7 @@ table {
       margin-top: -100px;
       margin-right: 150px;
       padding-right: 50px;
+      padding-bottom: 30px;
       padding-left: 30px; } }
 
 .pge-Card_Image {
@@ -1578,8 +1586,6 @@ table {
 
 .pge-Card_Title {
   margin-bottom: 15px;
-  font-size: 24px;
-  line-height: 30px;
   -webkit-transition: color 0.3s;
   -moz-transition: color 0.3s;
   -o-transition: color 0.3s;
@@ -1589,35 +1595,47 @@ table {
 
 .pge-Card_Icon {
   display: block;
-  margin-top: 40px;
+  margin-top: 20px;
   color: #ee7700; }
+  @media only screen and (min-width: 1200px) {
+    .pge-Card_Icon {
+      margin-top: 40px; } }
 
-@media only screen and (min-width: 1200px) {
-  .pge-List_Items {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    -ms-grid-gap: 50px;
-    grid-gap: 50px; } }
+.pge-List_Items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-gap: 30px;
+  grid-gap: 30px; }
+  @media only screen and (min-width: 1200px) {
+    .pge-List_Items {
+      -ms-grid-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      -ms-grid-gap: 50px;
+      grid-gap: 50px; } }
 
 .wep-Card {
   display: inline-block;
   padding: 5px 10px 5px 35px;
   position: relative;
   background-color: #ee7700; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 600px) {
     .wep-Card {
       display: block;
-      padding: 30px 25px 30px 40px;
+      padding: 20px 15px 0 35px;
       border-top: 1px solid #ee7700;
       background-color: transparent; } }
+  @media only screen and (min-width: 768px) {
+    .wep-Card {
+      padding: 30px 25px 0 40px; } }
+  @media only screen and (min-width: 900px) {
+    .wep-Card {
+      padding: 30px 25px 30px 40px; } }
 
 .wep-Card_Title {
   color: #fff;
   font-size: 16px;
   line-height: 20px; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 600px) {
     .wep-Card_Title {
       color: #373737;
       margin-bottom: 10px;
@@ -1626,7 +1644,7 @@ table {
 
 .wep-Card_Text {
   display: none; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 600px) {
     .wep-Card_Text {
       display: block; } }
 
@@ -1635,7 +1653,7 @@ table {
   position: absolute;
   top: 7px;
   left: 10px; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 600px) {
     .wep-Card_Icon {
       color: #ee7700;
       top: auto;
@@ -1646,18 +1664,22 @@ table {
   display: grid;
   -ms-grid-gap: 10px;
   grid-gap: 10px; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 600px) {
     .wep-List_Items {
-      -ms-grid-columns: repeat(3, 1fr);
-      grid-template-columns: repeat(3, 1fr);
+      -ms-grid-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       -ms-grid-column-gap: 20px;
       grid-column-gap: 20px;
       -ms-grid-row-gap: 30px;
       grid-row-gap: 30px; } }
+  @media only screen and (min-width: 900px) {
+    .wep-List_Items {
+      -ms-grid-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr); } }
 
 .wep-List_Item {
   text-align: center; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 600px) {
     .wep-List_Item {
       text-align: left; } }
 
@@ -1666,13 +1688,14 @@ table {
   display: grid;
   -ms-grid-columns: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr); }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 768px) {
     .wpw-List_Items {
       -ms-grid-columns: repeat(4, 1fr);
       grid-template-columns: repeat(4, 1fr); } }
 
 .wpw-List_Item {
-  padding: 65px 40px;
+  padding-top: 65px;
+  padding-bottom: 65px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -1687,6 +1710,10 @@ table {
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center; }
+  @media only screen and (min-width: 1200px) {
+    .wpw-List_Item {
+      padding-right: 40px;
+      padding-left: 40px; } }
 
 .wpw-List_Item-falmouth {
   color: #fff;
@@ -1707,7 +1734,7 @@ table {
 .sec-BannerCallToAction {
   position: relative;
   overflow: hidden;
-  padding: 60px 20px; }
+  padding: 100px 20px; }
   @media only screen and (min-width: 1200px) {
     .sec-BannerCallToAction {
       padding-top: 150px;
@@ -1764,8 +1791,7 @@ table {
 
 .sec-BannerCallToAction_Title {
   margin-bottom: 30px;
-  color: #ee7700;
-  font-size: 30px; }
+  color: #ee7700; }
 
 .sec-BannerCallToAction_Text {
   margin-bottom: 30px; }
@@ -1817,7 +1843,7 @@ table {
 .sec-BannerTitle {
   position: relative;
   overflow: hidden;
-  padding: 60px 20px; }
+  padding: 90px 20px; }
   @media only screen and (min-width: 1200px) {
     .sec-BannerTitle {
       padding-top: 150px;
@@ -1903,9 +1929,12 @@ table {
 
 .sec-BannerTitle_Title {
   color: #fff;
-  font-size: 54px;
+  font-size: 36px;
   font-weight: bold;
   letter-spacing: -1px; }
+  @media only screen and (min-width: 1200px) {
+    .sec-BannerTitle_Title {
+      font-size: 54px; } }
 
 .sec-BannerTitle_Text {
   color: #fff;
@@ -1934,8 +1963,8 @@ table {
   -ms-flex-pack: center; }
 
 .sec-BlogCarousel {
-  margin-top: 30px;
-  margin-bottom: 30px; }
+  margin-top: 50px;
+  margin-bottom: 50px; }
   @media only screen and (min-width: 1200px) {
     .sec-BlogCarousel {
       margin-top: 65px;
@@ -1988,8 +2017,8 @@ table {
   margin-left: 20px; }
 
 .sec-CaseStudy {
-  margin-top: 30px;
-  margin-bottom: 30px; }
+  margin-top: 50px;
+  margin-bottom: 50px; }
   @media only screen and (min-width: 1200px) {
     .sec-CaseStudy {
       margin-top: 65px;
@@ -2103,8 +2132,8 @@ table {
   flex: 0 0 65%; }
 
 .sec-ContentArea {
-  margin-top: 30px;
-  margin-bottom: 30px; }
+  margin-top: 50px;
+  margin-bottom: 50px; }
   @media only screen and (min-width: 1200px) {
     .sec-ContentArea {
       margin-top: 65px;
@@ -2234,8 +2263,8 @@ table {
       margin-left: auto; } }
 
 .sec-ContentIntro_Body {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   border-bottom: 1px solid #d3d3d3;
   position: relative;
   margin-right: 20px;
@@ -2264,8 +2293,12 @@ table {
   color: #ee7700;
   margin-bottom: 30px;
   text-align: center;
-  font-size: 30px;
-  letter-spacing: -1px; }
+  font-size: 24px;
+  letter-spacing: -1px;
+  line-height: 30px; }
+  @media only screen and (min-width: 1200px) {
+    .sec-ContentIntro_Title {
+      font-size: 30px; } }
 
 .sec-ContentIntro_Date {
   color: #8a959e;
@@ -2275,17 +2308,21 @@ table {
 
 .sec-ContentIntro_Text {
   font-family: droid_serifitalic, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-size: 21px;
-  line-height: 36px;
+  font-size: 18px;
+  line-height: 32px;
   text-align: center; }
+  @media only screen and (min-width: 1200px) {
+    .sec-ContentIntro_Text {
+      font-size: 21px;
+      line-height: 36px; } }
 
 .sec-Map {
   height: 500px;
   position: relative; }
 
 .sec-MeetOurPeople {
-  margin-top: 30px;
-  margin-bottom: 30px; }
+  margin-top: 50px;
+  margin-bottom: 50px; }
   @media only screen and (min-width: 1200px) {
     .sec-MeetOurPeople {
       margin-top: 65px;
@@ -2327,8 +2364,8 @@ table {
       margin-left: auto; } }
 
 .sec-News {
-  margin-top: 30px;
-  margin-bottom: 30px; }
+  margin-top: 50px;
+  margin-bottom: 50px; }
   @media only screen and (min-width: 1200px) {
     .sec-News {
       margin-top: 65px;
@@ -2345,8 +2382,8 @@ table {
       margin-left: auto; } }
 
 .sec-OtherSuccessStories {
-  margin-top: 30px;
-  margin-bottom: 30px; }
+  margin-top: 50px;
+  margin-bottom: 50px; }
   @media only screen and (min-width: 1200px) {
     .sec-OtherSuccessStories {
       margin-top: 65px;
@@ -2378,8 +2415,8 @@ table {
       margin-bottom: 50px; } }
 
 .sec-PageCallToAction {
-  margin-top: 30px;
-  margin-bottom: 30px; }
+  margin-top: 50px;
+  margin-bottom: 50px; }
   @media only screen and (min-width: 1200px) {
     .sec-PageCallToAction {
       margin-top: 65px;
@@ -2396,8 +2433,8 @@ table {
       margin-left: auto; } }
 
 .sec-WePartnerWith {
-  margin-top: 30px;
-  margin-bottom: 30px; }
+  margin-top: 50px;
+  margin-bottom: 50px; }
   @media only screen and (min-width: 1200px) {
     .sec-WePartnerWith {
       margin-top: 65px;
@@ -2445,8 +2482,8 @@ table {
       border-bottom: 1px solid #eee; } }
 
 .sec-WeProvide {
-  margin-top: 30px;
-  margin-bottom: 30px; }
+  margin-top: 50px;
+  margin-bottom: 50px; }
   @media only screen and (min-width: 1200px) {
     .sec-WeProvide {
       margin-top: 65px;

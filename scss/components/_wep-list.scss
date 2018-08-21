@@ -2,16 +2,20 @@
   @include grid;
   @include grid-gap(10px);
 
-  @include breakpoint('lg') {
-    @include grid-template-columns(repeat(3, 1fr));
+  @include breakpoint('custom-600') {
+    @include grid-template-columns(repeat(2, 1fr));
     @include grid-gap-column-row(20px, 30px);
+  }
+
+  @include breakpoint('md') {
+    @include grid-template-columns(repeat(3, 1fr));
   }
 }
 
 .wep-List_Item {
   text-align: center;
 
-  @include breakpoint('lg') {
+  @include breakpoint('custom-600') {
     text-align: left;
   }
 }

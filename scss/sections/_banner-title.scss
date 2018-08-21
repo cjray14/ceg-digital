@@ -1,8 +1,8 @@
 .sec-BannerTitle {
 	position: relative;
 	overflow: hidden;
-  padding: 60px 20px;
-  
+  padding: 90px 20px;
+
   @include breakpoint('lg') {
     padding-top: 150px;
     padding-bottom: 250px;
@@ -108,9 +108,13 @@
 
 .sec-BannerTitle_Title {
 	color: #fff;
-	font-size: 54px;
+	font-size: 36px;
 	font-weight: bold;
 	letter-spacing: -1px;
+
+	@include breakpoint('lg') {
+		font-size: 54px;
+  }
 }
 
 .sec-BannerTitle_Text {

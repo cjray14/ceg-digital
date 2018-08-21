@@ -9,7 +9,6 @@
 
 .pge-Card_Body {
   padding-top: 30px;
-  padding-bottom: 30px;
   position: relative;
   background-color: #fff;
   z-index: 1;
@@ -18,6 +17,7 @@
     margin-top: -100px;
     margin-right: 150px;
     padding-right: 50px;
+    padding-bottom: 30px;
     padding-left: 30px;
   }
 }
@@ -39,8 +39,6 @@
 
 .pge-Card_Title {
   margin-bottom: 15px;
-  font-size: 24px;
-  line-height: 30px;
   @include transition(color 0.3s);
 
   .pge-Card:hover & {
@@ -50,6 +48,10 @@
 
 .pge-Card_Icon {
   display: block;
-  margin-top: 40px;
+  margin-top: 20px;
   color: $color-orange;
+
+  @include breakpoint('lg') {
+    margin-top: 40px;
+  }
 }
