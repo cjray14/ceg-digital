@@ -3,8 +3,8 @@
   position: relative;
   background-color: #fff;
   z-index: 5;
-  
-  @include breakpoint('lg') {
+
+  @include breakpoint('custom-1000') {
     background-color: transparent;
   }
 }
@@ -14,8 +14,8 @@
 }
 
 .hd-Header_Logo {
-  width: 175px;
-  height: 100px;
+  width: 152px;
+  height: 85px;
   color: $color-orange;
   position: relative;
   z-index: 1;
@@ -23,8 +23,13 @@
   @include flexbox;
   @include justify-content(center);
   @include align-items(center);
-  
-  @include breakpoint('lg') {
+
+  @include breakpoint('sm') {
+    width: 175px;
+    height: 100px;
+  }
+
+  @include breakpoint('custom-1000') {
     height: 145px;
   }
 
@@ -38,9 +43,7 @@
 }
 
 .hd-Header_Navigation {
-  display: none;
-
-  @include breakpoint('lg') {
+  @include breakpoint('custom-1000') {
     border-bottom: 10px solid $color-orange;
     background-color: #fff;
     @include flexbox;
@@ -49,8 +52,13 @@
 }
 
 .hd-Header_Breadcrumb {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  display: none;
+
+  @include breakpoint('custom-1000') {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
   .template-homepage & {
     display: none;
@@ -58,13 +66,54 @@
 }
 
 .hd-CEG {
-  margin-top: 20px;
-  margin-right: 25px;
-  margin-left: auto;
+  display: none;
+
+  @include breakpoint('custom-1000') {
+    display: block;
+    margin-top: 20px;
+    margin-right: 25px;
+    margin-left: auto;
+  }
+}
+
+.hd-Navigation {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 1;
+  @include transition(transform 0.3s);
+  @include transform(translateY(-100%));
+
+  .hd-Header-active & {
+    @include box-shadow(0 20px 30px rgba(0, 0, 0, 0.1));
+    @include transform(translateY(85px));
+
+    @include breakpoint('sm') {
+      @include transform(translateY(100px));
+    }
+
+    @include breakpoint('custom-1000') {
+      @include box-shadow(none);
+      @include transform(none);
+    }
+  }
+
+  @include breakpoint('custom-1000') {
+    padding-top: 0;
+    padding-bottom: 0;
+    position: static;
+    @include transform(none);
+  }
 }
 
 .hd-Navigation_Items {
-  @include flexbox;
+  @include breakpoint('custom-1000') {
+    @include flexbox;
+  }
 }
 
 .hd-Navigation_Item {
@@ -74,9 +123,14 @@
 .hd-Navigation_Link {
   font-weight: bold;
   color: $color-dark-grey;
-  padding: 35px 30px;
+  padding: 12px 30px;
   @include flexbox;
   @include transition(color 0.3s);
+
+  @include breakpoint('custom-1000') {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
 
   &:hover {
     color: $color-orange;
@@ -91,35 +145,49 @@
   background-color: #ededed;
 }
 
-.hd-SubNavigation_Items {
-  min-width: 250px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  position: absolute;
-  top: 100%;
-  left: -35px;
-  background-color: #fff;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 9999;
-  box-shadow: 3px 0 9px rgba(0, 0, 0, 0.22);
-  @include transition(opacity 0.3s, visibility 0.3s, transform 0.3s);
+.hd-Navigation_Icon {
+  margin-left: 15px;
+  color: $color-orange;
 
-  &::before {
-    content: '';
-    width: 100%;
-    height: 13px;
-    position: absolute;
-    top: -13px;
-    left: 0;
-    background-image: url(../img/tip.png);
-    background-position: top center;
+  @include breakpoint('custom-1000') {
+    display: none;
   }
+}
 
-  .hd-Navigation_Item-sub:hover & {
-    opacity: 1;
-    visibility: visible;
-    @include transform(translateY(-10px));
+.hd-SubNavigation_Items {
+  display: none;
+
+  @include breakpoint('custom-1000') {
+    display: block;
+    min-width: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 100%;
+    left: -35px;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9999;
+    box-shadow: 3px 0 9px rgba(0, 0, 0, 0.22);
+    @include transition(opacity 0.3s, visibility 0.3s, transform 0.3s);
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 13px;
+      position: absolute;
+      top: -13px;
+      left: 0;
+      background-image: url(../img/tip.png);
+      background-position: top center;
+    }
+
+    .hd-Navigation_Item-sub:hover & {
+      opacity: 1;
+      visibility: visible;
+      @include transform(translateY(-10px));
+    }
   }
 }
 
@@ -166,4 +234,31 @@
   @include flexbox;
   @include justify-content(center);
   @include align-items(center);
+}
+
+
+
+
+
+.hd-MobileMenu {
+  width: 70px;
+  height: 60px;
+  position: absolute;
+  right: 0;
+  top: 12px;
+  @include flexbox;
+  @include justify-content(center);
+  @include align-items(center);
+
+  @include breakpoint('sm') {
+    top: 18px;
+  }
+
+  @include breakpoint('custom-1000') {
+    display: none;
+  }
+}
+
+.hd-MobileMenu_Text {
+  display: none;
 }

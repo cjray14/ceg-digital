@@ -1,6 +1,11 @@
 .ico-Logo {
-	width: 122px;
-	height: 68px;
+	width: 101px;
+  height: 56px;
+
+  @include breakpoint('sm') {
+    width: 122px;
+    height: 68px;
+  }
 }
 
 .ico-LogoFalmouth {

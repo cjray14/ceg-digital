@@ -77,6 +77,10 @@
     @media only screen and (min-width: 900px) {
       @content;
     }
+  } @else if $breakpoint == 'custom-1000' {
+    @media only screen and (min-width: 1000px) {
+      @content;
+    }
   } @else if $breakpoint == 'lg' {
     @media only screen and (min-width: 1200px) {
       @content;

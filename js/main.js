@@ -17,12 +17,12 @@ function pageLoader(){
   bar.animate(1.0);
 }
 
-function loadDelays() {
+function loadDelays(){
   $('.js-LoadDelay').addClass('js-LoadDelay-loaded');
   $('.js-LoadDelayAfter').addClass('js-LoadDelay-loaded');
 }
 
-function contentFadein() {
+function contentFadein(){
   setTimeout(function(){
     setInterval(function() {
       $($('.js-Fadein:in-viewport').not('.js-Fadedin')[0]).addClass('js-Fadedin');
@@ -47,7 +47,14 @@ function blogCarousel(){
   };
 }
 
-function imageParallax() {
+function mobileTrigger(){
+  $('.hd-MobileMenu').click(function(e){
+    e.preventDefault();
+    $('.hd-Header').toggleClass('hd-Header-active');
+  });
+}
+
+function imageParallax(){
   // https://codepen.io/hendrysadrak/pen/ctgaz
 
   var $fwindow = $(window);
@@ -98,7 +105,8 @@ function globals(){
   loadDelays()
   contentFadein()
   blogCarousel()
-  
+  mobileTrigger()
+
   if ($(window).width() >= 1200) {
     imageParallax()
   }

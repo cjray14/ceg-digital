@@ -22,7 +22,7 @@
 }
 
 .sec-BannerTitle-home {
-  @include breakpoint('lg') {
+  @include breakpoint('custom-1000') {
     margin-top: -47px;
     padding-bottom: 200px;
   }
