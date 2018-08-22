@@ -108,13 +108,8 @@
 
 .sec-BannerTitle_Title {
 	color: #fff;
-	font-size: 36px;
 	font-weight: bold;
 	letter-spacing: -1px;
-
-	@include breakpoint('lg') {
-		font-size: 54px;
-  }
 }
 
 .sec-BannerTitle_Text {

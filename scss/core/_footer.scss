@@ -37,7 +37,12 @@
 }
 
 .ft-Navigation_Item {
-  margin-right: 30px;
+  margin-bottom: 10px;
+
+  @include breakpoint('lg') {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 
   &:last-child {
     margin-right: 0;
