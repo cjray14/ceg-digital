@@ -897,7 +897,7 @@ table {
 
 .ft-Footer_Body {
   position: relative; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 768px) {
     .ft-Footer_Body {
       display: -webkit-box;
       display: -moz-box;
@@ -905,34 +905,51 @@ table {
       display: -webkit-flex;
       display: flex; } }
 
-.ft-Footer_Left {
-  margin-bottom: 20px; }
-  @media only screen and (min-width: 1200px) {
-    .ft-Footer_Left {
-      margin-bottom: 0;
-      -webkit-box-flex: 1;
-      -moz-box-flex: 1;
-      -webkit-flex: 1;
-      -ms-flex: 1;
-      flex: 1; } }
+@media only screen and (min-width: 768px) {
+  .ft-Footer_Left {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; } }
 
 .ft-Navigation {
   margin-bottom: 15px; }
 
-@media only screen and (min-width: 1200px) {
-  .ft-Navigation_Items {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex; } }
+.ft-Navigation_Items {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 .ft-Navigation_Item {
-  margin-bottom: 10px; }
-  @media only screen and (min-width: 1200px) {
+  margin-bottom: 10px;
+  -webkit-box-flex: 0 0 50%;
+  -moz-box-flex: 0 0 50%;
+  -webkit-flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%; }
+  @media only screen and (min-width: 600px) {
+    .ft-Navigation_Item {
+      -webkit-box-flex: 0 0 33.33%;
+      -moz-box-flex: 0 0 33.33%;
+      -webkit-flex: 0 0 33.33%;
+      -ms-flex: 0 0 33.33%;
+      flex: 0 0 33.33%; } }
+  @media only screen and (min-width: 768px) {
     .ft-Navigation_Item {
       margin-right: 30px;
-      margin-bottom: 0; } }
+      margin-bottom: 0;
+      -webkit-box-flex: none;
+      -moz-box-flex: none;
+      -webkit-flex: none;
+      -ms-flex: none;
+      flex: none; } }
   .ft-Navigation_Item:last-child {
     margin-right: 0; }
 
@@ -950,6 +967,7 @@ table {
     background-size: 100% 100%; }
 
 .ft-Navigation_Link-linkedin {
+  display: block;
   padding-bottom: 0;
   font-size: 0;
   -webkit-transition: color 0.3s;
@@ -978,11 +996,26 @@ table {
 
 .ft-Copyright {
   color: #7f7f7f;
-  font-size: 14px; }
+  font-size: 14px;
+  line-height: 18px; }
+  @media only screen and (min-width: 768px) {
+    .ft-Copyright {
+      line-height: 26px; } }
 
-@media only screen and (min-width: 1200px) {
-  .ft-Logo {
-    margin-top: -10px; } }
+.ft-Copyright_Rights {
+  display: block; }
+  @media only screen and (min-width: 768px) {
+    .ft-Copyright_Rights {
+      display: inline-block; } }
+
+.ft-Logo {
+  position: absolute;
+  right: 0;
+  bottom: -10px; }
+  @media only screen and (min-width: 768px) {
+    .ft-Logo {
+      margin-top: -10px;
+      position: static; } }
 
 .hd-Header {
   width: 100%;
