@@ -1523,7 +1523,7 @@ table {
 
 .blg-Card {
   overflow: hidden; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 768px) {
     .blg-Card {
       display: -webkit-box;
       display: -moz-box;
@@ -1534,17 +1534,17 @@ table {
 .blg-Card_Header {
   display: block;
   overflow: hidden; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 768px) {
     .blg-Card_Header {
       width: 50%; } }
 
 .blg-Card_Body {
   padding: 30px 20px;
   background-color: #ee7700; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 768px) {
     .blg-Card_Body {
-      padding-right: 75px;
-      padding-left: 75px;
+      padding-right: 40px;
+      padding-left: 40px;
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
@@ -1564,6 +1564,10 @@ table {
       -webkit-flex: 1;
       -ms-flex: 1;
       flex: 1; } }
+  @media only screen and (min-width: 1200px) {
+    .blg-Card_Body {
+      padding-right: 75px;
+      padding-left: 75px; } }
 
 .blg-Card_Image {
   width: 100%;
@@ -1646,12 +1650,16 @@ table {
   position: relative;
   background-color: #fff;
   z-index: 1; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 768px) {
     .cas-Card_Body {
       margin-top: -100px;
       margin-right: 150px;
-      padding-bottom: 30px;
-      padding: 50px 200px 50px 100px; } }
+      padding: 50px 100px 0 50px; } }
+  @media only screen and (min-width: 1200px) {
+    .cas-Card_Body {
+      padding-right: 200px;
+      padding-bottom: 50px;
+      padding-left: 100px; } }
 
 .cas-Card_Image {
   -webkit-transition: transform 0.5s;
@@ -1724,12 +1732,18 @@ table {
   font-family: droid_serifitalic, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif; }
 
 .mop-Card_Content {
-  margin-top: -30px;
-  margin-right: 40px;
-  padding: 30px 20px;
+  padding-top: 20px;
   position: relative;
   background-color: #fff;
   z-index: 1; }
+  @media only screen and (min-width: 768px) {
+    .mop-Card_Content {
+      margin-top: -30px;
+      margin-right: 40px;
+      padding: 30px 20px; } }
+
+.mop-Card_Image {
+  width: 100%; }
 
 .mop-Card_Title {
   margin-bottom: 10px;
@@ -1751,7 +1765,7 @@ table {
   grid-column-gap: 25px;
   -ms-grid-row-gap: 40px;
   grid-row-gap: 40px; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 768px) {
     .mop-List_Items {
       -ms-grid-columns: repeat(3, 1fr);
       grid-template-columns: repeat(3, 1fr); } }
@@ -1765,6 +1779,7 @@ table {
   overflow: hidden; }
 
 .oss-Card_Image {
+  width: 100%;
   -webkit-transition: transform 0.5s;
   -moz-transition: transform 0.5s;
   -o-transition: transform 0.5s;
@@ -1789,18 +1804,32 @@ table {
 
 .oss-Card_Icon {
   display: block;
-  margin-top: 40px;
+  margin-top: 20px;
   color: #ee7700; }
+  @media only screen and (min-width: 1200px) {
+    .oss-Card_Icon {
+      margin-top: 40px; } }
 
 .oss-List_Items {
   display: -ms-grid;
   display: grid;
   -ms-grid-gap: 30px;
   grid-gap: 30px; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 768px) {
+    .oss-List_Items {
+      -ms-grid-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr); } }
+  @media only screen and (min-width: 1000px) {
     .oss-List_Items {
       -ms-grid-columns: repeat(3, 1fr);
       grid-template-columns: repeat(3, 1fr); } }
+
+@media only screen and (min-width: 768px) {
+  .oss-List_Item:last-child {
+    display: none; } }
+  @media only screen and (min-width: 768px) and (min-width: 1000px) {
+    .oss-List_Item:last-child {
+      display: block; } }
 
 .pge-Card {
   display: block;
@@ -1814,6 +1843,12 @@ table {
   position: relative;
   background-color: #fff;
   z-index: 1; }
+  @media only screen and (min-width: 768px) {
+    .pge-Card_Body {
+      margin-top: -50px;
+      margin-right: 50px;
+      padding-right: 30px;
+      padding-left: 30px; } }
   @media only screen and (min-width: 1200px) {
     .pge-Card_Body {
       margin-top: -100px;
@@ -1823,6 +1858,7 @@ table {
       padding-left: 30px; } }
 
 .pge-Card_Image {
+  width: 100%;
   -webkit-transition: transform 0.5s;
   -moz-transition: transform 0.5s;
   -o-transition: transform 0.5s;
@@ -1861,7 +1897,7 @@ table {
   display: grid;
   -ms-grid-gap: 30px;
   grid-gap: 30px; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 768px) {
     .pge-List_Items {
       -ms-grid-columns: repeat(2, 1fr);
       grid-template-columns: repeat(2, 1fr);
@@ -2099,9 +2135,12 @@ table {
   position: relative;
   overflow: hidden;
   padding: 90px 20px; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1000px) {
     .sec-BannerTitle {
       padding-top: 150px;
+      padding-bottom: 150px; } }
+  @media only screen and (min-width: 1200px) {
+    .sec-BannerTitle {
       padding-bottom: 250px; } }
   .sec-BannerTitle::after {
     content: '';
@@ -2116,7 +2155,10 @@ table {
 
 @media only screen and (min-width: 1000px) {
   .sec-BannerTitle-home {
-    margin-top: -47px;
+    margin-top: -47px; } }
+
+@media only screen and (min-width: 1200px) {
+  .sec-BannerTitle-home {
     padding-bottom: 200px; } }
 
 .sec-BannerTitle-news {
@@ -2201,7 +2243,6 @@ table {
 .sec-BannerTitle_Logo {
   color: #fff;
   margin-top: 40px;
-  margin-bottom: -40px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -2212,6 +2253,9 @@ table {
   -ms-justify-content: center;
   justify-content: center;
   -ms-flex-pack: center; }
+  @media only screen and (min-width: 1200px) {
+    .sec-BannerTitle_Logo {
+      margin-bottom: -40px; } }
 
 .sec-BlogCarousel {
   margin-top: 50px;
@@ -2221,11 +2265,12 @@ table {
       margin-top: 65px;
       margin-bottom: 65px; } }
 
-.sec-BlogCarousel_Inner {
-  position: relative;
-  margin-right: 20px;
-  margin-left: 20px; }
-  @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
+  .sec-BlogCarousel_Inner {
+    position: relative;
+    margin-right: 20px;
+    margin-left: 20px; } }
+  @media only screen and (min-width: 768px) and (min-width: 1200px) {
     .sec-BlogCarousel_Inner {
       max-width: 1200px;
       margin-right: auto;
@@ -2233,11 +2278,13 @@ table {
 
 .sec-BlogCarousel_Header {
   text-align: center;
-  margin-bottom: 30px;
-  position: relative;
-  margin-right: 20px;
-  margin-left: 20px; }
+  margin-bottom: 30px; }
   @media only screen and (min-width: 900px) {
+    .sec-BlogCarousel_Header {
+      position: relative;
+      margin-right: 20px;
+      margin-left: 20px; } }
+  @media only screen and (min-width: 900px) and (min-width: 900px) {
     .sec-BlogCarousel_Header {
       max-width: 900px;
       margin-right: auto;
@@ -2248,11 +2295,15 @@ table {
 
 .sec-BlogCarousel_Footer {
   margin-top: 40px;
+  margin-right: 30px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex; }
+  @media only screen and (min-width: 768px) {
+    .sec-BlogCarousel_Footer {
+      margin-right: 0; } }
 
 .sec-BlogCarousel_Link {
   color: #ee7700;
@@ -2287,11 +2338,13 @@ table {
 
 .sec-CaseStudy_Header {
   text-align: center;
-  margin-bottom: 30px;
-  position: relative;
-  margin-right: 20px;
-  margin-left: 20px; }
+  margin-bottom: 30px; }
   @media only screen and (min-width: 900px) {
+    .sec-CaseStudy_Header {
+      position: relative;
+      margin-right: 20px;
+      margin-left: 20px; } }
+  @media only screen and (min-width: 900px) and (min-width: 900px) {
     .sec-CaseStudy_Header {
       max-width: 900px;
       margin-right: auto;
@@ -2486,24 +2539,28 @@ table {
     line-height: 24px; }
 
 .sec-ContentArea_VideoWrap {
-  width: calc(100% + 200px);
   margin-bottom: 50px;
-  margin-left: -100px;
-  padding-top: 20px;
-  padding-bottom: 50px;
-  border-bottom: 1px solid #eee; }
+  padding-top: 20px; }
+  @media only screen and (min-width: 1000px) {
+    .sec-ContentArea_VideoWrap {
+      width: calc(100% + 200px);
+      margin-left: -100px;
+      padding-bottom: 50px;
+      border-bottom: 1px solid #eee; } }
 
 .sec-ContentArea_ImageWrap {
   margin-bottom: 50px;
   padding-top: 20px; }
 
-.sec-ContentArea_ImageWrap-pushout {
-  width: calc(100% + 200px);
-  margin-left: -100px; }
+@media only screen and (min-width: 1000px) {
+  .sec-ContentArea_ImageWrap-pushout {
+    width: calc(100% + 200px);
+    margin-left: -100px; } }
 
-.sec-ContentArea_ImageWrap-border {
-  padding-bottom: 50px;
-  border-bottom: 1px solid #eee; }
+@media only screen and (min-width: 1000px) {
+  .sec-ContentArea_ImageWrap-border {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #eee; } }
 
 .sec-ContentIntro_Inner {
   background-color: #fff;
@@ -2519,11 +2576,13 @@ table {
 .sec-ContentIntro_Body {
   padding-top: 50px;
   padding-bottom: 50px;
-  border-bottom: 1px solid #d3d3d3;
-  position: relative;
-  margin-right: 20px;
-  margin-left: 20px; }
+  border-bottom: 1px solid #d3d3d3; }
   @media only screen and (min-width: 900px) {
+    .sec-ContentIntro_Body {
+      position: relative;
+      margin-right: 20px;
+      margin-left: 20px; } }
+  @media only screen and (min-width: 900px) and (min-width: 900px) {
     .sec-ContentIntro_Body {
       max-width: 900px;
       margin-right: auto;
@@ -2589,11 +2648,13 @@ table {
 
 .sec-MeetOurPeople_Header {
   text-align: center;
-  margin-bottom: 30px;
-  position: relative;
-  margin-right: 20px;
-  margin-left: 20px; }
+  margin-bottom: 30px; }
   @media only screen and (min-width: 900px) {
+    .sec-MeetOurPeople_Header {
+      position: relative;
+      margin-right: 20px;
+      margin-left: 20px; } }
+  @media only screen and (min-width: 900px) and (min-width: 900px) {
     .sec-MeetOurPeople_Header {
       max-width: 900px;
       margin-right: auto;
@@ -2602,11 +2663,12 @@ table {
     .sec-MeetOurPeople_Header {
       margin-bottom: 50px; } }
 
-.sec-MeetOurPeople_Body {
-  position: relative;
-  margin-right: 20px;
-  margin-left: 20px; }
-  @media only screen and (min-width: 900px) {
+@media only screen and (min-width: 900px) {
+  .sec-MeetOurPeople_Body {
+    position: relative;
+    margin-right: 20px;
+    margin-left: 20px; } }
+  @media only screen and (min-width: 900px) and (min-width: 900px) {
     .sec-MeetOurPeople_Body {
       max-width: 900px;
       margin-right: auto;
@@ -2650,11 +2712,13 @@ table {
 
 .sec-OtherSuccessStories_Header {
   text-align: center;
-  margin-bottom: 30px;
-  position: relative;
-  margin-right: 20px;
-  margin-left: 20px; }
+  margin-bottom: 30px; }
   @media only screen and (min-width: 900px) {
+    .sec-OtherSuccessStories_Header {
+      position: relative;
+      margin-right: 20px;
+      margin-left: 20px; } }
+  @media only screen and (min-width: 900px) and (min-width: 900px) {
     .sec-OtherSuccessStories_Header {
       max-width: 900px;
       margin-right: auto;
@@ -2689,13 +2753,12 @@ table {
       margin-top: 65px;
       margin-bottom: 65px; } }
 
-.sec-WePartnerWith_Inner {
-  position: relative;
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-right: -20px;
-  margin-left: -20px; }
-  @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
+  .sec-WePartnerWith_Inner {
+    position: relative;
+    margin-right: 20px;
+    margin-left: 20px; } }
+  @media only screen and (min-width: 768px) and (min-width: 1200px) {
     .sec-WePartnerWith_Inner {
       max-width: 1200px;
       margin-right: auto;
@@ -2703,11 +2766,13 @@ table {
 
 .sec-WePartnerWith_Header {
   text-align: center;
-  margin-bottom: 30px;
-  position: relative;
-  margin-right: 20px;
-  margin-left: 20px; }
+  margin-bottom: 30px; }
   @media only screen and (min-width: 900px) {
+    .sec-WePartnerWith_Header {
+      position: relative;
+      margin-right: 20px;
+      margin-left: 20px; } }
+  @media only screen and (min-width: 900px) and (min-width: 900px) {
     .sec-WePartnerWith_Header {
       max-width: 900px;
       margin-right: auto;
@@ -2717,18 +2782,21 @@ table {
       margin-bottom: 50px; } }
 
 .sec-WePartnerWith_Body {
-  position: relative;
-  margin-right: 20px;
-  margin-left: 20px; }
+  padding-bottom: 50px;
+  border-bottom: 1px solid #eee; }
   @media only screen and (min-width: 900px) {
+    .sec-WePartnerWith_Body {
+      position: relative;
+      margin-right: 20px;
+      margin-left: 20px; } }
+  @media only screen and (min-width: 900px) and (min-width: 900px) {
     .sec-WePartnerWith_Body {
       max-width: 900px;
       margin-right: auto;
       margin-left: auto; } }
   @media only screen and (min-width: 1200px) {
     .sec-WePartnerWith_Body {
-      padding-bottom: 100px;
-      border-bottom: 1px solid #eee; } }
+      padding-bottom: 100px; } }
 
 .sec-WeProvide {
   margin-top: 50px;
@@ -2750,11 +2818,13 @@ table {
 
 .sec-WeProvide_Header {
   text-align: center;
-  margin-bottom: 30px;
-  position: relative;
-  margin-right: 20px;
-  margin-left: 20px; }
+  margin-bottom: 30px; }
   @media only screen and (min-width: 900px) {
+    .sec-WeProvide_Header {
+      position: relative;
+      margin-right: 20px;
+      margin-left: 20px; } }
+  @media only screen and (min-width: 900px) and (min-width: 900px) {
     .sec-WeProvide_Header {
       max-width: 900px;
       margin-right: auto;
@@ -2765,11 +2835,13 @@ table {
 
 .sec-WeProvide_Body {
   padding-bottom: 50px;
-  border-bottom: 1px solid #eee;
-  position: relative;
-  margin-right: 20px;
-  margin-left: 20px; }
+  border-bottom: 1px solid #eee; }
   @media only screen and (min-width: 900px) {
+    .sec-WeProvide_Body {
+      position: relative;
+      margin-right: 20px;
+      margin-left: 20px; } }
+  @media only screen and (min-width: 900px) and (min-width: 900px) {
     .sec-WeProvide_Body {
       max-width: 900px;
       margin-right: auto;

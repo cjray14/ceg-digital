@@ -2,7 +2,7 @@
   @include grid;
   @include grid-gap(30px);
 
-  @include breakpoint('lg') {
+  @include breakpoint('sm') {
     @include grid-template-columns(repeat(2, 1fr));
     @include grid-gap(50px);
   }

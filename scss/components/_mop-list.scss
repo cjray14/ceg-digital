@@ -3,7 +3,7 @@
   @include grid-template-columns(repeat(2, 1fr));
   @include grid-gap-column-row(25px, 40px);
 
-  @include breakpoint('lg') {
+  @include breakpoint('sm') {
     @include grid-template-columns(repeat(3, 1fr));
   }
 }

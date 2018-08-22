@@ -9,6 +9,7 @@
 }
 
 .oss-Card_Image {
+  width: 100%;
   @include transition(transform 0.5s);
 
   .oss-Card:hover & {
@@ -31,6 +32,10 @@
 
 .oss-Card_Icon {
   display: block;
-  margin-top: 40px;
+  margin-top: 20px;
   color: $color-orange;
+
+  @include breakpoint('lg') {
+    margin-top: 40px;
+  }
 }

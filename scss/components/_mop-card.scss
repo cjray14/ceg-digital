@@ -1,10 +1,18 @@
 .mop-Card_Content {
-	margin-top: -30px;
-	margin-right: 40px;
-	padding: 30px 20px;
+	padding-top: 20px;
 	position: relative;
 	background-color: #fff;
 	z-index: 1;
+
+  @include breakpoint('sm') {
+    margin-top: -30px;
+    margin-right: 40px;
+    padding: 30px 20px;
+  }
+}
+
+.mop-Card_Image {
+  width: 100%;
 }
 
 .mop-Card_Title {

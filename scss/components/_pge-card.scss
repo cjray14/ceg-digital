@@ -13,6 +13,13 @@
   background-color: #fff;
   z-index: 1;
 
+  @include breakpoint('sm') {
+    margin-top: -50px;
+    margin-right: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
   @include breakpoint('lg') {
     margin-top: -100px;
     margin-right: 150px;
@@ -23,6 +30,7 @@
 }
 
 .pge-Card_Image {
+  width: 100%;
   @include transition(transform 0.5s);
 
   .pge-Card:hover & {

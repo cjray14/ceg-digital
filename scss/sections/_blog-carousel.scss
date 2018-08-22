@@ -3,7 +3,9 @@
 }
 
 .sec-BlogCarousel_Inner {
-	@include container-wide;
+  @include breakpoint('sm') {
+    @include container-wide;
+  }
 }
 
 .sec-BlogCarousel_Header {
@@ -12,7 +14,12 @@
 
 .sec-BlogCarousel_Footer {
 	margin-top: 40px;
+  margin-right: 30px;
   @include flexbox;
+
+  @include breakpoint('sm') {
+    margin-right: 0;
+  }
 }
 
 .sec-BlogCarousel_Link {

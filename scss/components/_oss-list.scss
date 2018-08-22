@@ -2,7 +2,23 @@
   @include grid;
   @include grid-gap(30px);
 
-  @include breakpoint('lg') {
+  @include breakpoint('sm') {
+    @include grid-template-columns(repeat(2, 1fr));
+  }
+
+  @include breakpoint('custom-1000') {
     @include grid-template-columns(repeat(3, 1fr));
+  }
+}
+
+.oss-List_Item {
+  @include breakpoint('sm') {
+    &:last-child {
+      display: none;
+
+      @include breakpoint('custom-1000') {
+        display: block;
+      }
+    }
   }
 }

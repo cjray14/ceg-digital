@@ -3,9 +3,9 @@
 }
 
 .sec-WePartnerWith_Inner {
-	@include container-wide;
-  margin-right: -20px;
-  margin-left: -20px;
+  @include breakpoint('sm') {
+    @include container-wide;
+  }
 }
 
 .sec-WePartnerWith_Header {
@@ -13,10 +13,14 @@
 }
 
 .sec-WePartnerWith_Body {
-	@include container-medium;
-  
+  padding-bottom: 50px;
+  border-bottom: 1px solid #eee;
+
+  @include breakpoint('md') {
+    @include container-medium;
+  }
+
   @include breakpoint('lg') {
     padding-bottom: 100px;
-    border-bottom: 1px solid #eee;
   }
 }

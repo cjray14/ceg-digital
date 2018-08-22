@@ -1,7 +1,7 @@
 .blg-Card {
   overflow: hidden;
 
-  @include breakpoint('lg') {
+  @include breakpoint('sm') {
     @include flexbox;
   }
 }
@@ -9,8 +9,8 @@
 .blg-Card_Header {
   display: block;
   overflow: hidden;
-  
-  @include breakpoint('lg') {
+
+  @include breakpoint('sm') {
     width: 50%;
   }
 }
@@ -19,13 +19,18 @@
   padding: 30px 20px;
   background-color: $color-orange;
 
-  @include breakpoint('lg') {
-    padding-right: 75px;
-    padding-left: 75px;
+  @include breakpoint('sm') {
+    padding-right: 40px;
+    padding-left: 40px;
     @include flexbox;
     @include flex-direction(column);
     @include justify-content(center);
     @include flex(1);
+  }
+
+  @include breakpoint('lg') {
+    padding-right: 75px;
+    padding-left: 75px;
   }
 }
 

@@ -48,12 +48,15 @@
 }
 
 .sec-ContentArea_VideoWrap {
-	width: calc(100% + 200px);
 	margin-bottom: 50px;
-	margin-left: -100px;
 	padding-top: 20px;
-	padding-bottom: 50px;
-	border-bottom: 1px solid #eee;
+
+	@include breakpoint('custom-1000') {
+		width: calc(100% + 200px);
+		margin-left: -100px;
+		padding-bottom: 50px;
+		border-bottom: 1px solid #eee;
+	}
 }
 
 .sec-ContentArea_ImageWrap {
@@ -62,11 +65,15 @@
 }
 
 .sec-ContentArea_ImageWrap-pushout {
-	width: calc(100% + 200px);
-	margin-left: -100px;
+	@include breakpoint('custom-1000') {
+		width: calc(100% + 200px);
+		margin-left: -100px;
+	}
 }
 
 .sec-ContentArea_ImageWrap-border {
-	padding-bottom: 50px;
-	border-bottom: 1px solid #eee;
+	@include breakpoint('custom-1000') {
+		padding-bottom: 50px;
+		border-bottom: 1px solid #eee;
+	}
 }

@@ -188,7 +188,10 @@
 @mixin section-header {
   text-align: center;
   margin-bottom: 30px;
-  @include container-medium;
+
+  @include breakpoint('md') {
+    @include container-medium;
+  }
 
   @include breakpoint('lg') {
     margin-bottom: 50px;

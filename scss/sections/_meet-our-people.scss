@@ -11,5 +11,7 @@
 }
 
 .sec-MeetOurPeople_Body {
-	@include container-medium;
+	@include breakpoint('md') {
+    @include container-medium;
+  }
 }

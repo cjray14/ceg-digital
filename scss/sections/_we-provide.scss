@@ -11,7 +11,10 @@
 }
 
 .sec-WeProvide_Body {
-	padding-bottom: 50px;
-	border-bottom: 1px solid #eee;
-	@include container-medium;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #eee;
+
+  @include breakpoint('md') {
+    @include container-medium;
+  }
 }
