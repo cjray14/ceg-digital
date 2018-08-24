@@ -9,6 +9,10 @@
   @include breakpoint('custom-1000') {
     @include grid-template-columns(repeat(3, 1fr));
   }
+
+  @include breakpoint('lg') {
+    @include grid-gap(50px);
+  }
 }
 
 .oss-List_Item {

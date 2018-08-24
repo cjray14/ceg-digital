@@ -7,8 +7,16 @@
     @include grid-gap-column-row(20px, 30px);
   }
 
+  @include breakpoint('sm') {
+    @include grid-gap(30px);
+  }
+
   @include breakpoint('md') {
     @include grid-template-columns(repeat(3, 1fr));
+  }
+
+  @include breakpoint('lg') {
+    @include grid-gap(50px);
   }
 }
 

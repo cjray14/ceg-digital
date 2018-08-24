@@ -1548,8 +1548,7 @@ table {
   background-color: #ee7700; }
   @media only screen and (min-width: 768px) {
     .blg-Card_Body {
-      padding-right: 40px;
-      padding-left: 40px;
+      padding: 50px 40px;
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
@@ -1655,7 +1654,7 @@ table {
   position: relative;
   background-color: #fff;
   z-index: 1; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 600px) {
     .cas-Card_Body {
       margin-top: -100px;
       margin-right: 150px;
@@ -1790,8 +1789,14 @@ table {
     .mop-List_Items {
       -ms-grid-columns: repeat(3, 1fr);
       grid-template-columns: repeat(3, 1fr);
-      -ms-grid-column-gap: 25px;
-      grid-column-gap: 25px;
+      -ms-grid-column-gap: 30px;
+      grid-column-gap: 30px;
+      -ms-grid-row-gap: 40px;
+      grid-row-gap: 40px; } }
+  @media only screen and (min-width: 1200px) {
+    .mop-List_Items {
+      -ms-grid-column-gap: 50px;
+      grid-column-gap: 50px;
       -ms-grid-row-gap: 40px;
       grid-row-gap: 40px; } }
 
@@ -1848,6 +1853,10 @@ table {
     .oss-List_Items {
       -ms-grid-columns: repeat(3, 1fr);
       grid-template-columns: repeat(3, 1fr); } }
+  @media only screen and (min-width: 1200px) {
+    .oss-List_Items {
+      -ms-grid-gap: 50px;
+      grid-gap: 50px; } }
 
 @media only screen and (min-width: 768px) {
   .oss-List_Item:last-child {
@@ -1868,7 +1877,7 @@ table {
   position: relative;
   background-color: #fff;
   z-index: 1; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 600px) {
     .pge-Card_Body {
       margin-top: -50px;
       margin-right: 50px;
@@ -1925,7 +1934,9 @@ table {
   @media only screen and (min-width: 768px) {
     .pge-List_Items {
       -ms-grid-columns: repeat(2, 1fr);
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr); } }
+  @media only screen and (min-width: 1200px) {
+    .pge-List_Items {
       -ms-grid-gap: 50px;
       grid-gap: 50px; } }
 
@@ -1945,7 +1956,7 @@ table {
       padding: 30px 25px 0 40px; } }
   @media only screen and (min-width: 900px) {
     .wep-Card {
-      padding: 30px 25px 30px 40px; } }
+      padding: 30px 5px 30px 40px; } }
 
 .wep-Card_Title {
   color: #fff;
@@ -1988,10 +1999,18 @@ table {
       grid-column-gap: 20px;
       -ms-grid-row-gap: 30px;
       grid-row-gap: 30px; } }
+  @media only screen and (min-width: 768px) {
+    .wep-List_Items {
+      -ms-grid-gap: 30px;
+      grid-gap: 30px; } }
   @media only screen and (min-width: 900px) {
     .wep-List_Items {
       -ms-grid-columns: repeat(3, 1fr);
       grid-template-columns: repeat(3, 1fr); } }
+  @media only screen and (min-width: 1200px) {
+    .wep-List_Items {
+      -ms-grid-gap: 50px;
+      grid-gap: 50px; } }
 
 .wep-List_Item {
   text-align: center; }

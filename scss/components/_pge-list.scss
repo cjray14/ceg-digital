@@ -4,6 +4,9 @@
 
   @include breakpoint('sm') {
     @include grid-template-columns(repeat(2, 1fr));
+  }
+
+  @include breakpoint('lg') {
     @include grid-gap(50px);
   }
 }

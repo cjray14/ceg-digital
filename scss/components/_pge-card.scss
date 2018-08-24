@@ -13,7 +13,7 @@
   background-color: #fff;
   z-index: 1;
 
-  @include breakpoint('sm') {
+  @include breakpoint('custom-600') {
     margin-top: -50px;
     margin-right: 50px;
     padding-right: 30px;
