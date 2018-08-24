@@ -1,7 +1,12 @@
 .sec-BannerTitle {
 	position: relative;
 	overflow: hidden;
-  padding: 90px 20px;
+  padding: 60px 20px;
+
+  @include breakpoint('custom-600') {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
 
   @include breakpoint('custom-1000') {
     padding-top: 150px;

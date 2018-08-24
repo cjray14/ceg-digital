@@ -2165,7 +2165,11 @@ table {
 .sec-BannerTitle {
   position: relative;
   overflow: hidden;
-  padding: 90px 20px; }
+  padding: 60px 20px; }
+  @media only screen and (min-width: 600px) {
+    .sec-BannerTitle {
+      padding-top: 90px;
+      padding-bottom: 90px; } }
   @media only screen and (min-width: 1000px) {
     .sec-BannerTitle {
       padding-top: 150px;
