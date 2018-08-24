@@ -4,10 +4,19 @@
 }
 
 .sec-Contact_Body {
-  margin-top: -80px;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  @include container-medium;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #d3d3d3;
+
+  @include breakpoint('md') {
+    @include container-medium;
+  }
+
+  @include breakpoint('lg') {
+    margin-top: -80px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
 }
 
 .sec-Contact_SubTitle {
@@ -20,9 +29,12 @@
 
 .sec-Contact_Title {
   margin-bottom: 20px;
-  font-size: 36px;
   font-weight: bold;
   letter-spacing: -1px;
+
+  @include breakpoint('sm') {
+    font-size: 36px;
+  }
 
   @include breakpoint('lg') {
     font-size: 54px;
@@ -32,9 +44,13 @@
 .sec-Contact_SubText {
   margin-bottom: 30px;
   font-family: $font-droid;
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 18px;
   font-weight: normal;
+
+  @include breakpoint('sm') {
+    font-size: 20px;
+    line-height: 36px;
+  }
 }
 
 .sec-Contact_Text {
@@ -47,7 +63,7 @@
 }
 
 .sec-Contact_Items {
-  @include breakpoint('lg') {
+  @include breakpoint('sm') {
     @include flexbox;
   }
 }

@@ -1701,8 +1701,16 @@ table {
       margin-top: 40px; } }
 
 .flw-Card {
-  padding: 50px 80px;
+  padding: 50px 30px;
   background-color: #f1f0ef; }
+  @media only screen and (min-width: 768px) {
+    .flw-Card {
+      padding-top: 50px;
+      padding-bottom: 50px; } }
+  @media only screen and (min-width: 900px) {
+    .flw-Card {
+      padding-right: 80px;
+      padding-left: 80px; } }
 
 .flw-Card_Title {
   color: #ee7700;
@@ -2383,17 +2391,24 @@ table {
       margin-left: auto; } }
 
 .sec-Contact_Body {
-  margin-top: -80px;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  position: relative;
-  margin-right: 20px;
-  margin-left: 20px; }
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #d3d3d3; }
   @media only screen and (min-width: 900px) {
+    .sec-Contact_Body {
+      position: relative;
+      margin-right: 20px;
+      margin-left: 20px; } }
+  @media only screen and (min-width: 900px) and (min-width: 900px) {
     .sec-Contact_Body {
       max-width: 900px;
       margin-right: auto;
       margin-left: auto; } }
+  @media only screen and (min-width: 1200px) {
+    .sec-Contact_Body {
+      margin-top: -80px;
+      padding-top: 80px;
+      padding-bottom: 60px; } }
 
 .sec-Contact_SubTitle {
   margin-bottom: 10px;
@@ -2404,9 +2419,11 @@ table {
 
 .sec-Contact_Title {
   margin-bottom: 20px;
-  font-size: 36px;
   font-weight: bold;
   letter-spacing: -1px; }
+  @media only screen and (min-width: 768px) {
+    .sec-Contact_Title {
+      font-size: 36px; } }
   @media only screen and (min-width: 1200px) {
     .sec-Contact_Title {
       font-size: 54px; } }
@@ -2414,9 +2431,12 @@ table {
 .sec-Contact_SubText {
   margin-bottom: 30px;
   font-family: droid_serifitalic, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 18px;
   font-weight: normal; }
+  @media only screen and (min-width: 768px) {
+    .sec-Contact_SubText {
+      font-size: 20px;
+      line-height: 36px; } }
 
 .sec-Contact_Text {
   margin-bottom: 20px; }
@@ -2425,7 +2445,7 @@ table {
   color: #ee7700;
   font-weight: bold; }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
   .sec-Contact_Items {
     display: -webkit-box;
     display: -moz-box;
