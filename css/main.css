@@ -1195,6 +1195,12 @@ table {
 .hd-Navigation_Link-active {
   background-color: #ededed; }
 
+.hd-Navigation_Link-subActive {
+  color: #ee7700; }
+  @media only screen and (min-width: 1000px) {
+    .hd-Navigation_Link-subActive {
+      color: #373737; } }
+
 .hd-Navigation_Icon {
   margin-left: 15px;
   color: #ee7700; }
@@ -1203,7 +1209,8 @@ table {
       display: none; } }
 
 .hd-SubNavigation_Items {
-  display: none; }
+  max-height: 0;
+  overflow: hidden; }
   @media only screen and (min-width: 1000px) {
     .hd-SubNavigation_Items {
       display: block;
@@ -1239,11 +1246,15 @@ table {
         -o-transform: translateY(-10px);
         transform: translateY(-10px); } }
 
+.hd-SubNavigation_Items-active {
+  max-height: 500px;
+  transition: all 0.6s; }
+
 .hd-SubNavigation_Link {
   display: block;
   font-weight: bold;
   color: #373737;
-  padding: 10px 30px; }
+  padding: 10px 30px 10px 45px; }
   .hd-SubNavigation_Link:hover {
     background-color: #ededed; }
 

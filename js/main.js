@@ -54,6 +54,14 @@ function mobileTrigger(){
   });
 }
 
+function subMenuTrigger(){
+  $('.hd-Navigation_Link-sub').click(function(e){
+    e.preventDefault();
+    $(this).toggleClass('hd-Navigation_Link-subActive');
+    $('.hd-SubNavigation_Items').toggleClass('hd-SubNavigation_Items-active');
+  });
+}
+
 function imageParallax(){
   // https://codepen.io/hendrysadrak/pen/ctgaz
 
@@ -104,6 +112,7 @@ $(function(){
   contentFadein()
   blogCarousel()
   mobileTrigger()
+  subMenuTrigger()
 
   if ($(window).width() >= 1200) {
     imageParallax()
