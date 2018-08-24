@@ -61,7 +61,11 @@
 }
 
 @mixin breakpoint($breakpoint) {
-  @if $breakpoint == 'xs' {
+  @if $breakpoint == 'custom-350' {
+    @media only screen and (min-width: 350px) {
+      @content;
+    }
+  } @else if $breakpoint == 'xs' {
     @media only screen and (min-width: 451px) {
       @content;
     }

@@ -1974,19 +1974,21 @@ table {
     .wep-List_Item {
       text-align: left; } }
 
-.wpw-List_Items {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: repeat(2, 1fr);
-  grid-template-columns: repeat(2, 1fr); }
-  @media only screen and (min-width: 768px) {
-    .wpw-List_Items {
-      -ms-grid-columns: repeat(4, 1fr);
-      grid-template-columns: repeat(4, 1fr); } }
+@media only screen and (min-width: 350px) {
+  .wpw-List_Items {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media only screen and (min-width: 768px) {
+  .wpw-List_Items {
+    -ms-grid-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); } }
 
 .wpw-List_Item {
-  padding-top: 65px;
-  padding-bottom: 65px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -2001,6 +2003,10 @@ table {
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center; }
+  @media only screen and (min-width: 350px) {
+    .wpw-List_Item {
+      padding-top: 65px;
+      padding-bottom: 65px; } }
   @media only screen and (min-width: 1200px) {
     .wpw-List_Item {
       padding-right: 40px;

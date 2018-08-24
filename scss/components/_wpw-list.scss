@@ -1,6 +1,8 @@
 .wpw-List_Items {
-  @include grid;
-  @include grid-template-columns(repeat(2, 1fr));
+  @include breakpoint('custom-350') {
+    @include grid;
+    @include grid-template-columns(repeat(2, 1fr));
+  }
 
   @include breakpoint('sm') {
     @include grid-template-columns(repeat(4, 1fr));
@@ -8,11 +10,16 @@
 }
 
 .wpw-List_Item {
-  padding-top: 65px;
-  padding-bottom: 65px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   @include flexbox;
   @include justify-content(center);
   @include align-items(center);
+
+  @include breakpoint('custom-350') {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
 
   @include breakpoint('lg') {
     padding-right: 40px;
