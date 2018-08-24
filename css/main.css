@@ -1310,6 +1310,7 @@ table {
   position: absolute;
   right: 0;
   top: 12px;
+  z-index: 9999;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;

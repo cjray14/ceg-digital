@@ -236,16 +236,13 @@
   @include align-items(center);
 }
 
-
-
-
-
 .hd-MobileMenu {
   width: 70px;
   height: 60px;
   position: absolute;
   right: 0;
   top: 12px;
+  z-index: 9999;
   @include flexbox;
   @include justify-content(center);
   @include align-items(center);
