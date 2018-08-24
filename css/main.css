@@ -2480,8 +2480,10 @@ table {
   position: relative; }
 
 .sec-ContentArea_Title {
-  margin-bottom: 25px;
-  font-size: 30px; }
+  margin-bottom: 25px; }
+  @media only screen and (min-width: 1200px) {
+    .sec-ContentArea_Title {
+      font-size: 30px; } }
 
 .sec-ContentArea_Text {
   margin-bottom: 30px; }
