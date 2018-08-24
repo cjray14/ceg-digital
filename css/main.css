@@ -1763,16 +1763,28 @@ table {
 .mop-List_Items {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: repeat(2, 1fr);
-  grid-template-columns: repeat(2, 1fr);
-  -ms-grid-column-gap: 25px;
-  grid-column-gap: 25px;
-  -ms-grid-row-gap: 40px;
-  grid-row-gap: 40px; }
+  -ms-grid-gap: 30px;
+  grid-gap: 30px; }
+  @media only screen and (min-width: 350px) {
+    .mop-List_Items {
+      -ms-grid-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      -ms-grid-gap: 20px;
+      grid-gap: 20px; } }
+  @media only screen and (min-width: 600px) {
+    .mop-List_Items {
+      -ms-grid-column-gap: 25px;
+      grid-column-gap: 25px;
+      -ms-grid-row-gap: 40px;
+      grid-row-gap: 40px; } }
   @media only screen and (min-width: 768px) {
     .mop-List_Items {
       -ms-grid-columns: repeat(3, 1fr);
-      grid-template-columns: repeat(3, 1fr); } }
+      grid-template-columns: repeat(3, 1fr);
+      -ms-grid-column-gap: 25px;
+      grid-column-gap: 25px;
+      -ms-grid-row-gap: 40px;
+      grid-row-gap: 40px; } }
 
 .oss-Card {
   display: block;
