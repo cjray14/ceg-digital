@@ -2016,7 +2016,12 @@ table {
   text-align: center; }
   @media only screen and (min-width: 600px) {
     .wep-List_Item {
-      text-align: left; } }
+      text-align: left;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex; } }
 
 @media only screen and (min-width: 350px) {
   .wpw-List_Items {
