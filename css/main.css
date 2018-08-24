@@ -1611,7 +1611,7 @@ table {
     opacity: 1; }
   .blg-List_Items .flickity-prev-next-button.previous {
     top: 50px;
-    right: -22px;
+    right: -20px;
     left: auto; }
     .blg-List_Items .flickity-prev-next-button.previous:hover svg {
       -webkit-transform: translateX(-3px);
@@ -1620,7 +1620,7 @@ table {
       transform: translateX(-3px); }
   .blg-List_Items .flickity-prev-next-button.next {
     top: 105px;
-    right: -22px;
+    right: -20px;
     left: auto; }
     .blg-List_Items .flickity-prev-next-button.next:hover svg {
       -webkit-transform: translateX(3px);
@@ -2265,12 +2265,11 @@ table {
       margin-top: 65px;
       margin-bottom: 65px; } }
 
-@media only screen and (min-width: 768px) {
-  .sec-BlogCarousel_Inner {
-    position: relative;
-    margin-right: 20px;
-    margin-left: 20px; } }
-  @media only screen and (min-width: 768px) and (min-width: 1200px) {
+.sec-BlogCarousel_Inner {
+  position: relative;
+  margin-right: 20px;
+  margin-left: 20px; }
+  @media only screen and (min-width: 1200px) {
     .sec-BlogCarousel_Inner {
       max-width: 1200px;
       margin-right: auto;
@@ -2295,15 +2294,11 @@ table {
 
 .sec-BlogCarousel_Footer {
   margin-top: 40px;
-  margin-right: 30px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex; }
-  @media only screen and (min-width: 768px) {
-    .sec-BlogCarousel_Footer {
-      margin-right: 0; } }
 
 .sec-BlogCarousel_Link {
   color: #ee7700;
@@ -2753,12 +2748,11 @@ table {
       margin-top: 65px;
       margin-bottom: 65px; } }
 
-@media only screen and (min-width: 768px) {
-  .sec-WePartnerWith_Inner {
-    position: relative;
-    margin-right: 20px;
-    margin-left: 20px; } }
-  @media only screen and (min-width: 768px) and (min-width: 1200px) {
+.sec-WePartnerWith_Inner {
+  position: relative;
+  margin-right: 20px;
+  margin-left: 20px; }
+  @media only screen and (min-width: 1200px) {
     .sec-WePartnerWith_Inner {
       max-width: 1200px;
       margin-right: auto;

@@ -3,9 +3,7 @@
 }
 
 .sec-WePartnerWith_Inner {
-  @include breakpoint('sm') {
-    @include container-wide;
-  }
+  @include container-wide;
 }
 
 .sec-WePartnerWith_Header {
