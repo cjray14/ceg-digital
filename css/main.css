@@ -2092,6 +2092,9 @@ table {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover; }
+  @media only screen and (max-width: 1199px) {
+    .sec-BannerCallToAction_Image {
+      background-position: top center !important; } }
   @media only screen and (min-width: 1200px) {
     .sec-BannerCallToAction_Image {
       background-attachment: fixed; } }
@@ -2232,6 +2235,9 @@ table {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover; }
+  @media only screen and (max-width: 1199px) {
+    .sec-BannerTitle_Image {
+      background-position: top center !important; } }
   @media only screen and (min-width: 1200px) {
     .sec-BannerTitle_Image {
       background-attachment: fixed; } }

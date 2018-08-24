@@ -37,6 +37,11 @@
   background-position: top center;
   background-size: cover;
 
+  @include breakpoint('lg-viewport') {
+    // Force parallax to not use js
+    background-position: top center !important;
+  }
+
   @include breakpoint('lg') {
     background-attachment: fixed;
   }
@@ -103,6 +108,10 @@
     }
   } @else if $breakpoint == 'xs-viewport' {
     @media only screen and (max-width: 767px) {
+      @content;
+    }
+  } @else if $breakpoint == 'lg-viewport' {
+    @media only screen and (max-width: 1199px) {
       @content;
     }
   } @else if $breakpoint == 'sm-viewport' {

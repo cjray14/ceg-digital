@@ -57,9 +57,7 @@ function mobileTrigger(){
 function imageParallax(){
   // https://codepen.io/hendrysadrak/pen/ctgaz
 
-  var $fwindow = $(window);
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
   var $contents = [];
   var $backgrounds = [];
 
@@ -79,7 +77,7 @@ function imageParallax(){
     $backgrounds.push($backgroundObj);
   });
 
-  $fwindow.on('scroll resize', function() {
+  $(window).on('scroll resize', function() {
     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
     $contents.forEach(function($contentObj) {
@@ -97,10 +95,10 @@ function imageParallax(){
     });
   });
 
-  $fwindow.trigger('scroll');
+  $(window).trigger('scroll');
 }
 
-function globals(){
+$(function(){
   pageLoader()
   loadDelays()
   contentFadein()
@@ -110,8 +108,4 @@ function globals(){
   if ($(window).width() >= 1200) {
     imageParallax()
   }
-}
-
-$(document).ready(function(){
-  globals()
 });
