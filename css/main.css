@@ -1883,7 +1883,12 @@ table {
       max-width: 350px;
       position: absolute;
       bottom: 30px;
-      left: 30px; }
+      left: 30px; } }
+  @media only screen and (min-width: 1000px) and (min-width: 1200px) {
+    .news-List_Item-large .news-Card_Body {
+      bottom: 50px;
+      left: 50px; } }
+  @media only screen and (min-width: 1000px) {
       .no-cssgrid .news-List_Item-large .news-Card_Body {
         max-width: none;
         position: static; } }

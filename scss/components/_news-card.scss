@@ -53,6 +53,11 @@
       bottom: 30px;
       left: 30px;
 
+      @include breakpoint('lg') {
+        bottom: 50px;
+        left: 50px;
+      }
+
       .no-cssgrid & {
         max-width: none;
         position: static;
