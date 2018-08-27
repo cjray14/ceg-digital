@@ -13,6 +13,11 @@
   @include breakpoint('lg') {
     @include grid-gap(50px);
   }
+
+  .no-cssgrid & {
+    @include flexbox;
+    @include flex-wrap(wrap);
+  }
 }
 
 .oss-List_Item {
@@ -23,6 +28,15 @@
       @include breakpoint('custom-1000') {
         display: block;
       }
+    }
+  }
+
+  .no-cssgrid & {
+    margin-right: 50px;
+    @include flex-basis(calc(33.33% - 33.33px));
+
+    &:nth-child(3n) {
+      margin-right: 0;
     }
   }
 }

@@ -1821,6 +1821,25 @@ table {
       grid-column-gap: 50px;
       -ms-grid-row-gap: 40px;
       grid-row-gap: 40px; } }
+  .no-cssgrid .mop-List_Items {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+
+.no-cssgrid .mop-List_Item {
+  margin-right: 50px;
+  -webkit-flex-basis: calc(33.33% - 33.33px);
+  -moz-flex-basis: calc(33.33% - 33.33px);
+  -ms-flex-basis: calc(33.33% - 33.33px);
+  flex-basis: calc(33.33% - 33.33px); }
+  .no-cssgrid .mop-List_Item:nth-child(3n) {
+    margin-right: 0; }
 
 .oss-Card {
   display: block;
@@ -1879,6 +1898,16 @@ table {
     .oss-List_Items {
       -ms-grid-gap: 50px;
       grid-gap: 50px; } }
+  .no-cssgrid .oss-List_Items {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
 
 @media only screen and (min-width: 768px) {
   .oss-List_Item:last-child {
@@ -1886,6 +1915,15 @@ table {
   @media only screen and (min-width: 768px) and (min-width: 1000px) {
     .oss-List_Item:last-child {
       display: block; } }
+
+.no-cssgrid .oss-List_Item {
+  margin-right: 50px;
+  -webkit-flex-basis: calc(33.33% - 33.33px);
+  -moz-flex-basis: calc(33.33% - 33.33px);
+  -ms-flex-basis: calc(33.33% - 33.33px);
+  flex-basis: calc(33.33% - 33.33px); }
+  .no-cssgrid .oss-List_Item:nth-child(3n) {
+    margin-right: 0; }
 
 .pge-Card {
   display: block;
@@ -1961,6 +1999,25 @@ table {
     .pge-List_Items {
       -ms-grid-gap: 50px;
       grid-gap: 50px; } }
+  .no-cssgrid .pge-List_Items {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+
+.no-cssgrid .pge-List_Item {
+  margin-right: 50px;
+  -webkit-flex-basis: calc(50% - 50px);
+  -moz-flex-basis: calc(50% - 50px);
+  -ms-flex-basis: calc(50% - 50px);
+  flex-basis: calc(50% - 50px); }
+  .no-cssgrid .pge-List_Item:nth-child(3n) {
+    margin-right: 0; }
 
 .wep-Card {
   display: inline-block;
@@ -2033,6 +2090,16 @@ table {
     .wep-List_Items {
       -ms-grid-gap: 50px;
       grid-gap: 50px; } }
+  .no-cssgrid .wep-List_Items {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
 
 .wep-List_Item {
   text-align: center; }
@@ -2044,6 +2111,14 @@ table {
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex; } }
+  .no-cssgrid .wep-List_Item {
+    margin-right: 50px;
+    -webkit-flex-basis: calc(33.33% - 33.33px);
+    -moz-flex-basis: calc(33.33% - 33.33px);
+    -ms-flex-basis: calc(33.33% - 33.33px);
+    flex-basis: calc(33.33% - 33.33px); }
+    .no-cssgrid .wep-List_Item:nth-child(3n) {
+      margin-right: 0; }
 
 @media only screen and (min-width: 350px) {
   .wpw-List_Items {
@@ -2056,6 +2131,17 @@ table {
   .wpw-List_Items {
     -ms-grid-columns: repeat(4, 1fr);
     grid-template-columns: repeat(4, 1fr); } }
+
+.no-cssgrid .wpw-List_Items {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 .wpw-List_Item {
   padding-top: 40px;
@@ -2082,6 +2168,11 @@ table {
     .wpw-List_Item {
       padding-right: 40px;
       padding-left: 40px; } }
+  .no-cssgrid .wpw-List_Item {
+    -webkit-flex-basis: 25%;
+    -moz-flex-basis: 25%;
+    -ms-flex-basis: 25%;
+    flex-basis: 25%; }
 
 .wpw-List_Item-falmouth {
   color: #fff;

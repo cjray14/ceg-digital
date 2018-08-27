@@ -19,4 +19,20 @@
   @include breakpoint('lg') {
     @include grid-gap-column-row(50px, 40px);
   }
+
+  .no-cssgrid & {
+    @include flexbox;
+    @include flex-wrap(wrap);
+  }
+}
+
+.mop-List_Item {
+  .no-cssgrid & {
+    margin-right: 50px;
+    @include flex-basis(calc(33.33% - 33.33px));
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
 }

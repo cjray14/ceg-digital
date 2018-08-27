@@ -18,6 +18,11 @@
   @include breakpoint('lg') {
     @include grid-gap(50px);
   }
+
+  .no-cssgrid & {
+    @include flexbox;
+    @include flex-wrap(wrap);
+  }
 }
 
 .wep-List_Item {
@@ -26,5 +31,14 @@
   @include breakpoint('custom-600') {
     text-align: left;
     @include flexbox;
+  }
+
+  .no-cssgrid & {
+    margin-right: 50px;
+    @include flex-basis(calc(33.33% - 33.33px));
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
   }
 }

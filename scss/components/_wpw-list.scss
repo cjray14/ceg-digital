@@ -7,6 +7,11 @@
   @include breakpoint('sm') {
     @include grid-template-columns(repeat(4, 1fr));
   }
+
+  .no-cssgrid & {
+    @include flexbox;
+    @include flex-wrap(wrap);
+  }
 }
 
 .wpw-List_Item {
@@ -24,6 +29,10 @@
   @include breakpoint('lg') {
     padding-right: 40px;
     padding-left: 40px;
+  }
+
+  .no-cssgrid & {
+    @include flex-basis(25%);
   }
 }
 
