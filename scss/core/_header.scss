@@ -6,6 +6,10 @@
 
   @include breakpoint('custom-1000') {
     background-color: transparent;
+
+    .skr-Scrolled & {
+      min-height: 145px;
+    }
   }
 }
 
@@ -31,6 +35,19 @@
 
   @include breakpoint('custom-1000') {
     height: 145px;
+
+    .skr-Scrolled & {
+      width: 135px;
+      height: 100px;
+      padding: 20px;
+      position: fixed;
+      @include transform(translateY(-250px));
+    }
+
+    .skr-Scrolled-logo & {
+      @include transition(transform 0.3s);
+      @include transform(none);
+    }
   }
 
   .hd-Header_Logo-text {

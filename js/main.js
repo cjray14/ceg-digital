@@ -47,6 +47,24 @@ function blogCarousel(){
   };
 }
 
+function scrollDetector(){
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 154) {
+      $('body').addClass('skr-Scrolled');
+    } else {
+      $('body').removeClass('skr-Scrolled');
+    }
+  });
+
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 176) {
+      $('body').addClass('skr-Scrolled-logo');
+    } else {
+      $('body').removeClass('skr-Scrolled-logo');
+    }
+  });
+}
+
 function mobileTrigger(){
   $('.hd-MobileMenu').click(function(e){
     e.preventDefault();
@@ -116,5 +134,9 @@ $(function(){
 
   if ($(window).width() >= 1200) {
     imageParallax()
+  }
+
+  if ($(window).width() >= 1000) {
+    scrollDetector()
   }
 });

@@ -1031,7 +1031,9 @@ table {
   z-index: 5; }
   @media only screen and (min-width: 1000px) {
     .hd-Header {
-      background-color: transparent; } }
+      background-color: transparent; }
+      .skr-Scrolled .hd-Header {
+        min-height: 145px; } }
 
 .hd-Header_Body {
   display: -webkit-box;
@@ -1067,7 +1069,25 @@ table {
       height: 100px; } }
   @media only screen and (min-width: 1000px) {
     .hd-Header_Logo {
-      height: 145px; } }
+      height: 145px; }
+      .skr-Scrolled .hd-Header_Logo {
+        width: 135px;
+        height: 100px;
+        padding: 20px;
+        position: fixed;
+        -webkit-transform: translateY(-250px);
+        -ms-transform: translateY(-250px);
+        -o-transform: translateY(-250px);
+        transform: translateY(-250px); }
+      .skr-Scrolled-logo .hd-Header_Logo {
+        -webkit-transition: transform 0.3s;
+        -moz-transition: transform 0.3s;
+        -o-transition: transform 0.3s;
+        transition: transform 0.3s;
+        -webkit-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none; } }
   .hd-Header_Logo .hd-Header_Logo-text {
     fill: #373737; }
 
