@@ -1,0 +1,158 @@
+.news-Card {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+
+  @include breakpoint('custom-1000') {
+    .news-List_Item-large & {
+      &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,0.25);
+
+        .no-cssgrid & {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.news-Card_Header {
+  margin-bottom: 30px;
+  overflow: hidden;
+
+  @include breakpoint('custom-1000') {
+    .news-List_Item-large & {
+      height: 100%;
+      margin-bottom: 0;
+      @include flexbox;
+
+      .no-cssgrid & {
+        height: auto;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.news-Card_Body {
+  z-index: 1;
+
+  @include breakpoint('custom-1000') {
+    .news-List_Item-large & {
+      max-width: 350px;
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+
+      .no-cssgrid & {
+        max-width: none;
+        position: static;
+      }
+    }
+  }
+}
+
+.news-Card_Image {
+  width: 100%;
+  @include transition(transform 0.5s);
+
+  .news-List_Item-large & {
+    @include breakpoint('custom-1000') {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @include breakpoint('lg') {
+      object-fit: inherit;
+    }
+  }
+
+  .news-Card:hover & {
+    @include transform(scale(1.04));
+  }
+}
+
+.news-Card_SubTitle {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #8a959e;
+
+  @include breakpoint('custom-1000') {
+    .news-List_Item-large & {
+      color: #fff;
+
+      .no-cssgrid & {
+        color: #8a959e;
+      }
+    }
+  }
+}
+
+.news-Card_Title {
+	margin-bottom: 20px;
+  @include transition(color 0.3s);
+
+  .news-Card:hover & {
+    color: $color-orange;
+
+    @include breakpoint('custom-1000') {
+      .news-List_Item-large & {
+        color: #fff;
+
+        .no-cssgrid & {
+          color: $color-orange;
+        }
+      }
+    }
+  }
+
+  @include breakpoint('custom-1000') {
+    .news-List_Item-large & {
+      color: #fff;
+
+      .no-cssgrid & {
+        color: $color-dark-grey;
+      }
+    }
+  }
+}
+
+.news-Card_Text {
+	margin-bottom: 20px;
+
+  @include breakpoint('custom-1000') {
+    .news-List_Item-large & {
+      color: #fff;
+
+      .no-cssgrid & {
+        color: $color-dark-grey;
+      }
+    }
+  }
+}
+
+.news-Card_Icon {
+  display: block;
+  margin-top: 20px;
+  color: $color-orange;
+
+  @include breakpoint('custom-1000') {
+    .news-List_Item-large & {
+      color: #fff;
+
+      .no-cssgrid & {
+        color: $color-orange;
+      }
+    }
+  }
+}

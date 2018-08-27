@@ -285,16 +285,16 @@
   grid-template-rows: $rows;
 }
 
-@mixin grid-column($col-start, $col-end) {
-  -ms-grid-column: $col-start;
-  -ms-grid-column-span: $col-end - $col-start;
-  grid-column: #{$col-start} / #{$col-end};
+@mixin grid-column($columns...) {
+  -ms-grid-column: $columns;
+  -ms-grid-column-span: $columns;
+  grid-column: $columns;
 }
 
-@mixin grid-row($row-start, $row-end) {
-  -ms-grid-row: $row-start;
-  -ms-grid-row-span: $row-end - $row-start;
-  grid-row: #{$row-start} / #{$row-end};
+@mixin grid-row($rows...) {
+  -ms-grid-row: $rows;
+  -ms-grid-row-span: $rows;
+  grid-row: $rows;
 }
 
 @mixin grid-align-self($value) {

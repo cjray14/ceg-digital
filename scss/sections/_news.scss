@@ -1,7 +1,11 @@
 .sec-News {
-	@include vertical-spacer;
+  @include vertical-spacer;
 }
 
 .sec-News_Inner {
-	@include container-wide;
+  @include container-wide;
+}
+
+.sec-News_Header {
+  @include section-header;
 }

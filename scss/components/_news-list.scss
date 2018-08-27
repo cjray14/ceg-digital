@@ -1,0 +1,51 @@
+.news-List_Items {
+  @include grid;
+  @include grid-gap(30px);
+
+  @include breakpoint('sm') {
+    @include grid-template-columns(repeat(2, 1fr));
+  }
+
+  @include breakpoint('custom-1000') {
+    @include grid-template-columns(repeat(3, 1fr));
+  }
+
+  @include breakpoint('lg') {
+    @include grid-gap(50px);
+  }
+
+  .no-cssgrid & {
+    margin-bottom: -50px;
+    @include flexbox;
+    @include flex-wrap(wrap);
+  }
+}
+
+.news-List_Item {
+  @include breakpoint('sm') {
+    &:last-child {
+      display: none;
+
+      @include breakpoint('custom-1000') {
+        display: block;
+      }
+    }
+  }
+
+  .no-cssgrid & {
+    margin-right: 50px;
+    margin-bottom: 50px;
+    @include flex-basis(calc(33.33% - 33.33px));
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.news-List_Item-large {
+  @include breakpoint('custom-1000') {
+    @include flexbox;
+    @include grid-column(span 2);
+  }
+}
