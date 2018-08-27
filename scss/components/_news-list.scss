@@ -22,16 +22,6 @@
 }
 
 .news-List_Item {
-  @include breakpoint('sm') {
-    &:last-child {
-      display: none;
-
-      @include breakpoint('custom-1000') {
-        display: block;
-      }
-    }
-  }
-
   .no-cssgrid & {
     margin-right: 50px;
     margin-bottom: 50px;

@@ -1984,13 +1984,6 @@ table {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
 
-@media only screen and (min-width: 768px) {
-  .news-List_Item:last-child {
-    display: none; } }
-  @media only screen and (min-width: 768px) and (min-width: 1000px) {
-    .news-List_Item:last-child {
-      display: block; } }
-
 .no-cssgrid .news-List_Item {
   margin-right: 50px;
   margin-bottom: 50px;
@@ -2710,8 +2703,7 @@ table {
 
 .sec-Contact_Body {
   padding-top: 50px;
-  padding-bottom: 50px;
-  border-bottom: 1px solid #d3d3d3; }
+  padding-bottom: 50px; }
   @media only screen and (min-width: 900px) {
     .sec-Contact_Body {
       position: relative;
