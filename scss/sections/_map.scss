@@ -1,4 +1,8 @@
 .sec-Map {
 	height: 500px;
   position: relative;
+
+  .no-js & {
+    height: 80px;
+  }
 }

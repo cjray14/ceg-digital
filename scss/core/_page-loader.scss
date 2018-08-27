@@ -3,6 +3,10 @@
   height: 10px;
   position: absolute;
   top: 0;
+
+  .no-js & {
+    display: none;
+  }
 }
 
 .js-LoadDelay {
@@ -10,6 +14,10 @@
   @include transition(opacity 1s 1.1s);
 
   &.js-LoadDelay-loaded {
+    opacity: 1;
+  }
+
+  .no-js & {
     opacity: 1;
   }
 }
