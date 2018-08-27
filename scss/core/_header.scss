@@ -169,6 +169,8 @@
   @include breakpoint('custom-1000') {
     display: block;
     min-width: 250px;
+    max-height: none;
+    overflow: visible;
     padding-top: 10px;
     padding-bottom: 10px;
     position: absolute;
