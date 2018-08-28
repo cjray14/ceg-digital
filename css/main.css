@@ -882,6 +882,20 @@ table {
   opacity: 1;
   top: 0; }
 
+.ft-Copyright {
+  color: #7f7f7f;
+  font-size: 14px;
+  line-height: 18px; }
+  @media only screen and (min-width: 768px) {
+    .ft-Copyright {
+      line-height: 26px; } }
+
+.ft-Copyright_Rights {
+  display: block; }
+  @media only screen and (min-width: 768px) {
+    .ft-Copyright_Rights {
+      display: inline-block; } }
+
 .ft-Footer {
   padding-top: 50px;
   padding-bottom: 40px;
@@ -915,6 +929,19 @@ table {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1; } }
+
+.ft-Logo {
+  margin-top: 20px; }
+  @media only screen and (min-width: 350px) {
+    .ft-Logo {
+      margin-top: 0;
+      position: absolute;
+      right: 0;
+      bottom: -10px; } }
+  @media only screen and (min-width: 768px) {
+    .ft-Logo {
+      margin-top: -10px;
+      position: static; } }
 
 .ft-Navigation {
   margin-bottom: 15px; }
@@ -997,32 +1024,68 @@ table {
     background-size: 0 0;
     color: #ee7700; }
 
-.ft-Copyright {
-  color: #7f7f7f;
+.hd-Breadcrumb_Items {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+
+.hd-Breadcrumb_Item {
+  margin-right: 15px;
   font-size: 14px;
-  line-height: 18px; }
-  @media only screen and (min-width: 768px) {
-    .ft-Copyright {
-      line-height: 26px; } }
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+  .hd-Breadcrumb_Item:last-child {
+    margin-right: 0; }
 
-.ft-Copyright_Rights {
-  display: block; }
-  @media only screen and (min-width: 768px) {
-    .ft-Copyright_Rights {
-      display: inline-block; } }
+.hd-Breadcrumb_Link {
+  font-weight: bold;
+  color: #ee7700;
+  padding-right: 15px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center; }
 
-.ft-Logo {
-  margin-top: 20px; }
-  @media only screen and (min-width: 350px) {
-    .ft-Logo {
-      margin-top: 0;
-      position: absolute;
-      right: 0;
-      bottom: -10px; } }
-  @media only screen and (min-width: 768px) {
-    .ft-Logo {
-      margin-top: -10px;
-      position: static; } }
+.hd-Breadcrumb_Divide {
+  color: #8a959e;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center; }
+
+.hd-CEG {
+  display: none; }
+  @media only screen and (min-width: 1000px) {
+    .hd-CEG {
+      display: block;
+      margin-top: 20px;
+      margin-right: 25px;
+      margin-left: auto; } }
 
 .hd-Header {
   width: 100%;
@@ -1123,14 +1186,36 @@ table {
   .template-homepage .hd-Header_Breadcrumb {
     display: none; }
 
-.hd-CEG {
-  display: none; }
+.hd-MobileMenu {
+  width: 70px;
+  height: 60px;
+  position: absolute;
+  right: 0;
+  top: 12px;
+  z-index: 9999;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center; }
+  @media only screen and (min-width: 768px) {
+    .hd-MobileMenu {
+      top: 18px; } }
   @media only screen and (min-width: 1000px) {
-    .hd-CEG {
-      display: block;
-      margin-top: 20px;
-      margin-right: 25px;
-      margin-left: auto; } }
+    .hd-MobileMenu {
+      display: none; } }
+
+.hd-MobileMenu_Text {
+  display: none; }
 
 .hd-Navigation {
   padding-top: 15px;
@@ -1285,91 +1370,6 @@ table {
 
 .hd-SubNavigation_Link-active {
   background-color: #ededed; }
-
-.hd-Breadcrumb_Items {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex; }
-
-.hd-Breadcrumb_Item {
-  margin-right: 15px;
-  font-size: 14px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex; }
-  .hd-Breadcrumb_Item:last-child {
-    margin-right: 0; }
-
-.hd-Breadcrumb_Link {
-  font-weight: bold;
-  color: #ee7700;
-  padding-right: 15px;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center; }
-
-.hd-Breadcrumb_Divide {
-  color: #8a959e;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center; }
-
-.hd-MobileMenu {
-  width: 70px;
-  height: 60px;
-  position: absolute;
-  right: 0;
-  top: 12px;
-  z-index: 9999;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  -ms-flex-pack: center;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center; }
-  @media only screen and (min-width: 768px) {
-    .hd-MobileMenu {
-      top: 18px; } }
-  @media only screen and (min-width: 1000px) {
-    .hd-MobileMenu {
-      display: none; } }
-
-.hd-MobileMenu_Text {
-  display: none; }
 
 .ico-Logo {
   width: 101px;

@@ -1,0 +1,10 @@
+.hd-CEG {
+  display: none;
+
+  @include breakpoint('custom-1000') {
+    display: block;
+    margin-top: 20px;
+    margin-right: 25px;
+    margin-left: auto;
+  }
+}

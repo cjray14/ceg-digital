@@ -1,0 +1,50 @@
+.ft-Navigation {
+  margin-bottom: 15px;
+}
+
+.ft-Navigation_Items {
+  @include flexbox;
+  @include flex-wrap(wrap);
+}
+
+.ft-Navigation_Item {
+  margin-bottom: 10px;
+  @include flex(0 0 50%);
+
+  @include breakpoint('custom-600') {
+    @include flex(0 0 33.33%);
+  }
+
+  @include breakpoint('sm') {
+    margin-right: 30px;
+    margin-bottom: 0;
+    @include flex(none);
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.ft-Navigation_Link {
+  color: $color-dark-grey;
+  @include animated-underline;
+}
+
+.ft-Navigation_Link-linkedin {
+  display: block;
+  padding-bottom: 0;
+  font-size: 0;
+  @include transition(color 0.3s);
+
+  @include breakpoint('lg') {
+    @include flexbox;
+    @include justify-content(center);
+    @include align-items(center);
+  }
+
+  &:hover {
+    background-size: 0 0;
+    color: $color-orange;
+  }
+}

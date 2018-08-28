@@ -1,0 +1,17 @@
+.ft-Copyright {
+  color: #7f7f7f;
+  font-size: 14px;
+  line-height: 18px;
+
+  @include breakpoint('sm') {
+    line-height: 26px;
+  }
+}
+
+.ft-Copyright_Rights {
+  display: block;
+
+  @include breakpoint('sm') {
+    display: inline-block;
+  }
+}

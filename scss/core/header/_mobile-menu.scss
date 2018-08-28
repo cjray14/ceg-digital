@@ -1,0 +1,23 @@
+.hd-MobileMenu {
+  width: 70px;
+  height: 60px;
+  position: absolute;
+  right: 0;
+  top: 12px;
+  z-index: 9999;
+  @include flexbox;
+  @include justify-content(center);
+  @include align-items(center);
+
+  @include breakpoint('sm') {
+    top: 18px;
+  }
+
+  @include breakpoint('custom-1000') {
+    display: none;
+  }
+}
+
+.hd-MobileMenu_Text {
+  display: none;
+}

@@ -1,0 +1,29 @@
+.hd-Breadcrumb_Items {
+  @include flexbox;
+}
+
+.hd-Breadcrumb_Item {
+  margin-right: 15px;
+  font-size: 14px;
+  @include flexbox;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.hd-Breadcrumb_Link {
+  font-weight: bold;
+  color: $color-orange;
+  padding-right: 15px;
+  @include flexbox;
+  @include justify-content(center);
+  @include align-items(center);
+}
+
+.hd-Breadcrumb_Divide {
+  color: $color-medium-grey;
+  @include flexbox;
+  @include justify-content(center);
+  @include align-items(center);
+}

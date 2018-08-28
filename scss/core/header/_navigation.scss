@@ -1,0 +1,85 @@
+.hd-Navigation {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 1;
+  @include transition(transform 0.3s);
+  @include transform(translateY(-100%));
+
+  .hd-Header-active & {
+    @include box-shadow(0 20px 30px rgba(0, 0, 0, 0.1));
+    @include transform(translateY(85px));
+
+    @include breakpoint('sm') {
+      @include transform(translateY(100px));
+    }
+
+    @include breakpoint('custom-1000') {
+      @include box-shadow(none);
+      @include transform(none);
+    }
+  }
+
+  @include breakpoint('custom-1000') {
+    padding-top: 0;
+    padding-bottom: 0;
+    position: static;
+    @include transform(none);
+  }
+}
+
+.hd-Navigation_Items {
+  @include breakpoint('custom-1000') {
+    @include flexbox;
+  }
+}
+
+.hd-Navigation_Item {
+  position: relative;
+}
+
+.hd-Navigation_Link {
+  font-weight: bold;
+  color: $color-dark-grey;
+  padding: 12px 30px;
+  @include flexbox;
+  @include transition(color 0.3s);
+
+  @include breakpoint('custom-1000') {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  &:hover {
+    color: $color-orange;
+  }
+
+  .hd-Navigation_Item-sub:hover & {
+    color: $color-orange;
+  }
+}
+
+.hd-Navigation_Link-active {
+  background-color: #ededed;
+}
+
+.hd-Navigation_Link-subActive {
+  color: $color-orange;
+
+  @include breakpoint('custom-1000') {
+    color: $color-dark-grey;
+  }
+}
+
+.hd-Navigation_Icon {
+  margin-left: 15px;
+  color: $color-orange;
+
+  @include breakpoint('custom-1000') {
+    display: none;
+  }
+}

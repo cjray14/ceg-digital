@@ -1,0 +1,15 @@
+.ft-Logo {
+  margin-top: 20px;
+
+  @include breakpoint('custom-350') {
+    margin-top: 0;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+  }
+
+  @include breakpoint('sm') {
+    margin-top: -10px;
+    position: static;
+  }
+}

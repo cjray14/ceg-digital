@@ -1,0 +1,83 @@
+.hd-Header {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  z-index: 5;
+
+  @include breakpoint('custom-1000') {
+    background-color: transparent;
+
+    .skr-Scrolled & {
+      min-height: 145px;
+    }
+  }
+}
+
+.hd-Header_Body {
+  @include flexbox;
+}
+
+.hd-Header_Logo {
+  width: 152px;
+  height: 85px;
+  color: $color-orange;
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  @include flexbox;
+  @include justify-content(center);
+  @include align-items(center);
+
+  @include breakpoint('sm') {
+    width: 175px;
+    height: 100px;
+  }
+
+  @include breakpoint('custom-1000') {
+    height: 145px;
+
+    .skr-Scrolled & {
+      width: 135px;
+      height: 100px;
+      padding: 20px;
+      position: fixed;
+      @include transform(translateY(-250px));
+    }
+
+    .skr-Scrolled-logo & {
+      @include transition(transform 0.3s);
+      @include transform(none);
+    }
+  }
+
+  .hd-Header_Logo-text {
+    fill: $color-dark-grey;
+  }
+}
+
+.hd-Header_Main {
+  @include flex(1);
+}
+
+.hd-Header_Navigation {
+  @include breakpoint('custom-1000') {
+    border-bottom: 10px solid $color-orange;
+    background-color: #fff;
+    @include flexbox;
+    @include flex(1);
+  }
+}
+
+.hd-Header_Breadcrumb {
+  display: none;
+
+  @include breakpoint('custom-1000') {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .template-homepage & {
+    display: none;
+  }
+}
