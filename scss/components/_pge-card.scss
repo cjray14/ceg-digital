@@ -31,10 +31,13 @@
 
 .pge-Card_Image {
   width: 100%;
-  @include transition(transform 0.5s);
 
-  .pge-Card:hover & {
-    @include transform(scale(1.04));
+  @include breakpoint('custom-1000') {
+    @include transition(transform 0.5s);
+
+    .pge-Card:hover & {
+      @include transform(scale(1.04));
+    }
   }
 }
 
@@ -47,10 +50,13 @@
 
 .pge-Card_Title {
   margin-bottom: 15px;
-  @include transition(color 0.3s);
 
-  .pge-Card:hover & {
-    color: $color-orange;
+  @include breakpoint('custom-1000') {
+    @include transition(color 0.3s);
+
+    .pge-Card:hover & {
+      color: $color-orange;
+    }
   }
 }
 

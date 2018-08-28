@@ -27,10 +27,12 @@
 }
 
 .cas-Card_Image {
-  @include transition(transform 0.5s);
+  @include breakpoint('custom-1000') {
+    @include transition(transform 0.5s);
 
-  .cas-Card:hover & {
-    @include transform(scale(1.04));
+    .cas-Card:hover & {
+      @include transform(scale(1.04));
+    }
   }
 }
 
@@ -43,10 +45,13 @@
 
 .cas-Card_Title {
   margin-bottom: 15px;
-  @include transition(color 0.3s);
 
-  .cas-Card:hover & {
-    color: $color-orange;
+  @include breakpoint('custom-1000') {
+    @include transition(color 0.3s);
+
+    .cas-Card:hover & {
+      color: $color-orange;
+    }
   }
 }
 

@@ -37,10 +37,13 @@
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-  @include transition(transform 0.5s);
 
-  .blg-Card:hover & {
-    @include transform(scale(1.04));
+  @include breakpoint('custom-1000') {
+    @include transition(transform 0.5s);
+
+    .blg-Card:hover & {
+      @include transform(scale(1.04));
+    }
   }
 }
 

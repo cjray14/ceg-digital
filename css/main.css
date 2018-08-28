@@ -1286,19 +1286,19 @@ table {
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: flex;
-  -webkit-transition: color 0.3s;
-  -moz-transition: color 0.3s;
-  -o-transition: color 0.3s;
-  transition: color 0.3s; }
+  display: flex; }
   @media only screen and (min-width: 1000px) {
     .hd-Navigation_Link {
       padding-top: 35px;
-      padding-bottom: 35px; } }
-  .hd-Navigation_Link:hover {
-    color: #ee7700; }
-  .hd-Navigation_Item-sub:hover .hd-Navigation_Link {
-    color: #ee7700; }
+      padding-bottom: 35px;
+      -webkit-transition: color 0.3s;
+      -moz-transition: color 0.3s;
+      -o-transition: color 0.3s;
+      transition: color 0.3s; }
+      .hd-Navigation_Link:hover {
+        color: #ee7700; }
+      .hd-Navigation_Item-sub:hover .hd-Navigation_Link {
+        color: #ee7700; } }
 
 .hd-Navigation_Link-active {
   background-color: #ededed; }
@@ -1365,8 +1365,9 @@ table {
   font-weight: bold;
   color: #373737;
   padding: 10px 30px 10px 45px; }
-  .hd-SubNavigation_Link:hover {
-    background-color: #ededed; }
+  @media only screen and (min-width: 1000px) {
+    .hd-SubNavigation_Link:hover {
+      background-color: #ededed; } }
 
 .hd-SubNavigation_Link-active {
   background-color: #ededed; }
@@ -1616,16 +1617,18 @@ table {
 .blg-Card_Image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  -webkit-transition: transform 0.5s;
-  -moz-transition: transform 0.5s;
-  -o-transition: transform 0.5s;
-  transition: transform 0.5s; }
-  .blg-Card:hover .blg-Card_Image {
-    -webkit-transform: scale(1.04);
-    -ms-transform: scale(1.04);
-    -o-transform: scale(1.04);
-    transform: scale(1.04); }
+  object-fit: cover; }
+  @media only screen and (min-width: 1000px) {
+    .blg-Card_Image {
+      -webkit-transition: transform 0.5s;
+      -moz-transition: transform 0.5s;
+      -o-transition: transform 0.5s;
+      transition: transform 0.5s; }
+      .blg-Card:hover .blg-Card_Image {
+        -webkit-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+        -o-transform: scale(1.04);
+        transform: scale(1.04); } }
 
 .blg-Card_SubTitle {
   color: #fff;
@@ -1707,16 +1710,17 @@ table {
       padding-bottom: 50px;
       padding-left: 100px; } }
 
-.cas-Card_Image {
-  -webkit-transition: transform 0.5s;
-  -moz-transition: transform 0.5s;
-  -o-transition: transform 0.5s;
-  transition: transform 0.5s; }
-  .cas-Card:hover .cas-Card_Image {
-    -webkit-transform: scale(1.04);
-    -ms-transform: scale(1.04);
-    -o-transform: scale(1.04);
-    transform: scale(1.04); }
+@media only screen and (min-width: 1000px) {
+  .cas-Card_Image {
+    -webkit-transition: transform 0.5s;
+    -moz-transition: transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s; }
+    .cas-Card:hover .cas-Card_Image {
+      -webkit-transform: scale(1.04);
+      -ms-transform: scale(1.04);
+      -o-transform: scale(1.04);
+      transform: scale(1.04); } }
 
 .cas-Card_SubTitle {
   margin-bottom: 15px;
@@ -1725,13 +1729,15 @@ table {
   color: #8a959e; }
 
 .cas-Card_Title {
-  margin-bottom: 15px;
-  -webkit-transition: color 0.3s;
-  -moz-transition: color 0.3s;
-  -o-transition: color 0.3s;
-  transition: color 0.3s; }
-  .cas-Card:hover .cas-Card_Title {
-    color: #ee7700; }
+  margin-bottom: 15px; }
+  @media only screen and (min-width: 1000px) {
+    .cas-Card_Title {
+      -webkit-transition: color 0.3s;
+      -moz-transition: color 0.3s;
+      -o-transition: color 0.3s;
+      transition: color 0.3s; }
+      .cas-Card:hover .cas-Card_Title {
+        color: #ee7700; } }
 
 .cas-Card_Icon {
   display: block;
@@ -1914,11 +1920,18 @@ table {
         position: static; } }
 
 .news-Card_Image {
-  width: 100%;
-  -webkit-transition: transform 0.5s;
-  -moz-transition: transform 0.5s;
-  -o-transition: transform 0.5s;
-  transition: transform 0.5s; }
+  width: 100%; }
+  @media only screen and (min-width: 1000px) {
+    .news-Card_Image {
+      -webkit-transition: transform 0.5s;
+      -moz-transition: transform 0.5s;
+      -o-transition: transform 0.5s;
+      transition: transform 0.5s; }
+      .news-Card:hover .news-Card_Image {
+        -webkit-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+        -o-transform: scale(1.04);
+        transform: scale(1.04); } }
   @media only screen and (min-width: 1000px) {
     .news-List_Item-large .news-Card_Image {
       height: 100%;
@@ -1926,11 +1939,6 @@ table {
   @media only screen and (min-width: 1200px) {
     .news-List_Item-large .news-Card_Image {
       object-fit: inherit; } }
-  .news-Card:hover .news-Card_Image {
-    -webkit-transform: scale(1.04);
-    -ms-transform: scale(1.04);
-    -o-transform: scale(1.04);
-    transform: scale(1.04); }
 
 .news-Card_SubTitle {
   margin-bottom: 15px;
@@ -1944,23 +1952,25 @@ table {
         color: #8a959e; } }
 
 .news-Card_Title {
-  margin-bottom: 20px;
-  -webkit-transition: color 0.3s;
-  -moz-transition: color 0.3s;
-  -o-transition: color 0.3s;
-  transition: color 0.3s; }
-  .news-Card:hover .news-Card_Title {
-    color: #ee7700; }
-    @media only screen and (min-width: 1000px) {
+  margin-bottom: 20px; }
+  @media only screen and (min-width: 1000px) {
+    .news-Card_Title {
+      -webkit-transition: color 0.3s;
+      -moz-transition: color 0.3s;
+      -o-transition: color 0.3s;
+      transition: color 0.3s; }
+      .news-Card:hover .news-Card_Title {
+        color: #ee7700; } }
+    @media only screen and (min-width: 1000px) and (min-width: 1000px) {
       .news-List_Item-large .news-Card:hover .news-Card_Title {
         color: #fff; }
         .no-cssgrid .news-List_Item-large .news-Card:hover .news-Card_Title {
           color: #ee7700; } }
   @media only screen and (min-width: 1000px) {
-    .news-List_Item-large .news-Card_Title {
-      color: #fff; }
-      .no-cssgrid .news-List_Item-large .news-Card_Title {
-        color: #373737; } }
+      .news-List_Item-large .news-Card_Title {
+        color: #fff; }
+        .no-cssgrid .news-List_Item-large .news-Card_Title {
+          color: #373737; } }
 
 .news-Card_Text {
   margin-bottom: 20px; }
@@ -2039,25 +2049,29 @@ table {
   overflow: hidden; }
 
 .oss-Card_Image {
-  width: 100%;
-  -webkit-transition: transform 0.5s;
-  -moz-transition: transform 0.5s;
-  -o-transition: transform 0.5s;
-  transition: transform 0.5s; }
-  .oss-Card:hover .oss-Card_Image {
-    -webkit-transform: scale(1.04);
-    -ms-transform: scale(1.04);
-    -o-transform: scale(1.04);
-    transform: scale(1.04); }
+  width: 100%; }
+  @media only screen and (min-width: 1000px) {
+    .oss-Card_Image {
+      -webkit-transition: transform 0.5s;
+      -moz-transition: transform 0.5s;
+      -o-transition: transform 0.5s;
+      transition: transform 0.5s; }
+      .oss-Card:hover .oss-Card_Image {
+        -webkit-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+        -o-transform: scale(1.04);
+        transform: scale(1.04); } }
 
 .oss-Card_Title {
-  margin-bottom: 20px;
-  -webkit-transition: color 0.3s;
-  -moz-transition: color 0.3s;
-  -o-transition: color 0.3s;
-  transition: color 0.3s; }
-  .oss-Card:hover .oss-Card_Title {
-    color: #ee7700; }
+  margin-bottom: 20px; }
+  @media only screen and (min-width: 1000px) {
+    .oss-Card_Title {
+      -webkit-transition: color 0.3s;
+      -moz-transition: color 0.3s;
+      -o-transition: color 0.3s;
+      transition: color 0.3s; }
+      .oss-Card:hover .oss-Card_Title {
+        color: #ee7700; } }
 
 .oss-Card_Text {
   margin-bottom: 20px; }
@@ -2141,16 +2155,18 @@ table {
       padding-left: 30px; } }
 
 .pge-Card_Image {
-  width: 100%;
-  -webkit-transition: transform 0.5s;
-  -moz-transition: transform 0.5s;
-  -o-transition: transform 0.5s;
-  transition: transform 0.5s; }
-  .pge-Card:hover .pge-Card_Image {
-    -webkit-transform: scale(1.04);
-    -ms-transform: scale(1.04);
-    -o-transform: scale(1.04);
-    transform: scale(1.04); }
+  width: 100%; }
+  @media only screen and (min-width: 1000px) {
+    .pge-Card_Image {
+      -webkit-transition: transform 0.5s;
+      -moz-transition: transform 0.5s;
+      -o-transition: transform 0.5s;
+      transition: transform 0.5s; }
+      .pge-Card:hover .pge-Card_Image {
+        -webkit-transform: scale(1.04);
+        -ms-transform: scale(1.04);
+        -o-transform: scale(1.04);
+        transform: scale(1.04); } }
 
 .pge-Card_SubTitle {
   margin-bottom: 15px;
@@ -2159,13 +2175,15 @@ table {
   color: #8a959e; }
 
 .pge-Card_Title {
-  margin-bottom: 15px;
-  -webkit-transition: color 0.3s;
-  -moz-transition: color 0.3s;
-  -o-transition: color 0.3s;
-  transition: color 0.3s; }
-  .pge-Card:hover .pge-Card_Title {
-    color: #ee7700; }
+  margin-bottom: 15px; }
+  @media only screen and (min-width: 1000px) {
+    .pge-Card_Title {
+      -webkit-transition: color 0.3s;
+      -moz-transition: color 0.3s;
+      -o-transition: color 0.3s;
+      transition: color 0.3s; }
+      .pge-Card:hover .pge-Card_Title {
+        color: #ee7700; } }
 
 .pge-Card_Icon {
   display: block;

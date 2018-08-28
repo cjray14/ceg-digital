@@ -47,19 +47,19 @@
   color: $color-dark-grey;
   padding: 12px 30px;
   @include flexbox;
-  @include transition(color 0.3s);
 
   @include breakpoint('custom-1000') {
     padding-top: 35px;
     padding-bottom: 35px;
-  }
+    @include transition(color 0.3s);
 
-  &:hover {
-    color: $color-orange;
-  }
+    &:hover {
+      color: $color-orange;
+    }
 
-  .hd-Navigation_Item-sub:hover & {
-    color: $color-orange;
+    .hd-Navigation_Item-sub:hover & {
+      color: $color-orange;
+    }
   }
 }
 

@@ -49,8 +49,10 @@
   color: $color-dark-grey;
   padding: 10px 30px 10px 45px;
 
-  &:hover {
-    background-color: #ededed;
+  @include breakpoint('custom-1000') {
+    &:hover {
+      background-color: #ededed;
+    }
   }
 }
 

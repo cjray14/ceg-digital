@@ -68,7 +68,14 @@
 
 .news-Card_Image {
   width: 100%;
-  @include transition(transform 0.5s);
+
+  @include breakpoint('custom-1000') {
+    @include transition(transform 0.5s);
+
+    .news-Card:hover & {
+      @include transform(scale(1.04));
+    }
+  }
 
   .news-List_Item-large & {
     @include breakpoint('custom-1000') {
@@ -79,10 +86,6 @@
     @include breakpoint('lg') {
       object-fit: inherit;
     }
-  }
-
-  .news-Card:hover & {
-    @include transform(scale(1.04));
   }
 }
 
@@ -105,23 +108,24 @@
 
 .news-Card_Title {
 	margin-bottom: 20px;
-  @include transition(color 0.3s);
+  
+  @include breakpoint('custom-1000') {
+    @include transition(color 0.3s);
 
-  .news-Card:hover & {
-    color: $color-orange;
+    .news-Card:hover & {
+      color: $color-orange;
 
-    @include breakpoint('custom-1000') {
-      .news-List_Item-large & {
-        color: #fff;
+      @include breakpoint('custom-1000') {
+        .news-List_Item-large & {
+          color: #fff;
 
-        .no-cssgrid & {
-          color: $color-orange;
+          .no-cssgrid & {
+            color: $color-orange;
+          }
         }
       }
     }
-  }
 
-  @include breakpoint('custom-1000') {
     .news-List_Item-large & {
       color: #fff;
 
